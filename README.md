@@ -10,4 +10,4 @@ A micro-site and repo to manage automated accessibility reports, generated scans
 ## pa11y
 
 ## lighthouse
-- `lighthouse <url>`
+- `npx lighthouse <url>`
