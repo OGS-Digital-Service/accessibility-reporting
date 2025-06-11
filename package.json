@@ -8,13 +8,15 @@
     "start": "npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy",
     "lighthouse-acsf-mobile": "npx lighthouse --chrome-flags='--ignore-certificate-errors'  --only-categories accessibility, best-practices, seo -- ",
-    "lighthouse-acsf-desktop": "npx lighthouse --chrome-flags='--ignore-certificate-errors' --preset=desktop  --only-categories accessibility, best-practices, seo -- "
+    "lighthouse-acsf-desktop": "npx lighthouse --chrome-flags='--ignore-certificate-errors' --preset=desktop  --only-categories accessibility, best-practices, seo -- ",
+    "ibm": "npx achecker -- "
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "accessibility-checker": "^4.0.5",
     "lighthouse": "^12.6.1",
     "pa11y-ci": "^3.1.0",
     "pa11y-ci-reporter-html": "^7.0.0"
