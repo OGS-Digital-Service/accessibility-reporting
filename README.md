@@ -10,4 +10,8 @@ A micro-site and repo to manage automated accessibility reports, generated scans
 ## pa11y
 
 ## lighthouse
-- `npx lighthouse <url>`
+- npx lighthouse <url> --chrome-flags='--ignore-certificate-errors' --only-categories accessibility, best-practices, seo
+
+
+## automated tool effectiveness
+- https://alphagov.github.io/accessibility-tool-audit/index.html
