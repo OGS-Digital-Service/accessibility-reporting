@@ -8,9 +8,13 @@ A micro-site and repo to manage automated accessibility reports, generated scans
 
 
 ## pa11y
+- 
 
 ## lighthouse
-- npx lighthouse <url> --chrome-flags='--ignore-certificate-errors' --only-categories accessibility, best-practices, seo
+- using the ignore invalid cert flag for chrome
+- cd into the correct directory for the report (this seems insane, but the --output-path arg can't write to any other directory?)
+- npm run lighthouse {url to run against}
+
 
 
 ## automated tool effectiveness
