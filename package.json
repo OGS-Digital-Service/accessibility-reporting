@@ -7,7 +7,7 @@
     "test": "pa11y-ci",
     "start": "npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy",
-    "lighthouse":"npx lighthouse ${url} --chrome-flags='--ignore-certificate-errors' --only-categories accessibility, best-practices, seo"
+    "lighthouse":"npx lighthouse --chrome-flags='--ignore-certificate-errors' --only-categories accessibility, best-practices, seo -- "
   },
   "keywords": [],
   "author": "",
