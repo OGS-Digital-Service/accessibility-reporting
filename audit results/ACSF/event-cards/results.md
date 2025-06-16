@@ -1,5 +1,15 @@
-# Manual Testing 
-## Problematic Patterns
+# Results
+
+## Lighthouse
+
+## Pa11y
+
+## WAVE
+
+## IBM Equal Access
+
+
+## Manual & Screen Reader Testing Issues
 1. Event Time structure
 2. Event Location structure 
 
