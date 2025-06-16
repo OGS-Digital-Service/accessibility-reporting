@@ -7,8 +7,8 @@
     "pa11y": "pa11y-ci",
     "start": "npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy",
-    "lighthouse-acsf-mobile": "npx lighthouse --chrome-flags='--ignore-certificate-errors'  --only-categories accessibility, best-practices, seo -- ",
-    "lighthouse-acsf-desktop": "npx lighthouse --chrome-flags='--ignore-certificate-errors' --preset=desktop  --only-categories accessibility, best-practices, seo -- ",
+    "lighthouse-ignore-mobile": "npx lighthouse --chrome-flags='--ignore-certificate-errors'  --only-categories accessibility, best-practices, seo -- ",
+    "lighthouse-ignore-desktop": "npx lighthouse --chrome-flags='--ignore-certificate-errors' --preset=desktop  --only-categories accessibility, best-practices, seo -- ",
     "ibm": "npx achecker -- "
   },
   "keywords": [],

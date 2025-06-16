@@ -23,6 +23,7 @@ A micro-site and repo to manage automated accessibility reports, generated scans
 
 ## IBM equal access
 - still working on getting this up and running from cli
+- for now these are manual, exported browser audits due to invalid cert in the testing env
 
 ## automated tool effectiveness
 - https://alphagov.github.io/accessibility-tool-audit/index.html
