@@ -26,7 +26,7 @@ Suggested example from NY.gov:
 ```
 > This example reads the entire time as a single string element
 
-### ===Recommendations===
+### Recommendations
 1. Try to use fewer distinct DOM elements to represent the structure of a time block to improve readability for screen reader users.
 2. Consider using screen reader only text to represent timezones or range attributes
 
@@ -55,4 +55,7 @@ Suggested example from NY.gov:
     The Michigan Street Baptist Church, 511 Michigan Ave., Buffalo, NY 14203
 </div>
 ```
-> this example has the entire location set as one string of inner text that reads out, parsed correctly by the screen reading cadence. 
+> this example has the entire location set as one string of inner text that reads out parsed correctly by the screen reading cadence. 
+
+### Recommendations
+1. Consider rendering the location as a single string of inner text inside one DOM element for readability

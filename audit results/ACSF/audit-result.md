@@ -1,0 +1,16 @@
+# Audit of New Component Features
+
+## Components with testable Accessibility Considerations
+1. Back to top feature
+2. Event Cards
+3. Heroes
+4. Popular Services
+5. Photo Gallery
+6. Quick Links Styled Link
+7. Table of Contents
+
+## No testable considerations
+1. rounded corners
+2. font awesome icons
+
+
