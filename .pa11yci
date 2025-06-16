@@ -18,21 +18,14 @@
     },
     "urls": [
     {
-      "url": "https://empirestateplaza2.nysits.acsitefactory.com?=mobile",
+      "url": "https://empirestateplaza2.nysits.acsitefactory.com/upcoming-events?mobile",
       "viewport": {
         "width": 360,
         "height": 480
       }
     },
     {
-      "url": "https://empirestateplaza2.nysits.acsitefactory.com?=tablet",
-      "viewport": {
-        "width": 768,
-        "height": 600
-      }
-    },
-    {
-      "url": "https://empirestateplaza2.nysits.acsitefactory.com?=desktop",
+      "url": "https://empirestateplaza2.nysits.acsitefactory.com/upcoming-events?desktop",
       "viewport": {
         "width": 1280,
         "height": 1024
