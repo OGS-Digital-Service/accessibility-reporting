@@ -2,7 +2,7 @@
 
 ## Components with testable Accessibility Considerations
 1. Back to top feature
-2. Event Cards
+2. [Event Cards](audit results/ACSF/event-cards/manual-testing.md)
 3. Heroes
 4. Popular Services
 5. Photo Gallery
@@ -13,4 +13,5 @@
 1. rounded corners
 2. font awesome icons
 
-
+## Testing not included
+1. Wholesale color audit of all color options for all new components in the updated theme. 
