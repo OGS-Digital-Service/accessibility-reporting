@@ -2,7 +2,9 @@
 
 ## Components with testable Accessibility Considerations
 1. [Back to top feature](https://github.com/OGS-Digital-Service/accessibility-reporting/blob/main/audit_results/ACSF/back-top/results.md)
+- (1) recommended **Low** priority fix
 2. [Event Cards](https://github.com/OGS-Digital-Service/accessibility-reporting/blob/main/audit_results/ACSF/event-cards/results.md)
+- (2) recommended **Low** priority fixes
 3. Heroes
 4. Popular Services
 5. Photo Gallery
@@ -26,3 +28,16 @@
 2. VoiceOver screen reader
 3. ANDI: for accessible names, interactions, and states
 4. WAVE: manual browser test
+
+## NYS Digital Service Severity Scale
+Issues ranked as severe, moderate, or low should be remediated in order to promote equal access. 
+1. **Severe** 
+- Issues at this level represent signficant (or total) barriers to equal access for all users and have WCAG A and AA failures. 
+2. **Moderate**
+- Issues at this level represent some impact to equal access, accessibility patterns, screen reader usage, and/or contain WCAG A and AA failures.
+3. **Low**
+- Issues at this level represent minimal barriers to access, but often still contain lesser WCAG A and AA failures. 
+4. **Best Practice**
+- Issues at this level are web development best practices and do not contain measurable WCAG failures. 
+5. **None**
+- No issues identified as of this audit. Congrats!
