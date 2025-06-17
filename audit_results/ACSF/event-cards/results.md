@@ -15,17 +15,22 @@
 - [ogs](/audit_results/ACSF/event-cards/pa11y/ogs/)
 - [plaza](/audit_results/ACSF/event-cards/pa11y/plaza/)
 - [taste](/audit_results/ACSF/event-cards/pa11y/taste/)
-
-## WAVE
+- No issues related to this component
 
 ## IBM Equal Access
 - not enough criteria to test
+
+## WAVE
+- no criteria to test
+
+## ANDI
+- no issues related to this component
 
 ## Manual & Screen Reader Testing Issues
 1. Event Time structure
 2. Event Location structure 
 
-## Event Time structure
+### Event Time structure
 Currently the event time is not a single structured element with readable inner text, rather it's broken up into several distinct elements that are read separately, causing possible confusion for screen reader users.
 
 Current code:
@@ -48,11 +53,11 @@ Suggested example from NY.gov:
 ```
 > This example reads the entire time as a single string element
 
-### Recommendations
+#### Recommendations
 1. Try to use fewer distinct DOM elements to represent the structure of a time block to improve readability for screen reader users.
 2. Consider using screen reader only text to represent timezones or range attributes
 
-## Event Location Structure
+### Event Location Structure
 The event location structure also uses several distinct DOM elements to represent a single string of location inner text, which causes screen reader users to hear jumbled or incomplete location data. 
 
 Current Code:
@@ -79,5 +84,5 @@ Suggested example from NY.gov:
 ```
 > this example has the entire location set as one string of inner text that reads out parsed correctly by the screen reading cadence. 
 
-### Recommendations
+#### Recommendations
 1. Consider rendering the location as a single string of inner text inside one DOM element for readability

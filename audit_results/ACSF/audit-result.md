@@ -19,10 +19,10 @@
 ## Automated Test Runners
 1. Lighthouse: mobile and desktop, no performance flags
 2. Pa11y: 360px and 1280px for mobile and desktop. aXecore and HTMLCS.
-3. WAVE: manual browser test
-4. IBM Equal Access for complex layouts, browser test
+3. IBM Equal Access for complex layouts, browser test
 
 ## Manual & Screen Reader Testing
 1. Manual code inspection
 2. VoiceOver screen reader
 3. ANDI: for accessible names, interactions, and states
+4. WAVE: manual browser test
