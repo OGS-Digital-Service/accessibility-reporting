@@ -6,11 +6,10 @@
 - https://empirestateplaza2.nysits.acsitefactory.com/upcoming-events
 
 ## Lighthouse
-- Desktop
-- - [taste](/audit%20results/ACSF/event-cards/lighthouse/desktop/taste2.nysits.acsitefactory.com-eventcards.html)
-- - [ogs](/audit%20results/ACSF/event-cards/lighthouse/desktop/ogs2.nysits.acsitefactory.com_2025-06-16_10-49-11.report.html)
-- - [empire-plaza](/audit%20results/ACSF/event-cards/lighthouse/desktop/empirestateplaza2.nysits.acsitefactory.com_2025-06-16_11-04-48.report.html)
-
+- [Desktop results](/audit_results/ACSF/event-cards/lighthouse/desktop/)
+- No issues related to this component
+- [Mobile results](/audit_results/ACSF/event-cards/lighthouse/mobile/)
+- No issues related to this component
 
 
 ## Pa11y
