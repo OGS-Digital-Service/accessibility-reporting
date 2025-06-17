@@ -1,6 +1,17 @@
 # Results
 
+## Pages Tested
+- https://taste2.nysits.acsitefactory.com/events
+- https://ogs2.nysits.acsitefactory.com/upcoming-events
+- https://empirestateplaza2.nysits.acsitefactory.com/upcoming-events
+
 ## Lighthouse
+- Desktop
+- - [taste](/audit%20results/ACSF/event-cards/lighthouse/desktop/taste2.nysits.acsitefactory.com-eventcards.html)
+- - [ogs](/audit%20results/ACSF/event-cards/lighthouse/desktop/ogs2.nysits.acsitefactory.com_2025-06-16_10-49-11.report.html)
+- - [empire-plaza](/audit%20results/ACSF/event-cards/lighthouse/desktop/empirestateplaza2.nysits.acsitefactory.com_2025-06-16_11-04-48.report.html)
+
+
 
 ## Pa11y
 
