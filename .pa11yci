@@ -18,14 +18,28 @@
     },
     "urls": [
     {
-      "url": "https://empirestateplaza2.nysits.acsitefactory.com/upcoming-events?mobile",
+      "url": "https://empirestateplaza2.nysits.acsitefactory.com/?mobile",
       "viewport": {
         "width": 360,
         "height": 480
       }
     },
     {
-      "url": "https://empirestateplaza2.nysits.acsitefactory.com/upcoming-events?desktop",
+      "url": "https://empirestateplaza2.nysits.acsitefactory.com/?desktop",
+      "viewport": {
+        "width": 1280,
+        "height": 1024
+      }
+    },
+    {
+      "url": "https://empirestateplaza2.nysits.acsitefactory.com/convention-center-available-space?mobile",
+      "viewport": {
+        "width": 360,
+        "height": 480
+      }
+    },
+    {
+      "url": "https://empirestateplaza2.nysits.acsitefactory.com/convention-center-available-space?desktop",
       "viewport": {
         "width": 1280,
         "height": 1024
