@@ -11,13 +11,15 @@
 - [Mobile results](/audit_results/ACSF/event-cards/lighthouse/mobile/)
 - No issues related to this component
 
-
 ## Pa11y
+- [ogs](/audit_results/ACSF/event-cards/pa11y/ogs/)
+- [plaza](/audit_results/ACSF/event-cards/pa11y/plaza/)
+- [taste](/audit_results/ACSF/event-cards/pa11y/taste/)
 
 ## WAVE
 
 ## IBM Equal Access
-
+- not enough criteria to test
 
 ## Manual & Screen Reader Testing Issues
 1. Event Time structure
