@@ -26,6 +26,10 @@
 ## ANDI
 - no issues related to this component
 
+## Checks
+1. Text Spacing - Pass: text can be resized.
+2. Tap Target Size - Pass: no overlapping controls.
+
 ## Manual & Screen Reader Testing Issues
 1. Event Time structure
 2. Event Location structure 
