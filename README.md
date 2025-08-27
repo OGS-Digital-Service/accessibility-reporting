@@ -52,3 +52,7 @@ Notes and commands for running the tests.
 
 ### automated tool effectiveness
 - https://alphagov.github.io/accessibility-tool-audit/index.html
+
+
+### flags for lighthouse
+- --chrome-flags='--ignore-certificate-errors' in order to run against non-https urls

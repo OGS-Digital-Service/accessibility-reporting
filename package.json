@@ -7,8 +7,10 @@
     "pa11y": "pa11y-ci",
     "start": "npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy",
-    "lighthouse-ignore-mobile": "npx lighthouse --chrome-flags='--ignore-certificate-errors'  --only-categories accessibility, best-practices, seo -- ",
-    "lighthouse-ignore-desktop": "npx lighthouse --chrome-flags='--ignore-certificate-errors' --preset=desktop  --only-categories accessibility, best-practices, seo -- ",
+    "lighthouse-mobile-a11y": "npx lighthouse --only-categories accessibility, best-practices, seo -- ",
+    "lighthouse-desktop-a11y": "npx lighthouse  --preset=desktop  --only-categories accessibility, best-practices, seo -- ",
+    "lighthouse-mobile-performance": "npx lighthouse --only-categories performance -- ",
+    "lighthouse-desktop-performance": "npx lighthouse --preset=desktop  --only-categories performance -- ",
     "ibm": "npx achecker -- "
   },
   "keywords": [],
