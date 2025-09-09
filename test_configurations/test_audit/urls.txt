@@ -1,2 +1,5 @@
 https://www.ny.gov
-https://www.governor.ny.gov
+https://www.ny.gov/programs
+https://www.ny.gov/services
+https://www.ny.gov/all-services
+https://www.ny.gov/services/apply-heating-assistance-heap
