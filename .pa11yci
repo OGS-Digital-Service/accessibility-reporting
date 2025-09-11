@@ -18,28 +18,28 @@
     },
     "urls": [
     {
-      "url": "https://empirestateplaza2.nysits.acsitefactory.com/?mobile",
+      "url": "https://www.ny.gov/?mobile",
       "viewport": {
         "width": 360,
         "height": 480
       }
     },
     {
-      "url": "https://empirestateplaza2.nysits.acsitefactory.com/?desktop",
+      "url": "https://www.ny.gov/?desktop",
       "viewport": {
         "width": 1280,
         "height": 1024
       }
     },
     {
-      "url": "https://empirestateplaza2.nysits.acsitefactory.com/convention-center-available-space?mobile",
+      "url": "https://www.ny.gov//programs?mobile",
       "viewport": {
         "width": 360,
         "height": 480
       }
     },
     {
-      "url": "https://empirestateplaza2.nysits.acsitefactory.com/convention-center-available-space?desktop",
+      "url": "https://www.ny.gov//programs?desktop",
       "viewport": {
         "width": 1280,
         "height": 1024
