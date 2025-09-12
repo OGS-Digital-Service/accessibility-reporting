@@ -1,0 +1,2 @@
+npm run lighthouse-mobile-performance https://ogs.ny.gov/
+npm run lighthouse-desktop-performance https://ogs.ny.gov/
