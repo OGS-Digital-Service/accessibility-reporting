@@ -1,0 +1,37 @@
+[
+  {
+    "page": "Homepage",
+    "mobilelink": "ogs.ny.gov-mobile.html",
+    "mobilescore":"",
+    "desktoplink":"ogs.ny.gov-desktop.html",
+    "desktopscore":""
+  },
+  {
+    "page": "Procurement Contracts",
+    "mobilelink": "",
+    "mobilescore":"",
+    "desktoplink":"",
+    "desktopscore":""
+  },
+  {
+    "page": "Procurement",
+    "mobilelink": "",
+    "mobilescore":"",
+    "desktoplink":"",
+    "desktopscore":""
+  },
+  {
+    "page": "Parking",
+    "mobilelink": "",
+    "mobilescore":"",
+    "desktoplink":"",
+    "desktopscore":""
+  },
+  {
+    "page": "Design and Construction",
+    "mobilelink": "",
+    "mobilescore":"",
+    "desktoplink":"",
+    "desktopscore":""
+  }
+]
