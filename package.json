@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "pa11y": "pa11y-ci",
-    "start": "npx @11ty/eleventy --serve & npx tailwindcss -i tailwind-setup.css -o css/tailwind.css --minify --watch",
+    "start":"npx @11ty/eleventy --serve",
+    "11tybuild": "npx @11ty/eleventy --serve & npx tailwindcss -i tailwind-setup.css -o css/tailwind.css --minify --watch",
     "build": "npx @11ty/eleventy",
     "lighthouse-mobile-a11y": "npx lighthouse  --only-categories accessibility, best-practices, seo -- ",
     "lighthouse-desktop-a11y": "npx lighthouse   --preset=desktop  --only-categories accessibility, best-practices, seo -- ",
