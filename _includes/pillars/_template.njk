@@ -1,0 +1,66 @@
+<section class="nysds-pillars" id="nysds-pillar-id">
+
+{% if params.type === 'hollow'%}
+
+    <div class="nysds-pillars-headline"> 
+        <h2>{{params.headline}} </h2>
+        {% if params.cta %}
+            <a href="{{params.ctaLink}}" class="nysds-pillars-cta">{{params.cta}}</a>
+        {% endif %}
+        
+    </div>
+
+    <div class="nysds-pillars-container">
+        {% for card in params.pillarCards %}
+            <div class="nysds-pillars-card">
+
+                <div class="nysds-pillars-icon" aria-hidden="true">
+                    {{card.icon | safe}}
+                </div>
+
+                {%if card.titleType === 'link' %}
+                <a href="{{card.link}}" class="nysds-pillars-card-title-link">
+                    <h3>
+                        {{card.title}}
+                    </h3>
+                </a>
+                {% else %}
+                <h3 class="nysds-pillars-title">
+                    {{card.title}}
+                </h3>
+                {% endif %}
+
+                <div class="nysds-pillars-list-container">
+                    <ul class="nysds-pillars-card-list">
+                        {%for check in card.checklist%}
+                            <li>
+                                {# <span class="nysds-pillars-check" aria-hidden="true"></span> #}
+                                <span>{{check.text}}</span>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                {%if card.titleType === 'link' %}
+
+                    <a class="nysds-pillar-link" href="{{card.link}}" aria-hidden="true" tabindex="-1">
+                        <span class="nysds-pillars-large-arrow" aria-hidden="true"></span>
+                        <span class="sr-only">{{card.title}}</span>
+                    </a>
+
+                {% else %}  
+                    
+                {% endif %}
+            </div>
+        {% endfor %}
+
+    </div>
+
+{% else %}  
+    {# for other variants #}
+{% endif %}
+
+</section>
+<script>
+    {% include './_pillars.js'  %}
+</script>

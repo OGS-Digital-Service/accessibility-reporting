@@ -1,5 +1,5 @@
 # accessibility-reporting
-A micro-site and repo to manage automated accessibility reports, generated scans, and general compliance with WCAG 2.2 AA across NYS Digital Service managed websites and tools.
+A micro-site and repo to manage automated accessibility and performance reports, generated scans, and general compliance with WCAG 2.2 AA across NYS Digital Service managed websites and tools.
 
 ## What tools are we using?
 - pa11y (aXe core and HTMLCS)
@@ -56,3 +56,5 @@ Notes and commands for running the tests.
 
 ### flags for lighthouse
 - --chrome-flags='--ignore-certificate-errors' in order to run against non-https urls
+- --output json --output html for multiple outputs
+- --output-path for <path><name>

@@ -5,3 +5,6 @@ tailwind.config.js
 /textarea-content
 /reports
 /css/nysds-utilities
+/audit_results
+/pa11y_reports
+/test_configurations
