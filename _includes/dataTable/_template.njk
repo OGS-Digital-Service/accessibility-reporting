@@ -1,0 +1,100 @@
+{# <link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.dataTables.css" /> #}
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdn.datatables.net/2.3.2/js/dataTables.js" ></script>
+<script>
+    (function($) {
+    $(document).ready(function() {
+       new DataTable('#{{params.tableName}}', {
+            columnDefs: [{ 
+                orderable: true, 
+                targets: [0,1,2,3],  
+                render: function(data, type, row, meta) {
+                    if (type != 'display') {
+                    return data.replace( /<.*?>/g, '' );
+                    }
+                    return data;
+                    }
+                
+                
+                
+                }],
+                layout: {
+                            
+                            topStart: {
+                                search: {
+                                    placeholder: '{{params.searchPlaceholder}}'
+                                }
+                            },
+                            topEnd: 'info',
+                            bottomStart: null,
+                            bottomEnd: null,
+                            bottom: 'paging'
+                        },
+            order: [[1, 'asc']],
+            scrollX: true
+           
+        });
+        
+        
+        
+    } );
+
+    $(document).ready(function() {
+    const searchInput = document.getElementById("dt-search-0");
+        const clearAll = document.getElementById("clear");
+        const tableId = '#{{params.tableName}}'
+        console.log(tableId)
+        searchInput.insertAdjacentHTML('afterend','<button class="nysds-reset-button" id="clear"> Reset </button>')
+        $('#clear').on('click', () => {
+            $(tableId).DataTable().search('').columns().search('').draw();
+            })
+     } );
+
+     })(jQuery);
+ 
+</script>
+
+{%set tableData = params.dataSource %}
+
+<h2 class=""> 
+    <span class="a-pHeadline a-card__subHeadline">{{params.title}}</span>
+</h2>
+
+
+
+<table id="{{params.tableName}}" class="display">
+    <caption>
+        {{params.caption}}
+    </caption>
+    <thead class="">
+        <tr>
+            {% for headers in params.tableHeaders %}
+            <th scope="col">{{headers.title}}</th>
+            {% endfor %}  
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for data in tableData %}
+            <tr>
+                <td> 
+                    {% if data.status === "Submitted" %}
+                        <a href="{{data.link}}"> School Policy <span class="sr-only"> for {{data.name}}</span> </a>
+                    {% else %}
+                        <em> Contact School </em>
+                    {% endif %}
+                
+                </td>
+                <td> {{data.name}} </td>
+                <td> {{data.type}} </td>
+                <td> {{data.county}} </td>
+                
+            </tr>
+        {% endfor %}
+    </tbody>
+
+</table>
+
+{% if params.disclaimer %}
+    <p class="nysds-table-disclaimer"><em>{{params.disclaimer}}</em></p>
+{% endif %}
