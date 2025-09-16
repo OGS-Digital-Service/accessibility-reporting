@@ -18,28 +18,70 @@
     },
     "urls": [
     {
-      "url": "https://www.ny.gov/?mobile",
+      "url": "https://ogs.ny.gov/?mobile",
       "viewport": {
         "width": 360,
         "height": 480
       }
     },
     {
-      "url": "https://www.ny.gov/?desktop",
+      "url": "https://ogs.ny.gov/?desktop",
       "viewport": {
         "width": 1280,
         "height": 1024
       }
     },
-    {
-      "url": "https://www.ny.gov//programs?mobile",
+     {
+      "url": "https://ogs.ny.gov/procurement?mobile",
       "viewport": {
         "width": 360,
         "height": 480
       }
     },
     {
-      "url": "https://www.ny.gov//programs?desktop",
+      "url": "https://ogs.ny.gov/procurement?desktop",
+      "viewport": {
+        "width": 1280,
+        "height": 1024
+      }
+    },
+     {
+      "url": "https://ogs.ny.gov/procurement/ogs-centralized-contracts-list?mobile",
+      "viewport": {
+        "width": 360,
+        "height": 480
+      }
+    },
+    {
+      "url": "https://ogs.ny.gov/procurement/ogs-centralized-contracts-list?desktop",
+      "viewport": {
+        "width": 1280,
+        "height": 1024
+      }
+    },
+     {
+      "url": "https://ogs.ny.gov/parking?mobile",
+      "viewport": {
+        "width": 360,
+        "height": 480
+      }
+    },
+    {
+      "url": "https://ogs.ny.gov/parking?desktop",
+      "viewport": {
+        "width": 1280,
+        "height": 1024
+      }
+    },
+     {
+      "url": "https://ogs.ny.gov/design-construction?mobile",
+      "viewport": {
+        "width": 360,
+        "height": 480
+      }
+    },
+    {
+      "url": "https://ogs.ny.gov/design-construction?desktop",
       "viewport": {
         "width": 1280,
         "height": 1024

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "pa11y": "pa11y-ci",
-    "start":"npx @11ty/eleventy --serve",
+    "start": "npx @11ty/eleventy --serve",
     "11tybuild": "npx @11ty/eleventy --serve & npx tailwindcss -i tailwind-setup.css -o css/tailwind.css --minify --watch",
     "build": "npx @11ty/eleventy",
     "lighthouse-mobile-a11y": "npx lighthouse  --only-categories accessibility, best-practices, seo -- ",
@@ -19,7 +19,7 @@
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "accessibility-checker": "^4.0.5",
+    "accessibility-checker": "^4.0.9",
     "lighthouse": "^12.6.1",
     "pa11y-ci": "^3.1.0",
     "pa11y-ci-reporter-html": "^7.0.0"
