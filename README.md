@@ -29,7 +29,7 @@ Issues ranked as severe, moderate, or low should be remediated in order to promo
 3. **Low**
 > Issues at this level represent minimal barriers to access, but often still contain lesser WCAG A and AA failures. 
 4. **Best Practice**
-> Issues at this level are web development best practices and do not contain measurable WCAG failures. 
+> Issues at this level are NYS Digital web development best practices and do not contain measurable WCAG failures. 
 5. **None**
 > No issues identified as of this audit. Congrats!
 
@@ -47,8 +47,8 @@ Notes and commands for running the tests.
 - working on the mobile vs. desktop testing suite
 
 ### IBM equal access
-- still working on getting this up and running from cli
-- for now these are manual, exported browser audits due to invalid cert in the testing env
+- these tests are configured using puppeteer and run from a js file included in the test_configurations
+- currently the overally summary number is totally borked, no idea why it doesn't match the browser runs. The violations, needs review, and recommendations are still correct.
 
 ### automated tool effectiveness
 - https://alphagov.github.io/accessibility-tool-audit/index.html
@@ -58,3 +58,5 @@ Notes and commands for running the tests.
 - --chrome-flags='--ignore-certificate-errors' in order to run against non-https urls
 - --output json --output html for multiple outputs
 - --output-path for <path><name>
+- helpful https://medium.com/@giezendanenner/running-lighthouse-reports-on-the-command-line-1691a1b06a56 
+
