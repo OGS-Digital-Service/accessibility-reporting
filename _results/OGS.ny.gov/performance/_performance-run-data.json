@@ -4,34 +4,34 @@
     "mobilelink": "ogs.ny.gov-mobile.html",
     "mobilescore":"56",
     "desktoplink":"ogs.ny.gov-desktop.html",
-    "desktopscore":""
+    "desktopscore":"59"
   },
   {
     "page": "Procurement Contracts",
     "mobilelink": "ogs.ny.gov-contracts-mobile.html",
-    "mobilescore":"",
+    "mobilescore":"59",
     "desktoplink":"ogs.ny.gov-contracts-desktop.html",
-    "desktopscore":""
+    "desktopscore":"55"
   },
   {
     "page": "Procurement",
-    "mobilelink": "",
-    "mobilescore":"",
-    "desktoplink":"",
-    "desktopscore":""
+    "mobilelink": "ogs.ny.gov-procurement-mobile.html",
+    "mobilescore":"60",
+    "desktoplink":"ogs.ny.gov-procurement-desktop.html",
+    "desktopscore":"55"
   },
   {
     "page": "Parking",
-    "mobilelink": "",
-    "mobilescore":"",
-    "desktoplink":"",
-    "desktopscore":""
+    "mobilelink": "ogs.ny.gov-parking-mobile.html",
+    "mobilescore":"60",
+    "desktoplink":"ogs.ny.gov-parking-desktop.html",
+    "desktopscore":"55"
   },
   {
     "page": "Design and Construction",
-    "mobilelink": "",
-    "mobilescore":"",
-    "desktoplink":"",
-    "desktopscore":""
+    "mobilelink": "ogs.ny.gov-designconstruction-mobile.html",
+    "mobilescore":"60",
+    "desktoplink":"ogs.ny.gov-designconstruction-desktop.html",
+    "desktopscore":"55"
   }
 ]
