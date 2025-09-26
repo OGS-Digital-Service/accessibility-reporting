@@ -20,9 +20,14 @@
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
     "accessibility-checker": "^4.0.9",
+    "accessibility-checker-engine": "^4.0.9",
     "lighthouse": "^12.6.1",
     "pa11y-ci": "^3.1.0",
-    "pa11y-ci-reporter-html": "^7.0.0"
+    "pa11y-ci-reporter-html": "^7.0.0",
+    "puppeteer": "^24.22.1",
+    "puppeteer-core": "^24.22.1",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.17"
