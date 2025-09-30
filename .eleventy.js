@@ -9,8 +9,8 @@ module.exports = function(eleventyConfig){
       eleventyConfig.addPassthroughCopy("img");
       eleventyConfig.addPassthroughCopy("fonts");
       eleventyConfig.addPassthroughCopy("js");
-      eleventyConfig.addPassthroughCopy({"_results/**/accessibility/**/*.html": "results/accessibility"});
-      eleventyConfig.addPassthroughCopy({"_results/**/performance/**/*.html": "results/performance"});
+    //   eleventyConfig.addPassthroughCopy({"_results/**/accessibility/**/*.html": "results/accessibility"});
+    //   eleventyConfig.addPassthroughCopy({"_results/**/performance/**/*.html": "results/performance"});
 
     
 

@@ -1,8 +1,9 @@
 module.exports = {
   content: [
-     '_site/*.html',
-    '_site/**/*.html',
-    '!./_site/results/'
+    '!./_site/results/*.html',
+     './_site/*.html',
+    './_site/**/*.html'
+    
   ],
   theme: {
     fontFamily: {
