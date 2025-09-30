@@ -1,13 +1,17 @@
 ---
-layout: layout-nonav.njk
+layout: layout.njk
 title: NYS Digital Services Performance Audit
 data: ogs.performance
 ---
-{% from '../../_includes/_components.njk' import hero,categorytiles,card,bio,textarea,highlight,iconframe,quicklinks,feedback  %}
+{% from '../../_includes/_components.njk' import hero,categorytiles,card,bio,textarea,highlight,iconframe,quicklinks,feedback, dataCard with context %}
 
 <h1> Data </h1>
 
 
-{% for data in ogs.performance  %}
-<p> {{data.page}} {{data.mobilescore}} <a href="/results/{{data.mobilelink}}"> mobile report </a></p>
-{% endfor %}
+
+{{
+    dataCard({
+        title:"performance data",
+        dataSource: ogs.performance
+    })
+}}
