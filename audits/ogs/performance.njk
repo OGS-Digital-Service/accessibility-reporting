@@ -3,15 +3,15 @@ layout: layout.njk
 title: NYS Digital Services Performance Audit
 data: ogs.performance
 ---
-{% from '../../_includes/_components.njk' import hero,categorytiles,card,bio,textarea,highlight,iconframe,quicklinks,feedback, dataCard with context %}
+{% from '../../_includes/_components.njk' import dataCard with context %}
 
-<h1> Data </h1>
+<h1 class="text-3xl"> Performance Data </h1>
 
 
 
 {{
     dataCard({
-        title:"performance data",
+        title:"Automated Reports",
         type:"performance",
         dataSource: ogs.performance
     })
