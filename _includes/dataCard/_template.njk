@@ -1,0 +1,41 @@
+{% set cardData = params.dataSource %} {# set the card data source from the page #}
+
+{% if params.type === "performance" %}
+
+    <section class="items-center flex flex-col">
+        <h2 class="">{{params.title}} </h2>
+
+        {% for data in cardData %}
+            <div class="flex flex-col m-4 p-4 w-2/3 border border-solid border-primary-core-blue rounded-lg bg-light-gray">
+                
+                <h2 class="text-2xl">{{data.page}}</h2>
+                <h3 class="text-xl"> Lighthouse Reports </h3>
+                <ul class="mx-8">
+                    <li>
+                        <a class="text-link-blue hover:decoration-[3px] focus:decoration-[3px]" href="/reports/{{data.mobilelink}}">Mobile Report <span class="sr-only">for {{data.page}}</span></a>
+                    </li>
+                    <li>
+                        <a href="/reports/{{data.desktoplink}}">Desktop Report <span class="sr-only">for {{data.page}}</span></a>
+                    </li>
+                </ul>
+                <div>
+                    <span class="text-2xl bold text-primary-core-blue">{{data.mobilescore}}</span>
+                </div>
+            </div>
+
+
+        {% endfor %}
+
+
+    </section>
+
+
+
+
+
+
+{% elif params.type === "a11y" %}
+
+
+
+{% endif %}
