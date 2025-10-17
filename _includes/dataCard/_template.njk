@@ -81,7 +81,7 @@
 
 
 
-{% elif params.type === "a11y" %}
+{% elif params.type === "a11y-lighthouse" %}
 
     <section class="items-center flex flex-col">
         <h2 class="">{{params.title}} </h2>
@@ -94,16 +94,9 @@
                 <div class="flex">
 
                     <div class="w-1/2">
-                        <h3 class="text-xl mb-1"> Lighthouse Performance Reports </h3>
+                        <h3 class="text-xl mb-1"> Automated Accessibility Reports from Google Lighthouse</h3>
                         <p class="text-sm m-0"> <em>for {{data.url}} </em></p>
-                        <ul class="mx-8">
-                            <li class="my-2">
-                                <a class="text-link-blue hover:decoration-[3px] focus:decoration-[3px]" href="/reports/{{data.mobilelink}}">Mobile Report <span class="sr-only">for {{data.page}}</span></a>
-                            </li>
-                            <li>
-                                <a href="/reports/{{data.desktoplink}}">Desktop Report <span class="sr-only">for {{data.page}}</span></a>
-                            </li>
-                        </ul>
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3" href="/reports/{{data.mobilelink}}">Full Mobile Report <span class="sr-only">for {{data.page}}</span></a>
                     </div>
 
                     <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
