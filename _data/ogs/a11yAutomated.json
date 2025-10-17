@@ -1,0 +1,72 @@
+[
+  {
+    "page": "Homepage",
+    "url": "https://ogs.ny.gov/",
+    "accessibility": 98,
+    "seo": 96,
+    "bestpractice": 85
+  },
+  {
+    "page": "Homepage (Mobile)",
+    "url": "https://ogs.ny.gov/",
+    "accessibility": 93,
+    "seo": 96,
+    "bestpractice": 85
+  },
+  {
+    "page": "Procurement Contracts",
+    "url": "https://ogs.ny.gov/procurement/ogs-centralized-contracts-list",
+    "accessibility": 100,
+    "seo": 100,
+    "bestpractice": 92
+  },
+  {
+    "page": "Procurement Contracts (Mobile)",
+    "url": "https://ogs.ny.gov/procurement/ogs-centralized-contracts-list",
+    "accessibility": 95,
+    "seo": 100,
+    "bestpractice": 92
+  },
+  {
+    "page": "Procurement",
+    "url": "https://ogs.ny.gov/procurement",
+    "accessibility": 100,
+    "seo": 100,
+    "bestpractice": 92
+  },
+  {
+    "page": "Procurement (Mobile)",
+    "url": "https://ogs.ny.gov/procurement",
+    "accessibility": 94,
+    "seo": 100,
+    "bestpractice": 92
+  },
+  {
+    "page": "Parking",
+    "url": "https://ogs.ny.gov/parking",
+    "accessibility": 98,
+    "seo": 96,
+    "bestpractice": 100
+  },
+  {
+    "page": "Parking (Mobile)",
+    "url": "https://ogs.ny.gov/parking",
+    "accessibility": 93,
+    "seo": 100,
+    "bestpractice": 100
+  },
+  {
+    "page": "Design and Construction",
+    "url": "https://ogs.ny.gov/design-construction",
+    "accessibility": 98,
+    "seo": 96,
+    "bestpractice": 92
+  },
+  {
+    "page": "Design and Construction (Mobile)",
+    "url": "https://ogs.ny.gov/design-construction",
+    "accessibility": 93,
+    "seo": 100,
+    "bestpractice": 92
+  }
+]
