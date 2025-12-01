@@ -1,0 +1,19 @@
+---
+layout: layout.njk
+title: NYS Digital Services Accessibility Automated Audit
+data: ogs.a11yAutomated
+---
+{% from '../../_includes/_components.njk' import dataCard with context %}
+
+<h1 class="text-3xl"> Accessibility Data </h1>
+
+<p>
+    </p>
+
+{{
+    dataCard({
+        title:"Automated Reports",
+        type:"a11y-lighthouse",
+        dataSource: ogs.a11yAutomated
+    })
+}}
