@@ -1,7 +1,7 @@
 {% for link in params.url %}
 
     {% if link.type == 'lighthouse' %}
-        
+        npm run lighthouse-mobile-performance {{link.link}} && npm run lighthouse-desktop-performance {{link.link}}
     {% endif %}
 
 {% endfor %}
