@@ -1,7 +1,10 @@
 {% for link in params.url %}
 
     {% if link.type == 'lighthouse' %}
-        npm run lighthouse-mobile-performance {{link.link}} && npm run lighthouse-desktop-performance {{link.link}}
+        npx lighthouse --only-categories performance --output-path={% filter replace(".", "") %}{% filter replace("/", "") %}{{link.link}}{% endfilter %}{% endfilter %}MOBILE.html -- https://{{link.link}} 
+        
+        
+       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories performance --output-path={% filter replace(".", "") %}{% filter replace("/", "") %}{{link.link}}{% endfilter %}{% endfilter %}DESKTOP.html -- https://{{link.link}}
     {% endif %}
 
 {% endfor %}
