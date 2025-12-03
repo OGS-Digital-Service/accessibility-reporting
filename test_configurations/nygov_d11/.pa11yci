@@ -17,75 +17,249 @@
       "standard": "WCAG2AA"
     },
     "urls": [
-    {
-      "url": "https://ogs.ny.gov/?mobile",
-      "viewport": {
-        "width": 360,
-        "height": 480
-      }
-    },
-    {
-      "url": "https://ogs.ny.gov/?desktop",
-      "viewport": {
-        "width": 1280,
-        "height": 1024
-      }
-    },
-     {
-      "url": "https://ogs.ny.gov/procurement?mobile",
-      "viewport": {
-        "width": 360,
-        "height": 480
-      }
-    },
-    {
-      "url": "https://ogs.ny.gov/procurement?desktop",
-      "viewport": {
-        "width": 1280,
-        "height": 1024
-      }
-    },
-     {
-      "url": "https://ogs.ny.gov/procurement/ogs-centralized-contracts-list?mobile",
-      "viewport": {
-        "width": 360,
-        "height": 480
-      }
-    },
-    {
-      "url": "https://ogs.ny.gov/procurement/ogs-centralized-contracts-list?desktop",
-      "viewport": {
-        "width": 1280,
-        "height": 1024
-      }
-    },
-     {
-      "url": "https://ogs.ny.gov/parking?mobile",
-      "viewport": {
-        "width": 360,
-        "height": 480
-      }
-    },
-    {
-      "url": "https://ogs.ny.gov/parking?desktop",
-      "viewport": {
-        "width": 1280,
-        "height": 1024
-      }
-    },
-     {
-      "url": "https://ogs.ny.gov/design-construction?mobile",
-      "viewport": {
-        "width": 360,
-        "height": 480
-      }
-    },
-    {
-      "url": "https://ogs.ny.gov/design-construction?desktop",
-      "viewport": {
-        "width": 1280,
-        "height": 1024
-      }
-    }
+    
+            {
+            "url": "https://ny.gov?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "hhtps://ny.gov/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://www.governor.ny.gov?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "hhtps://www.governor.ny.gov/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://www.governor.ny.gov/news?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "hhtps://www.governor.ny.gov/news/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://www.ny.gov/services?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "hhtps://www.ny.gov/services/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://www.ny.gov/all-services?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "hhtps://www.ny.gov/all-services/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://www.governor.ny.gov/programs/get-offline-get-outside?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "hhtps://www.governor.ny.gov/programs/get-offline-get-outside/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://www.governor.ny.gov/programs/eliminating-distractions-new-york-schools?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "hhtps://www.governor.ny.gov/programs/eliminating-distractions-new-york-schools/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://www.ny.gov/programs/new-york-experience-nyx?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "hhtps://www.ny.gov/programs/new-york-experience-nyx/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://www.governor.ny.gov/executive-order/no-51-appointing-special-prosecutor-investigate-and-if-warranted-prosecute-matters?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "hhtps://www.governor.ny.gov/executive-order/no-51-appointing-special-prosecutor-investigate-and-if-warranted-prosecute-matters/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://www.governor.ny.gov/news/money-your-pockets-governor-hochul-proposes-sending-86-million-new-yorkers-inflation-refund?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "hhtps://www.governor.ny.gov/news/money-your-pockets-governor-hochul-proposes-sending-86-million-new-yorkers-inflation-refund/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://www.ny.gov/services/apply-professional-license?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "hhtps://www.ny.gov/services/apply-professional-license/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://www.governor.ny.gov/governor-hochuls-past-schedule?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "hhtps://www.governor.ny.gov/governor-hochuls-past-schedule/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://www.ny.gov/nysdot-employment-opportunities/highway-maintenance-worker-series?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "hhtps://www.ny.gov/nysdot-employment-opportunities/highway-maintenance-worker-series/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://www.governor.ny.gov/schedule/governor-hochul-clinton-and-rockland-counties?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "hhtps://www.governor.ny.gov/schedule/governor-hochul-clinton-and-rockland-counties/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            }
+           
+         
+    
+
+
+
+
+
   ]
   }
