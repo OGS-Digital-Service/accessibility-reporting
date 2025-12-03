@@ -1,0 +1,23 @@
+performance
+
+npm run lighthouse-mobile-performance https://ogs.ny.gov/ && npm run lighthouse-desktop-performance https://ogs.ny.gov/
+
+npm run lighthouse-mobile-performance https://ogs.ny.gov/procurement && npm run lighthouse-desktop-performance https://ogs.ny.gov/procurement
+
+npm run lighthouse-mobile-performance https://ogs.ny.gov/procurement/ogs-centralized-contracts-list && npm run lighthouse-desktop-performance https://ogs.ny.gov/procurement/ogs-centralized-contracts-list
+
+npm run lighthouse-mobile-performance https://ogs.ny.gov/parking && npm run lighthouse-desktop-performance https://ogs.ny.gov/parking
+
+npm run lighthouse-mobile-performance https://ogs.ny.gov/design-construction && npm run lighthouse-desktop-performance https://ogs.ny.gov/design-construction
+
+a11y
+
+npm run lighthouse-mobile-a11y https://ogs.ny.gov/ && npm run lighthouse-desktop-a11y https://ogs.ny.gov/ 
+
+npm run lighthouse-mobile-a11y https://ogs.ny.gov/procurement && npm run lighthouse-desktop-a11y https://ogs.ny.gov/procurement
+
+npm run lighthouse-mobile-a11y https://ogs.ny.gov/procurement/ogs-centralized-contracts-list && npm run lighthouse-desktop-a11y https://ogs.ny.gov/procurement/ogs-centralized-contracts-list 
+
+npm run lighthouse-mobile-a11y https://ogs.ny.gov/parking && npm run lighthouse-desktop-a11y https://ogs.ny.gov/parking 
+
+npm run lighthouse-mobile-a11y https://ogs.ny.gov/design-construction && npm run lighthouse-desktop-a11y https://ogs.ny.gov/design-construction 
