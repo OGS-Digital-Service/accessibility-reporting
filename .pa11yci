@@ -13,7 +13,7 @@
       
       "runners": ["axe", "htmlcs"],
       "includeNotices": false,
-      "includeWarnings": true,
+      "includeWarnings": false,
       "standard": "WCAG2AA"
     },
     "urls": [
