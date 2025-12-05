@@ -1,0 +1,60 @@
+---
+layout: render.njk
+title:  Data render for configs
+data:
+---
+{% from './_includes/_components.njk' import batch  %}
+
+{{
+    batch({
+        test: "a11y",
+        url: [
+            {
+                link:"ny.gov"
+            },
+            {
+                link:"www.governor.ny.gov"
+            },
+            {
+                link:"www.governor.ny.gov/news"
+            },
+            {
+                link:"www.ny.gov/services"
+            },
+            {
+                link:"www.ny.gov/all-services"
+            },
+            {
+                link:"www.governor.ny.gov/programs/get-offline-get-outside"
+            },
+            {
+                link:"www.governor.ny.gov/programs/eliminating-distractions-new-york-schools"
+            },
+            {
+                link:"www.ny.gov/programs/new-york-experience-nyx"
+            },
+            {
+                link:"www.governor.ny.gov/executive-order/no-51-appointing-special-prosecutor-investigate-and-if-warranted-prosecute-matters"
+            },
+            {
+                link:"www.governor.ny.gov/news/money-your-pockets-governor-hochul-proposes-sending-86-million-new-yorkers-inflation-refund"
+            },
+            {
+                link:"www.ny.gov/services/apply-professional-license"
+            }
+            ,
+            {
+                link:"www.governor.ny.gov/governor-hochuls-past-schedule"
+            }
+            ,
+            {
+                link:"www.ny.gov/nysdot-employment-opportunities/highway-maintenance-worker-series"
+            }
+            ,
+            {
+                link:"www.governor.ny.gov/schedule/governor-hochul-clinton-and-rockland-counties"
+            }
+            
+        ]   
+    })
+}}

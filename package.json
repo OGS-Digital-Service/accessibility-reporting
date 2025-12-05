@@ -10,7 +10,7 @@
     "build": "npx @11ty/eleventy",
     "lighthouse-mobile-a11y": "npx lighthouse  --only-categories accessibility, best-practices, seo -- ",
     "lighthouse-desktop-a11y": "npx lighthouse   --preset=desktop  --only-categories accessibility, best-practices, seo -- ",
-    "lighthouse-mobile-performance": "npx lighthouse --only-categories performance  -- ",
+    "lighthouse-mobile-performance": "npx lighthouse --only-categories performance -- ",
     "lighthouse-desktop-performance": "npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories performance -- ",
     "ibm": "npx achecker -- "
   },
