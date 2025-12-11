@@ -1,0 +1,96 @@
+
+npx lighthouse --only-categories performance --output-path=nygovMOBILE.html -- https://ny.gov 
+
+
+npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories performance --output-path=nygovDESKTOP.html -- https://ny.gov
+
+
+
+npx lighthouse --only-categories performance --output-path=wwwgovernornygovMOBILE.html -- https://www.governor.ny.gov 
+
+
+npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories performance --output-path=wwwgovernornygovDESKTOP.html -- https://www.governor.ny.gov
+
+
+
+npx lighthouse --only-categories performance --output-path=wwwgovernornygovnewsMOBILE.html -- https://www.governor.ny.gov/news 
+
+
+npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories performance --output-path=wwwgovernornygovnewsDESKTOP.html -- https://www.governor.ny.gov/news
+
+
+
+npx lighthouse --only-categories performance --output-path=wwwnygovservicesMOBILE.html -- https://www.ny.gov/services 
+
+
+npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories performance --output-path=wwwnygovservicesDESKTOP.html -- https://www.ny.gov/services
+
+
+
+npx lighthouse --only-categories performance --output-path=wwwnygovall-servicesMOBILE.html -- https://www.ny.gov/all-services 
+
+
+npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories performance --output-path=wwwnygovall-servicesDESKTOP.html -- https://www.ny.gov/all-services
+
+
+
+npx lighthouse --only-categories performance --output-path=wwwgovernornygovprogramsget-offline-get-outsideMOBILE.html -- https://www.governor.ny.gov/programs/get-offline-get-outside 
+
+
+npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories performance --output-path=wwwgovernornygovprogramsget-offline-get-outsideDESKTOP.html -- https://www.governor.ny.gov/programs/get-offline-get-outside
+
+
+
+npx lighthouse --only-categories performance --output-path=wwwgovernornygovprogramseliminating-distractions-new-york-schoolsMOBILE.html -- https://www.governor.ny.gov/programs/eliminating-distractions-new-york-schools 
+
+
+npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories performance --output-path=wwwgovernornygovprogramseliminating-distractions-new-york-schoolsDESKTOP.html -- https://www.governor.ny.gov/programs/eliminating-distractions-new-york-schools
+
+
+
+npx lighthouse --only-categories performance --output-path=wwwnygovprogramsnew-york-experience-nyxMOBILE.html -- https://www.ny.gov/programs/new-york-experience-nyx 
+
+
+npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories performance --output-path=wwwnygovprogramsnew-york-experience-nyxDESKTOP.html -- https://www.ny.gov/programs/new-york-experience-nyx
+
+
+
+npx lighthouse --only-categories performance --output-path=wwwgovernornygovexecutive-orderno-51-appointing-special-prosecutor-investigate-and-if-warranted-prosecute-mattersMOBILE.html -- https://www.governor.ny.gov/executive-order/no-51-appointing-special-prosecutor-investigate-and-if-warranted-prosecute-matters 
+
+
+npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories performance --output-path=wwwgovernornygovexecutive-orderno-51-appointing-special-prosecutor-investigate-and-if-warranted-prosecute-mattersDESKTOP.html -- https://www.governor.ny.gov/executive-order/no-51-appointing-special-prosecutor-investigate-and-if-warranted-prosecute-matters
+
+
+
+npx lighthouse --only-categories performance --output-path=wwwgovernornygovnewsmoney-your-pockets-governor-hochul-proposes-sending-86-million-new-yorkers-inflation-refundMOBILE.html -- https://www.governor.ny.gov/news/money-your-pockets-governor-hochul-proposes-sending-86-million-new-yorkers-inflation-refund 
+
+
+npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories performance --output-path=wwwgovernornygovnewsmoney-your-pockets-governor-hochul-proposes-sending-86-million-new-yorkers-inflation-refundDESKTOP.html -- https://www.governor.ny.gov/news/money-your-pockets-governor-hochul-proposes-sending-86-million-new-yorkers-inflation-refund
+
+
+
+npx lighthouse --only-categories performance --output-path=wwwnygovservicesapply-professional-licenseMOBILE.html -- https://www.ny.gov/services/apply-professional-license 
+
+
+npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories performance --output-path=wwwnygovservicesapply-professional-licenseDESKTOP.html -- https://www.ny.gov/services/apply-professional-license
+
+
+npx lighthouse --only-categories performance --output-path=wwwgovernornygovgovernor-hochuls-past-scheduleMOBILE.html -- https://www.governor.ny.gov/governor-hochuls-past-schedule 
+
+
+npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories performance --output-path=wwwgovernornygovgovernor-hochuls-past-scheduleDESKTOP.html -- https://www.governor.ny.gov/governor-hochuls-past-schedule
+
+
+npx lighthouse --only-categories performance --output-path=wwwnygovnysdot-employment-opportunitieshighway-maintenance-worker-seriesMOBILE.html -- https://www.ny.gov/nysdot-employment-opportunities/highway-maintenance-worker-series 
+
+
+npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories performance --output-path=wwwnygovnysdot-employment-opportunitieshighway-maintenance-worker-seriesDESKTOP.html -- https://www.ny.gov/nysdot-employment-opportunities/highway-maintenance-worker-series
+
+
+npx lighthouse --only-categories performance --output-path=wwwgovernornygovschedulegovernor-hochul-clinton-and-rockland-countiesMOBILE.html -- https://www.governor.ny.gov/schedule/governor-hochul-clinton-and-rockland-counties 
+
+
+npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories performance --output-path=wwwgovernornygovschedulegovernor-hochul-clinton-and-rockland-countiesDESKTOP.html -- https://www.governor.ny.gov/schedule/governor-hochul-clinton-and-rockland-counties
+
+
+
