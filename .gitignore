@@ -15,6 +15,7 @@ Thumbs.db
 /cache
 /batch-create
 /node_modules
+.anima
 
 /.vscode
 # User-specific files
