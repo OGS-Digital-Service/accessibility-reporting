@@ -1,0 +1,33 @@
+{
+    "page": "",
+    "url": "",
+    "desktop": {
+        "link": "",
+        "title": "",
+        "performance_score": "",
+        "metrics": {
+            "first_contentful_paint": "",
+            "largest_contentful_paint": "",
+            "total_blocking_time": "",
+            "cumulative_layout_shift": "",
+            "speed_index": ""
+        }
+    },
+    "mobile": {
+        "link": "",
+        "title": "",
+        "performance_score": "",
+        "metrics": {
+            "first_contentful_paint": "",
+            "largest_contentful_paint": "",
+            "total_blocking_time": "",
+            "cumulative_layout_shift": "",
+            "speed_index": ""
+        }
+    },
+    "score_ranges": {
+        "poor": "0-49",
+        "needs_improvement": "50-89",
+        "good": "90-100"
+    }
+}
