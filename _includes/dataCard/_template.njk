@@ -5,7 +5,7 @@
     <section class="items-center flex flex-col">
         <h2 class="">{{params.title}} </h2>
 
-        {% for data in cardData %}
+        {% for data in cardData.pages %}
             <div class="flex flex-col m-4 p-4 w-2/3 border border-solid border-primary-core-blue rounded-lg bg-light-gray">
                 
                 <h2 class="text-2xl">{{data.page}}</h2>
@@ -31,13 +31,13 @@
                             <span 
                                 class="
                                     text-4xl font-medium 
-                                    {% if data.mobilescore >= 89 %} text-success-green {% endif %}
-                                    {% if data.mobilescore >= 50 and data.mobilescore <= 88 %} text-warning-orange {% endif %}
-                                    {% if data.mobilescore >= 0 and data.mobilescore <= 49 %} text-dark-red-alert {% endif %}
+                                    {% if data.mobile.performance_score >= 89 %} text-success-green {% endif %}
+                                    {% if data.mobile.performance_score >= 50 and data.mobile.performance_score <= 88 %} text-warning-orange {% endif %}
+                                    {% if data.mobile.performance_score >= 0 and data.mobile.performance_score <= 49 %} text-dark-red-alert {% endif %}
                                     "
                             >
 
-                            {{data.mobilescore}} 
+                            {{data.mobile.performance_score}} 
 
                             <span class="text-lg"> / 100 </span>
                             
@@ -105,13 +105,13 @@
                             <span 
                                 class="
                                     text-4xl font-medium 
-                                    {% if data.mobilescore >= 89 %} text-success-green {% endif %}
-                                    {% if data.mobilescore >= 50 and data.mobilescore <= 88 %} text-warning-orange {% endif %}
-                                    {% if data.mobilescore >= 0 and data.mobilescore <= 49 %} text-dark-red-alert {% endif %}
+                                    {% if data.mobile.performance_score >= 89 %} text-success-green {% endif %}
+                                    {% if data.mobile.performance_score >= 50 and data.mobile.performance_score <= 88 %} text-warning-orange {% endif %}
+                                    {% if data.mobile.performance_score >= 0 and data.mobile.performance_score <= 49 %} text-dark-red-alert {% endif %}
                                     "
                             >
 
-                            {{data.mobilescore}} 
+                            {{data.mobile.performance_score}} 
 
                             <span class="text-lg"> / 100 </span>
                             
