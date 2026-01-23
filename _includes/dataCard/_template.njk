@@ -14,7 +14,7 @@
 
                     <div class="w-1/2">
                         <h3 class="text-xl mb-1"> Lighthouse Performance Reports </h3>
-                        <p class="text-sm m-0"> <em>for {{data.pages}} </em></p>
+                        <p class="text-sm m-0"> <em>for {{data.url}} </em></p>
                         <ul class="mx-8">
                             <li class="my-2">
                                 <a class="text-link-blue hover:decoration-[3px] focus:decoration-[3px]" href="/reports/{{data.mobile.link}}">Mobile Report <span class="sr-only">for {{mobile.title}}</span></a>
@@ -68,6 +68,64 @@
 
 
                 </div>
+
+                {# Mobile Metric Section #}
+                <div class="mt-6">
+                    <h4 class="text-lg font-bold mb-3">Mobile Metrics</h4>
+                    <div class="flex flex-wrap flex-col md:flex-row justify-center gap-4">
+                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-xl bg-white">
+                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">First Contentful Paint</span>
+                            <span class="text-2xl font-bold">{{data.mobile.metrics.first_contentful_paint}}<span class="text-sm ml-1">s</span></span>
+                            </div>
+                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
+                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Largest Contentful Paint</span>
+                            <span class="text-2xl font-bold">{{data.mobile.metrics.largest_contentful_paint}}<span class="text-sm ml-1">s</span></span>
+                        </div>
+                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
+                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Total Blocking Time</span>
+                            <span class="text-2xl font-bold">{{data.mobile.metrics.total_blocking_time}}<span class="text-sm ml-1">ms</span></span>
+                        </div>
+                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
+                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Cumulative Layout Shift</span>
+                            <span class="text-2xl font-bold">{{data.mobile.metrics.cumulative_layout_shift}}</span>
+                        </div>
+                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
+                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Speed Index</span>
+                            <span class="text-2xl font-bold">{{data.mobile.metrics.speed_index}}<span class="text-sm ml-1">s</span>
+                        </div>
+                    </div>
+                </div>
+    
+                {# Desktop Metrics Section #}
+                <div class="mt-6">
+                    <h4 class="text-lg font-bold mb-3">Desktop Metrics</h4>
+                    <div class="flex flex-wrap flex-col md:flex-row justify-center gap-4">
+                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
+                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">First Contentful Paint</span>
+                            <span class="text-2xl font-bold">{{data.desktop.metrics.first_contentful_paint}}<span class="text-sm ml-1">s</span></span>
+                        </div>
+                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
+                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Largest Contentful Paint</span>
+                            <span class="text-2xl font-bold">{{data.desktop.metrics.largest_contentful_paint}}<span class="text-sm font-normal ml-1">s</span></span>
+                        </div>
+                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
+                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Total Blocking Time</span>
+                            <span class="text-2xl font-bold">{{data.desktop.metrics.total_blocking_time}}<span class="text-sm font-normal ml-1">ms</span></span>
+                        </div>
+                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
+                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Cumulative Layout Shift</span>
+                            <span class="text-2xl font-bold">{{data.desktop.metrics.cumulative_layout_shift}}</span>
+                        </div>
+                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
+                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Speed Index</span>
+                            <span class="text-2xl font-bold">{{data.desktop.metrics.speed_index}}<span class="text-sm font-normal ml-1">s</span></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+{# Desktop Metric Section #}
             </div>
 
 
