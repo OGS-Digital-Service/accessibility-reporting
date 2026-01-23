@@ -1,49 +1,170 @@
-[
-  {
-    "page": "Homepage",
-    "url":"https://ogs.ny.gov/",
-    "mobilelink": "ogs.ny.gov-mobile.html",
-    "mobilescore":"56",
-    "desktoplink":"ogs.ny.gov-desktop.html",
-    "desktopscore":"59"
-  },
-  {
-    "page": "Procurement Contracts",
-    "url":"https://ogs.ny.gov/procurement/ogs-centralized-contracts-list",
-    "mobilelink": "ogs.ny.gov-contracts-mobile.html",
-    "mobilescore":"59",
-    "desktoplink":"ogs.ny.gov-contracts-desktop.html",
-    "desktopscore":"55"
-  },
-  {
-    "page": "Procurement",
-    "url":"https://ogs.ny.gov/procurement",
-    "mobilelink": "ogs.ny.gov-procurement-mobile.html",
-    "mobilescore":"60",
-    "desktoplink":"ogs.ny.gov-procurement-desktop.html",
-    "desktopscore":"55"
-  },
-  {
-    "page": "Parking",
-    "url":"https://ogs.ny.gov/parking",
-    "mobilelink": "ogs.ny.gov-parking-mobile.html",
-    "mobilescore":"60",
-    "desktoplink":"ogs.ny.gov-parking-desktop.html",
-    "desktopscore":"55"
-  },
-  {
-    "page": "Design and Construction",
-    "url":"https://ogs.ny.gov/design-construction",
-    "mobilelink": "ogs.ny.gov-designconstruction-mobile.html",
-    "mobilescore":"60",
-    "desktoplink":"ogs.ny.gov-designconstruction-desktop.html",
-    "desktopscore":"55"
-  },
-  {
-    "page": "TEST VALUE",
-    "mobilelink": "ogs.ny.gov-designconstruction-mobile.html",
-    "mobilescore":"94",
-    "desktoplink":"ogs.ny.gov-designconstruction-desktop.html",
-    "desktopscore":"7"
-  }
-]
+{
+  "report_type": "Lighthouse Performance Report - Combined Desktop & Mobile",
+  "pages": [
+    {
+      "page": "Design Construction",
+      "url": "https://ogs.ny.gov/design-construction",
+      "desktop": {
+        "link": "ogs.ny.gov-design-construction-desktop.html",
+        "title": "Lighthouse Report - Desktop",
+        "performance_score": 55,
+        "metrics": {
+          "first_contentful_paint": "5.8",
+          "largest_contentful_paint": "21.9",
+          "total_blocking_time": "0 ",
+          "cumulative_layout_shift": "0.048",
+          "speed_index": "5.8"
+        }
+      },
+      "mobile": {
+        "link": "ogs.ny.gov-design-construction-mobile.html",
+        "title": "Lighthouse Report - Mobile",
+        "performance_score": 60,
+        "metrics": {
+          "first_contentful_paint": "5.9",
+          "largest_contentful_paint": "19.9",
+          "total_blocking_time": "60",
+          "cumulative_layout_shift": "0",
+          "speed_index": "5.9"
+        }
+      },
+      "score_ranges": {
+        "poor": "0-49",
+        "needs_improvement": "50-89",
+        "good": "90-100"
+      }
+    },
+    {
+      "page": "Home",
+      "url": "https://ogs.ny.gov/",
+      "desktop": {
+        "link": "ogs.ny.gov-desktop.html",
+        "title": "Lighthouse Report - Desktop",
+        "performance_score": 55,
+        "metrics": {
+          "first_contentful_paint": "9.4",
+          "largest_contentful_paint": "21.6",
+          "total_blocking_time": "0",
+          "cumulative_layout_shift": "0.048",
+          "speed_index": "9.4"
+        }
+      },
+      "mobile": {
+        "link": "ogs.ny.gov-mobile.html",
+        "title": "Lighthouse Report - Mobile",
+        "performance_score": 56,
+        "metrics": {
+          "first_contentful_paint": "9.7",
+          "largest_contentful_paint": "21.9",
+          "total_blocking_time": "20",
+          "cumulative_layout_shift": "0",
+          "speed_index": "9.7"
+        }
+      },
+      "score_ranges": {
+        "poor": "0-49",
+        "needs_improvement": "50-89",
+        "good": "90-100"
+      }
+    },
+    {
+      "page": "Centralized Contracts List",
+      "url": "https://ogs.ny.gov/procurement/ogs-centralized-contracts-list",
+      "desktop": {
+        "link": "ogs.ny.gov-centralized-contracts-list-desktop.html",
+        "title": "Lighthouse Report - Desktop",
+        "performance_score": 55,
+        "metrics": {
+          "first_contentful_paint": "6.1",
+          "largest_contentful_paint": "16.4",
+          "total_blocking_time": "0",
+          "cumulative_layout_shift": "0.048",
+          "speed_index": "6.1"
+        }
+      },
+      "mobile": {
+        "link": "ogs.ny.gov-centralized-contracts-list-mobile.html",
+        "title": "Lighthouse Report - Mobile",
+        "performance_score": 59,
+        "metrics": {
+          "first_contentful_paint": "6.1",
+          "largest_contentful_paint": "15.4",
+          "total_blocking_time": "120",
+          "cumulative_layout_shift": "0.001",
+          "speed_index": "6.1"
+        }
+      },
+      "score_ranges": {
+        "poor": "0-49",
+        "needs_improvement": "50-89",
+        "good": "90-100"
+      }
+    },
+    {
+      "page": "Parking",
+      "url": "https://ogs.ny.gov/parking",
+      "desktop": {
+        "link": "ogs.ny.gov-parking-desktop.html",
+        "title": "Lighthouse Report - Desktop",
+        "performance_score": 55,
+        "metrics": {
+          "first_contentful_paint": "5.8",
+          "largest_contentful_paint": "21.0",
+          "total_blocking_time": "0",
+          "cumulative_layout_shift": "0.054",
+          "speed_index": "6.5"
+        }
+      },
+      "mobile": {
+        "link": "ogs.ny.gov-parking-mobile.html",
+        "title": "Lighthouse Report - Mobile",
+        "performance_score": 60,
+        "metrics": {
+          "first_contentful_paint": "5.8",
+          "largest_contentful_paint": "19.2",
+          "total_blocking_time": "50",
+          "cumulative_layout_shift": "0.001",
+          "speed_index": "5.8"
+        }
+      },
+      "score_ranges": {
+        "poor": "0-49",
+        "needs_improvement": "50-89",
+        "good": "90-100"
+      }
+    },
+    {
+      "page": "Procurement",
+      "url": "https://ogs.ny.gov/procurement",
+      "desktop": {
+        "link": "ogs.ny.gov-procurement-desktop.html",
+        "title": "Lighthouse Report - Desktop",
+        "performance_score": 55,
+        "metrics": {
+          "first_contentful_paint": "6.0",
+          "largest_contentful_paint": "16.0",
+          "total_blocking_time": "0",
+          "cumulative_layout_shift": "0.048",
+          "speed_index": "6.0"
+        }
+      },
+      "mobile": {
+        "link": "ogs.ny.gov-procurement-mobile.html",
+        "title": "Lighthouse Report - Mobile",
+        "performance_score": 60,
+        "metrics": {
+          "first_contentful_paint": "5.7",
+          "largest_contentful_paint": "17.2",
+          "total_blocking_time": "110",
+          "cumulative_layout_shift": "0",
+          "speed_index": "5.7"
+        }
+      },
+      "score_ranges": {
+        "poor": "0-49",
+        "needs_improvement": "50-89",
+        "good": "90-100"
+      }
+    }
+  ]
+}
