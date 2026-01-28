@@ -107,61 +107,289 @@
                         </p>
                     </div>
 
-
+                    
 
                 </div>
 
-                
-                <div class="mt-6">
-                    <h4 class="text-lg font-bold mb-3">Mobile Metrics</h4>
-                    <div class="flex flex-wrap flex-col md:flex-row justify-center gap-4">
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-xl bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">First Contentful Paint</span>
-                            <span class="text-2xl font-bold">5.9<span class="text-sm ml-1">s</span></span>
-                            </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Largest Contentful Paint</span>
-                            <span class="text-2xl font-bold">19.9<span class="text-sm ml-1">s</span></span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Total Blocking Time</span>
-                            <span class="text-2xl font-bold">60<span class="text-sm ml-1">ms</span></span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Cumulative Layout Shift</span>
-                            <span class="text-2xl font-bold">0</span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Speed Index</span>
-                            <span class="text-2xl font-bold">5.9<span class="text-sm ml-1">s</span>
-                        </div>
+               
+<div class="mt-6">
+    <h4 class="text-lg font-bold mb-3">Mobile Metrics</h4><p>Click on a metric for more information.</p>
+
+    <div class="flex flex-wrap flex-col md:flex-row justify-center gap-4">
+
+        
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            @keydown.enter.prevent="open = !open"
+            @keydown.space.prevent="open = !open"
+            role="button"
+            tabindex="0"
+            :aria-expanded="open"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                First Contentful Paint
+            </span>
+
+            <span class="text-2xl font-bold">
+                5.9
+                <span class="text-sm ml-1">s</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                Time until the first piece of content is rendered on screen.
+            </div>
+        </div>
+
+        
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            tabindex="0"
+            role="button"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                Largest Contentful Paint
+            </span>
+
+            <span class="text-2xl font-bold">
+                19.9
+                <span class="text-sm ml-1">s</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                How long it takes for the largest visible element to load.
+            </div>
+        </div>
+        
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            tabindex="0"
+            role="button"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                Total Blocking Time
+            </span>
+
+            <span class="text-2xl font-bold">
+                60
+                <span class="text-sm ml-1">ms</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                How long it takes for the largest visible element to load.
+            </div>
+        </div>
+        
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            tabindex="0"
+            role="button"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                Cumulative Layout Shift
+            </span>        
+
+            <span class="text-2xl font-bold">
+                0
+                <span class="text-sm ml-1">s</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                How much the page layout shifts during loading.
+            </div>
+            </div>
+            
+            <div
+                x-data="{ open: false }"
+                class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+                @click="open = !open"
+            >
+                <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                    Speed Index
+                </span>
+
+                <span class="text-2xl font-bold">
+                    5.9
+                    <span class="text-sm ml-1">s</span>
+                </span>
+
+                <div
+                    x-show="open"
+                    x-transition
+                    x-cloak
+                    class="mt-2 text-xs text-gray-600 text-center"
+                >
+                    How quickly the contents of a page are visibly populated.
+                </div>
+            </div>
+        
                     </div>
                 </div>
     
                 
-                <div class="mt-6">
-                    <h4 class="text-lg font-bold mb-3">Desktop Metrics</h4>
-                    <div class="flex flex-wrap flex-col md:flex-row justify-center gap-4">
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">First Contentful Paint</span>
-                            <span class="text-2xl font-bold">5.8<span class="text-sm ml-1">s</span></span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Largest Contentful Paint</span>
-                            <span class="text-2xl font-bold">21.9<span class="text-sm font-normal ml-1">s</span></span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Total Blocking Time</span>
-                            <span class="text-2xl font-bold">0 <span class="text-sm font-normal ml-1">ms</span></span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Cumulative Layout Shift</span>
-                            <span class="text-2xl font-bold">0.048</span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Speed Index</span>
-                            <span class="text-2xl font-bold">5.8<span class="text-sm font-normal ml-1">s</span></span>
-                        </div>
+<div class="mt-6">
+    <h4 class="text-lg font-bold mb-3">Desktop Metrics</h4><p>Click on a metric for more information.</p>
+
+    <div class="flex flex-wrap flex-col md:flex-row justify-center gap-4">
+
+        
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            @keydown.enter.prevent="open = !open"
+            @keydown.space.prevent="open = !open"
+            role="button"
+            tabindex="0"
+            :aria-expanded="open"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                First Contentful Paint
+            </span>
+
+            <span class="text-2xl font-bold">
+                5.8
+                <span class="text-sm ml-1">s</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                Time until the first piece of content is rendered on screen.
+            </div>
+        </div>
+
+        
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            tabindex="0"
+            role="button"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                Largest Contentful Paint
+            </span>
+
+            <span class="text-2xl font-bold">
+                21.9
+                <span class="text-sm ml-1">s</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                How long it takes for the largest visible element to load.
+            </div>
+        </div>
+    
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            tabindex="0"
+            role="button"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                Total Blocking Time
+            </span>
+
+            <span class="text-2xl font-bold">
+                0 
+                <span class="text-sm ml-1">ms</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                How long it takes for the largest visible element to load.
+            </div>
+        </div>
+        
+        <div 
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            tabindex="0"
+            role="button"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                Cumulative Layout Shift
+            </span>        
+
+            <span class="text-2xl font-bold">
+                0.048
+                <span class="text-sm ml-1">s</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                How much the page layout shifts during loading.
+            </div>
+            </div>
+            
+            <div
+                x-data="{ open: false }"
+                class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+                @click="open = !open"
+            >
+                <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                    Speed Index
+                </span>
+
+                <span class="text-2xl font-bold">
+                    5.8
+                    <span class="text-sm ml-1">s</span>
+                </span>
+
+                <div
+                    x-show="open"
+                    x-transition
+                    x-cloak
+                    class="mt-2 text-xs text-gray-600 text-center"
+                >
+                    How quickly the contents of a page are visibly populated.
+                </div>
                     </div>
                 </div>
 
@@ -231,61 +459,289 @@
                         </p>
                     </div>
 
-
+                    
 
                 </div>
 
-                
-                <div class="mt-6">
-                    <h4 class="text-lg font-bold mb-3">Mobile Metrics</h4>
-                    <div class="flex flex-wrap flex-col md:flex-row justify-center gap-4">
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-xl bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">First Contentful Paint</span>
-                            <span class="text-2xl font-bold">9.7<span class="text-sm ml-1">s</span></span>
-                            </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Largest Contentful Paint</span>
-                            <span class="text-2xl font-bold">21.9<span class="text-sm ml-1">s</span></span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Total Blocking Time</span>
-                            <span class="text-2xl font-bold">20<span class="text-sm ml-1">ms</span></span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Cumulative Layout Shift</span>
-                            <span class="text-2xl font-bold">0</span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Speed Index</span>
-                            <span class="text-2xl font-bold">9.7<span class="text-sm ml-1">s</span>
-                        </div>
+               
+<div class="mt-6">
+    <h4 class="text-lg font-bold mb-3">Mobile Metrics</h4><p>Click on a metric for more information.</p>
+
+    <div class="flex flex-wrap flex-col md:flex-row justify-center gap-4">
+
+        
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            @keydown.enter.prevent="open = !open"
+            @keydown.space.prevent="open = !open"
+            role="button"
+            tabindex="0"
+            :aria-expanded="open"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                First Contentful Paint
+            </span>
+
+            <span class="text-2xl font-bold">
+                9.7
+                <span class="text-sm ml-1">s</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                Time until the first piece of content is rendered on screen.
+            </div>
+        </div>
+
+        
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            tabindex="0"
+            role="button"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                Largest Contentful Paint
+            </span>
+
+            <span class="text-2xl font-bold">
+                21.9
+                <span class="text-sm ml-1">s</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                How long it takes for the largest visible element to load.
+            </div>
+        </div>
+        
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            tabindex="0"
+            role="button"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                Total Blocking Time
+            </span>
+
+            <span class="text-2xl font-bold">
+                20
+                <span class="text-sm ml-1">ms</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                How long it takes for the largest visible element to load.
+            </div>
+        </div>
+        
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            tabindex="0"
+            role="button"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                Cumulative Layout Shift
+            </span>        
+
+            <span class="text-2xl font-bold">
+                0
+                <span class="text-sm ml-1">s</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                How much the page layout shifts during loading.
+            </div>
+            </div>
+            
+            <div
+                x-data="{ open: false }"
+                class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+                @click="open = !open"
+            >
+                <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                    Speed Index
+                </span>
+
+                <span class="text-2xl font-bold">
+                    9.7
+                    <span class="text-sm ml-1">s</span>
+                </span>
+
+                <div
+                    x-show="open"
+                    x-transition
+                    x-cloak
+                    class="mt-2 text-xs text-gray-600 text-center"
+                >
+                    How quickly the contents of a page are visibly populated.
+                </div>
+            </div>
+        
                     </div>
                 </div>
     
                 
-                <div class="mt-6">
-                    <h4 class="text-lg font-bold mb-3">Desktop Metrics</h4>
-                    <div class="flex flex-wrap flex-col md:flex-row justify-center gap-4">
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">First Contentful Paint</span>
-                            <span class="text-2xl font-bold">9.4<span class="text-sm ml-1">s</span></span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Largest Contentful Paint</span>
-                            <span class="text-2xl font-bold">21.6<span class="text-sm font-normal ml-1">s</span></span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Total Blocking Time</span>
-                            <span class="text-2xl font-bold">0<span class="text-sm font-normal ml-1">ms</span></span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Cumulative Layout Shift</span>
-                            <span class="text-2xl font-bold">0.048</span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Speed Index</span>
-                            <span class="text-2xl font-bold">9.4<span class="text-sm font-normal ml-1">s</span></span>
-                        </div>
+<div class="mt-6">
+    <h4 class="text-lg font-bold mb-3">Desktop Metrics</h4><p>Click on a metric for more information.</p>
+
+    <div class="flex flex-wrap flex-col md:flex-row justify-center gap-4">
+
+        
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            @keydown.enter.prevent="open = !open"
+            @keydown.space.prevent="open = !open"
+            role="button"
+            tabindex="0"
+            :aria-expanded="open"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                First Contentful Paint
+            </span>
+
+            <span class="text-2xl font-bold">
+                9.4
+                <span class="text-sm ml-1">s</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                Time until the first piece of content is rendered on screen.
+            </div>
+        </div>
+
+        
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            tabindex="0"
+            role="button"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                Largest Contentful Paint
+            </span>
+
+            <span class="text-2xl font-bold">
+                21.6
+                <span class="text-sm ml-1">s</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                How long it takes for the largest visible element to load.
+            </div>
+        </div>
+    
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            tabindex="0"
+            role="button"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                Total Blocking Time
+            </span>
+
+            <span class="text-2xl font-bold">
+                0
+                <span class="text-sm ml-1">ms</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                How long it takes for the largest visible element to load.
+            </div>
+        </div>
+        
+        <div 
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            tabindex="0"
+            role="button"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                Cumulative Layout Shift
+            </span>        
+
+            <span class="text-2xl font-bold">
+                0.048
+                <span class="text-sm ml-1">s</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                How much the page layout shifts during loading.
+            </div>
+            </div>
+            
+            <div
+                x-data="{ open: false }"
+                class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+                @click="open = !open"
+            >
+                <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                    Speed Index
+                </span>
+
+                <span class="text-2xl font-bold">
+                    9.4
+                    <span class="text-sm ml-1">s</span>
+                </span>
+
+                <div
+                    x-show="open"
+                    x-transition
+                    x-cloak
+                    class="mt-2 text-xs text-gray-600 text-center"
+                >
+                    How quickly the contents of a page are visibly populated.
+                </div>
                     </div>
                 </div>
 
@@ -355,61 +811,289 @@
                         </p>
                     </div>
 
-
+                    
 
                 </div>
 
-                
-                <div class="mt-6">
-                    <h4 class="text-lg font-bold mb-3">Mobile Metrics</h4>
-                    <div class="flex flex-wrap flex-col md:flex-row justify-center gap-4">
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-xl bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">First Contentful Paint</span>
-                            <span class="text-2xl font-bold">6.1<span class="text-sm ml-1">s</span></span>
-                            </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Largest Contentful Paint</span>
-                            <span class="text-2xl font-bold">15.4<span class="text-sm ml-1">s</span></span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Total Blocking Time</span>
-                            <span class="text-2xl font-bold">120<span class="text-sm ml-1">ms</span></span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Cumulative Layout Shift</span>
-                            <span class="text-2xl font-bold">0.001</span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Speed Index</span>
-                            <span class="text-2xl font-bold">6.1<span class="text-sm ml-1">s</span>
-                        </div>
+               
+<div class="mt-6">
+    <h4 class="text-lg font-bold mb-3">Mobile Metrics</h4><p>Click on a metric for more information.</p>
+
+    <div class="flex flex-wrap flex-col md:flex-row justify-center gap-4">
+
+        
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            @keydown.enter.prevent="open = !open"
+            @keydown.space.prevent="open = !open"
+            role="button"
+            tabindex="0"
+            :aria-expanded="open"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                First Contentful Paint
+            </span>
+
+            <span class="text-2xl font-bold">
+                6.1
+                <span class="text-sm ml-1">s</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                Time until the first piece of content is rendered on screen.
+            </div>
+        </div>
+
+        
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            tabindex="0"
+            role="button"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                Largest Contentful Paint
+            </span>
+
+            <span class="text-2xl font-bold">
+                15.4
+                <span class="text-sm ml-1">s</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                How long it takes for the largest visible element to load.
+            </div>
+        </div>
+        
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            tabindex="0"
+            role="button"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                Total Blocking Time
+            </span>
+
+            <span class="text-2xl font-bold">
+                120
+                <span class="text-sm ml-1">ms</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                How long it takes for the largest visible element to load.
+            </div>
+        </div>
+        
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            tabindex="0"
+            role="button"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                Cumulative Layout Shift
+            </span>        
+
+            <span class="text-2xl font-bold">
+                0.001
+                <span class="text-sm ml-1">s</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                How much the page layout shifts during loading.
+            </div>
+            </div>
+            
+            <div
+                x-data="{ open: false }"
+                class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+                @click="open = !open"
+            >
+                <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                    Speed Index
+                </span>
+
+                <span class="text-2xl font-bold">
+                    6.1
+                    <span class="text-sm ml-1">s</span>
+                </span>
+
+                <div
+                    x-show="open"
+                    x-transition
+                    x-cloak
+                    class="mt-2 text-xs text-gray-600 text-center"
+                >
+                    How quickly the contents of a page are visibly populated.
+                </div>
+            </div>
+        
                     </div>
                 </div>
     
                 
-                <div class="mt-6">
-                    <h4 class="text-lg font-bold mb-3">Desktop Metrics</h4>
-                    <div class="flex flex-wrap flex-col md:flex-row justify-center gap-4">
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">First Contentful Paint</span>
-                            <span class="text-2xl font-bold">6.1<span class="text-sm ml-1">s</span></span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Largest Contentful Paint</span>
-                            <span class="text-2xl font-bold">16.4<span class="text-sm font-normal ml-1">s</span></span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Total Blocking Time</span>
-                            <span class="text-2xl font-bold">0<span class="text-sm font-normal ml-1">ms</span></span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Cumulative Layout Shift</span>
-                            <span class="text-2xl font-bold">0.048</span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Speed Index</span>
-                            <span class="text-2xl font-bold">6.1<span class="text-sm font-normal ml-1">s</span></span>
-                        </div>
+<div class="mt-6">
+    <h4 class="text-lg font-bold mb-3">Desktop Metrics</h4><p>Click on a metric for more information.</p>
+
+    <div class="flex flex-wrap flex-col md:flex-row justify-center gap-4">
+
+        
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            @keydown.enter.prevent="open = !open"
+            @keydown.space.prevent="open = !open"
+            role="button"
+            tabindex="0"
+            :aria-expanded="open"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                First Contentful Paint
+            </span>
+
+            <span class="text-2xl font-bold">
+                6.1
+                <span class="text-sm ml-1">s</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                Time until the first piece of content is rendered on screen.
+            </div>
+        </div>
+
+        
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            tabindex="0"
+            role="button"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                Largest Contentful Paint
+            </span>
+
+            <span class="text-2xl font-bold">
+                16.4
+                <span class="text-sm ml-1">s</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                How long it takes for the largest visible element to load.
+            </div>
+        </div>
+    
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            tabindex="0"
+            role="button"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                Total Blocking Time
+            </span>
+
+            <span class="text-2xl font-bold">
+                0
+                <span class="text-sm ml-1">ms</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                How long it takes for the largest visible element to load.
+            </div>
+        </div>
+        
+        <div 
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            tabindex="0"
+            role="button"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                Cumulative Layout Shift
+            </span>        
+
+            <span class="text-2xl font-bold">
+                0.048
+                <span class="text-sm ml-1">s</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                How much the page layout shifts during loading.
+            </div>
+            </div>
+            
+            <div
+                x-data="{ open: false }"
+                class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+                @click="open = !open"
+            >
+                <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                    Speed Index
+                </span>
+
+                <span class="text-2xl font-bold">
+                    6.1
+                    <span class="text-sm ml-1">s</span>
+                </span>
+
+                <div
+                    x-show="open"
+                    x-transition
+                    x-cloak
+                    class="mt-2 text-xs text-gray-600 text-center"
+                >
+                    How quickly the contents of a page are visibly populated.
+                </div>
                     </div>
                 </div>
 
@@ -479,61 +1163,289 @@
                         </p>
                     </div>
 
-
+                    
 
                 </div>
 
-                
-                <div class="mt-6">
-                    <h4 class="text-lg font-bold mb-3">Mobile Metrics</h4>
-                    <div class="flex flex-wrap flex-col md:flex-row justify-center gap-4">
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-xl bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">First Contentful Paint</span>
-                            <span class="text-2xl font-bold">5.8<span class="text-sm ml-1">s</span></span>
-                            </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Largest Contentful Paint</span>
-                            <span class="text-2xl font-bold">19.2<span class="text-sm ml-1">s</span></span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Total Blocking Time</span>
-                            <span class="text-2xl font-bold">50<span class="text-sm ml-1">ms</span></span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Cumulative Layout Shift</span>
-                            <span class="text-2xl font-bold">0.001</span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Speed Index</span>
-                            <span class="text-2xl font-bold">5.8<span class="text-sm ml-1">s</span>
-                        </div>
+               
+<div class="mt-6">
+    <h4 class="text-lg font-bold mb-3">Mobile Metrics</h4><p>Click on a metric for more information.</p>
+
+    <div class="flex flex-wrap flex-col md:flex-row justify-center gap-4">
+
+        
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            @keydown.enter.prevent="open = !open"
+            @keydown.space.prevent="open = !open"
+            role="button"
+            tabindex="0"
+            :aria-expanded="open"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                First Contentful Paint
+            </span>
+
+            <span class="text-2xl font-bold">
+                5.8
+                <span class="text-sm ml-1">s</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                Time until the first piece of content is rendered on screen.
+            </div>
+        </div>
+
+        
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            tabindex="0"
+            role="button"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                Largest Contentful Paint
+            </span>
+
+            <span class="text-2xl font-bold">
+                19.2
+                <span class="text-sm ml-1">s</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                How long it takes for the largest visible element to load.
+            </div>
+        </div>
+        
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            tabindex="0"
+            role="button"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                Total Blocking Time
+            </span>
+
+            <span class="text-2xl font-bold">
+                50
+                <span class="text-sm ml-1">ms</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                How long it takes for the largest visible element to load.
+            </div>
+        </div>
+        
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            tabindex="0"
+            role="button"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                Cumulative Layout Shift
+            </span>        
+
+            <span class="text-2xl font-bold">
+                0.001
+                <span class="text-sm ml-1">s</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                How much the page layout shifts during loading.
+            </div>
+            </div>
+            
+            <div
+                x-data="{ open: false }"
+                class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+                @click="open = !open"
+            >
+                <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                    Speed Index
+                </span>
+
+                <span class="text-2xl font-bold">
+                    5.8
+                    <span class="text-sm ml-1">s</span>
+                </span>
+
+                <div
+                    x-show="open"
+                    x-transition
+                    x-cloak
+                    class="mt-2 text-xs text-gray-600 text-center"
+                >
+                    How quickly the contents of a page are visibly populated.
+                </div>
+            </div>
+        
                     </div>
                 </div>
     
                 
-                <div class="mt-6">
-                    <h4 class="text-lg font-bold mb-3">Desktop Metrics</h4>
-                    <div class="flex flex-wrap flex-col md:flex-row justify-center gap-4">
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">First Contentful Paint</span>
-                            <span class="text-2xl font-bold">5.8<span class="text-sm ml-1">s</span></span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Largest Contentful Paint</span>
-                            <span class="text-2xl font-bold">21.0<span class="text-sm font-normal ml-1">s</span></span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Total Blocking Time</span>
-                            <span class="text-2xl font-bold">0<span class="text-sm font-normal ml-1">ms</span></span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Cumulative Layout Shift</span>
-                            <span class="text-2xl font-bold">0.054</span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Speed Index</span>
-                            <span class="text-2xl font-bold">6.5<span class="text-sm font-normal ml-1">s</span></span>
-                        </div>
+<div class="mt-6">
+    <h4 class="text-lg font-bold mb-3">Desktop Metrics</h4><p>Click on a metric for more information.</p>
+
+    <div class="flex flex-wrap flex-col md:flex-row justify-center gap-4">
+
+        
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            @keydown.enter.prevent="open = !open"
+            @keydown.space.prevent="open = !open"
+            role="button"
+            tabindex="0"
+            :aria-expanded="open"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                First Contentful Paint
+            </span>
+
+            <span class="text-2xl font-bold">
+                5.8
+                <span class="text-sm ml-1">s</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                Time until the first piece of content is rendered on screen.
+            </div>
+        </div>
+
+        
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            tabindex="0"
+            role="button"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                Largest Contentful Paint
+            </span>
+
+            <span class="text-2xl font-bold">
+                21.0
+                <span class="text-sm ml-1">s</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                How long it takes for the largest visible element to load.
+            </div>
+        </div>
+    
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            tabindex="0"
+            role="button"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                Total Blocking Time
+            </span>
+
+            <span class="text-2xl font-bold">
+                0
+                <span class="text-sm ml-1">ms</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                How long it takes for the largest visible element to load.
+            </div>
+        </div>
+        
+        <div 
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            tabindex="0"
+            role="button"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                Cumulative Layout Shift
+            </span>        
+
+            <span class="text-2xl font-bold">
+                0.054
+                <span class="text-sm ml-1">s</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                How much the page layout shifts during loading.
+            </div>
+            </div>
+            
+            <div
+                x-data="{ open: false }"
+                class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+                @click="open = !open"
+            >
+                <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                    Speed Index
+                </span>
+
+                <span class="text-2xl font-bold">
+                    6.5
+                    <span class="text-sm ml-1">s</span>
+                </span>
+
+                <div
+                    x-show="open"
+                    x-transition
+                    x-cloak
+                    class="mt-2 text-xs text-gray-600 text-center"
+                >
+                    How quickly the contents of a page are visibly populated.
+                </div>
                     </div>
                 </div>
 
@@ -603,61 +1515,289 @@
                         </p>
                     </div>
 
-
+                    
 
                 </div>
 
-                
-                <div class="mt-6">
-                    <h4 class="text-lg font-bold mb-3">Mobile Metrics</h4>
-                    <div class="flex flex-wrap flex-col md:flex-row justify-center gap-4">
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-xl bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">First Contentful Paint</span>
-                            <span class="text-2xl font-bold">5.7<span class="text-sm ml-1">s</span></span>
-                            </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Largest Contentful Paint</span>
-                            <span class="text-2xl font-bold">17.2<span class="text-sm ml-1">s</span></span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Total Blocking Time</span>
-                            <span class="text-2xl font-bold">110<span class="text-sm ml-1">ms</span></span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Cumulative Layout Shift</span>
-                            <span class="text-2xl font-bold">0</span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Speed Index</span>
-                            <span class="text-2xl font-bold">5.7<span class="text-sm ml-1">s</span>
-                        </div>
+               
+<div class="mt-6">
+    <h4 class="text-lg font-bold mb-3">Mobile Metrics</h4><p>Click on a metric for more information.</p>
+
+    <div class="flex flex-wrap flex-col md:flex-row justify-center gap-4">
+
+        
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            @keydown.enter.prevent="open = !open"
+            @keydown.space.prevent="open = !open"
+            role="button"
+            tabindex="0"
+            :aria-expanded="open"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                First Contentful Paint
+            </span>
+
+            <span class="text-2xl font-bold">
+                5.7
+                <span class="text-sm ml-1">s</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                Time until the first piece of content is rendered on screen.
+            </div>
+        </div>
+
+        
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            tabindex="0"
+            role="button"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                Largest Contentful Paint
+            </span>
+
+            <span class="text-2xl font-bold">
+                17.2
+                <span class="text-sm ml-1">s</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                How long it takes for the largest visible element to load.
+            </div>
+        </div>
+        
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            tabindex="0"
+            role="button"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                Total Blocking Time
+            </span>
+
+            <span class="text-2xl font-bold">
+                110
+                <span class="text-sm ml-1">ms</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                How long it takes for the largest visible element to load.
+            </div>
+        </div>
+        
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            tabindex="0"
+            role="button"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                Cumulative Layout Shift
+            </span>        
+
+            <span class="text-2xl font-bold">
+                0
+                <span class="text-sm ml-1">s</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                How much the page layout shifts during loading.
+            </div>
+            </div>
+            
+            <div
+                x-data="{ open: false }"
+                class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+                @click="open = !open"
+            >
+                <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                    Speed Index
+                </span>
+
+                <span class="text-2xl font-bold">
+                    5.7
+                    <span class="text-sm ml-1">s</span>
+                </span>
+
+                <div
+                    x-show="open"
+                    x-transition
+                    x-cloak
+                    class="mt-2 text-xs text-gray-600 text-center"
+                >
+                    How quickly the contents of a page are visibly populated.
+                </div>
+            </div>
+        
                     </div>
                 </div>
     
                 
-                <div class="mt-6">
-                    <h4 class="text-lg font-bold mb-3">Desktop Metrics</h4>
-                    <div class="flex flex-wrap flex-col md:flex-row justify-center gap-4">
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">First Contentful Paint</span>
-                            <span class="text-2xl font-bold">6.0<span class="text-sm ml-1">s</span></span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Largest Contentful Paint</span>
-                            <span class="text-2xl font-bold">16.0<span class="text-sm font-normal ml-1">s</span></span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Total Blocking Time</span>
-                            <span class="text-2xl font-bold">0<span class="text-sm font-normal ml-1">ms</span></span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Cumulative Layout Shift</span>
-                            <span class="text-2xl font-bold">0.048</span>
-                        </div>
-                        <div class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">Speed Index</span>
-                            <span class="text-2xl font-bold">6.0<span class="text-sm font-normal ml-1">s</span></span>
-                        </div>
+<div class="mt-6">
+    <h4 class="text-lg font-bold mb-3">Desktop Metrics</h4><p>Click on a metric for more information.</p>
+
+    <div class="flex flex-wrap flex-col md:flex-row justify-center gap-4">
+
+        
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            @keydown.enter.prevent="open = !open"
+            @keydown.space.prevent="open = !open"
+            role="button"
+            tabindex="0"
+            :aria-expanded="open"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                First Contentful Paint
+            </span>
+
+            <span class="text-2xl font-bold">
+                6.0
+                <span class="text-sm ml-1">s</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                Time until the first piece of content is rendered on screen.
+            </div>
+        </div>
+
+        
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            tabindex="0"
+            role="button"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                Largest Contentful Paint
+            </span>
+
+            <span class="text-2xl font-bold">
+                16.0
+                <span class="text-sm ml-1">s</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                How long it takes for the largest visible element to load.
+            </div>
+        </div>
+    
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            tabindex="0"
+            role="button"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                Total Blocking Time
+            </span>
+
+            <span class="text-2xl font-bold">
+                0
+                <span class="text-sm ml-1">ms</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                How long it takes for the largest visible element to load.
+            </div>
+        </div>
+        
+        <div 
+            x-data="{ open: false }"
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+            @click="open = !open"
+            tabindex="0"
+            role="button"
+        >
+            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                Cumulative Layout Shift
+            </span>        
+
+            <span class="text-2xl font-bold">
+                0.048
+                <span class="text-sm ml-1">s</span>
+            </span>
+
+            <div
+                x-show="open"
+                x-transition
+                x-cloak
+                class="mt-2 text-xs text-gray-600 text-center"
+            >
+                How much the page layout shifts during loading.
+            </div>
+            </div>
+            
+            <div
+                x-data="{ open: false }"
+                class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
+                @click="open = !open"
+            >
+                <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                    Speed Index
+                </span>
+
+                <span class="text-2xl font-bold">
+                    6.0
+                    <span class="text-sm ml-1">s</span>
+                </span>
+
+                <div
+                    x-show="open"
+                    x-transition
+                    x-cloak
+                    class="mt-2 text-xs text-gray-600 text-center"
+                >
+                    How quickly the contents of a page are visibly populated.
+                </div>
                     </div>
                 </div>
 
