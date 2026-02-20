@@ -31,7 +31,7 @@
 
 {% if params.type === "performance" %}
 
-    <section class="items-center flex flex-col">
+    <section class="flex flex-col gap-8 mt-6 m-4 items-center bg-primary-core-blue/10 rounded-lg p-4">
         <h2 class="">{{params.title}}
         </h2>
 
@@ -40,7 +40,7 @@
 
                 <h2 class="text-2xl">{{data.page}}</h2>
 
-                <div class="flex">
+                <div class="flex flex-wrap">
 
                     <div class="w-1/2">
                         <h3 class="text-xl mb-1"> Lighthouse Performance Reports </h3>
@@ -99,23 +99,26 @@
                     </div>
 
                 </div>
-
+                {# metric container 1 #}
+                <div class="flex justify-evenly lg:flex-row flex-col">
                 {# Mobile Metric Section #}
-                <div class="mt-6">
+                <div class="w-full lg:w-1/2">
                     <h4 class="text-lg font-bold mb-3">Mobile Metrics</h4>
-                    <p>Click on a metric for more information.</p>
+                    <p>Click on a metric button for additional details.</p>
 
-                    <div class="flex flex-wrap flex-col grid-cols-1 md:grid-cols-2 justify-items-center gap-4">
+                    
+
+                    <div class="flex flex-wrap flex-col grid-cols-1 lg:grid-cols-2 justify-items-center gap-4">
 
                         {# First Contentful Paint #}
-                        <div x-data="{ fcp: false }" class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg- cursor-pointer">
+                        <div x-data="{ fcp: false }" class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer">
                         <button
-            class="flex flex-col grid-cols-1 items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer focus:border-solid focus:border-2 focus:border-red-600"
+            class="flex flex-col grid-cols-1 items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg hover:bg-quaternary-blue hover:text-white bg-white cursor-pointer focus:border-solid focus:border-2 focus:border-yellow-500"
             @click="fcp = !fcp"
             @click.outside="fcp = false"
             :aria-expanded="fcp"
             >
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                            <span class="text-xs font-medium uppercase mb-1">
                 First Contentful Paint
             </span>
 
@@ -128,26 +131,23 @@
                 x-show="fcp"
                 x-transition
                 x-cloak
-                class="mt-2 text-xs text-gray-600 text-center"
+                class="mt-2 text-xs text-black text-center"
                 @click.outside="fcp = false"
             >
                 Time until the first piece of content is rendered on screen.
             </div>
             </div>  
             
-                        
-
+                
                         {# Largest Contentful Paint #}
-                        <div
-            x-data="{ open: false }"
-            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
-            @click="open = !open"
-            @keydown.enter.prevent="open = !open"
-            @keydown.space.prevent="open = !open"
-            tabindex="0"
-            role="button"
+                        <div x-data="{ lcp: false }" class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer ">
+                        <button
+            class="flex flex-col grid-cols-1 items-center px-4 py-3 border border-solid border-primary-core-blue hover:bg-quaternary-blue hover:text-white rounded-lg bg-white cursor-pointer focus:border-solid focus:border-2 focus:border-yellow-500"
+            @click="lcp = !lcp"
+            @click.outside="lcp = false"
+            :aria-expanded="lcp"
         >
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                            <span class="text-xs font-medium uppercase mb-1">
                 Largest Contentful Paint
             </span>
 
@@ -155,56 +155,51 @@
                                 {{ data.mobile.metrics.largest_contentful_paint }}
                                 <span class="text-sm ml-1">s</span>
                             </span>
-
+                            </button>
                             <div
-                x-show="open"
+                x-show="lcp"
                 x-transition
                 x-cloak
-                class="mt-2 text-xs text-gray-600 text-center"
+                class="mt-2 text-xs text-black text-center"
+                @click.outside="lcp = false"
             >
                 How long it takes for the largest visible element to load.
             </div>
                         </div>
                         {# Total Blocking Time #}
-                        <div
-            x-data="{ open: false }"
-            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
-            @click="open = !open"
-            @keydown.enter.prevent="open = !open"
-            @keydown.space.prevent="open = !open"
-            tabindex="0"
-            role="button"
+                        <div x-data="{ tbt: false }" class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer">
+                        <button
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue hover:bg-quaternary-blue hover:text-white rounded-lg bg-white cursor-pointer focus:border-solid focus:border-2 focus:border-yellow-500"
+            @click="tbt = !tbt"
+            :aria-expanded="tbt"
         >
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                            <span class="text-xs font-medium uppercase mb-1">
                 Total Blocking Time
             </span>
-
                             <span class="text-2xl font-bold">
                                 {{ data.mobile.metrics.total_blocking_time }}
                                 <span class="text-sm ml-1">ms</span>
                             </span>
-
+                            </button>
                             <div
-                x-show="open"
+                x-show="tbt"
                 x-transition
                 x-cloak
-                class="mt-2 text-xs text-gray-600 text-center"
+                class="mt-2 text-xs text-black text-center"
+                @click.outside="tbt = false"
             >
                 How long it takes for the largest visible element to load.
             </div>
                         </div>
                         {# Cumulative Layout Shift #}
-                        <div
-            x-data="{ open: false }"
-            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
-            @click="open = !open"
-            @keydown.enter.prevent="open = !open"
-            @keydown.space.prevent="open = !open"
-            tabindex="0"
-            role="button"
-            aria-expanded="open"
+                        <div x-data="{ cls: false }" class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer">
+                        <button
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue hover:bg-quaternary-blue hover:text-white rounded-lg bg-white cursor-pointer focus:border-solid focus:border-2 focus:border-yellow-500"
+            @click="cls = !cls"
+            @click.outside="cls = false"
+            :aria-expanded="cls"
         >
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                            <span class="text-xs font-medium uppercase mb-1">
                 Cumulative Layout Shift
             </span>
 
@@ -212,28 +207,24 @@
                                 {{ data.mobile.metrics.cumulative_layout_shift }}
                                 <span class="text-sm ml-1">s</span>
                             </span>
-
+                            </button>
                             <div
-                x-show="open"
+                x-show="cls"
                 x-transition
                 x-cloak
-                class="mt-2 text-xs text-gray-600 text-center"
+                class="mt-2 text-xs text-black text-center"
             >
                 How much the page layout shifts during loading.
             </div>
                         </div>
                         {# Speed Index #}
-                        <div
-                x-data="{ open: false }"
-                class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
-                @click="open = !open"
-                @keydown.enter.prevent="open = !open"
-                @keydown.space.prevent="open = !open"
-                tabindex="0"
-                role="button"
-                aria-expanded="open"
+                        <div x-data="{ si: false }" class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer">
+                        <button
+                class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue hover:bg-quaternary-blue hover:text-white rounded-lg bg-white cursor-pointer focus:border-solid focus:border-2 focus:border-yellow-500"
+                @click="si = !si"
+                :aria-expanded="si"
             >
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                            <span class="text-xs font-medium uppercase mb-1">
                     Speed Index
                 </span>
 
@@ -241,12 +232,13 @@
                                 {{ data.mobile.metrics.speed_index }}
                                 <span class="text-sm ml-1">s</span>
                             </span>
-
+                            </button>
                             <div
-                    x-show="open"
+                    x-show="si"
                     x-transition
                     x-cloak
-                    class="mt-2 text-xs text-gray-600 text-center"
+                    class="mt-2 text-xs text-black text-center"
+                    @click.outside="si = false"
                 >
                     How quickly the contents of a page are visibly populated.
                 </div>
@@ -256,24 +248,19 @@
                 </div>
 
                 {# Desktop Metrics Section #}
-                <div class="mt-6">
+                  <div class="relative ml-8 space-y-4 justify-center lg:w-1/2 border">
                     <h4 class="text-lg font-bold mb-3">Desktop Metrics</h4>
-                    <p>Click on a metric for more information.</p>
-
-                    <div class="flex flex-wrap flex-col grid-cols-2 md:grid-cols-2 justify-center gap-4">
+                    <p>Click on a metric for additional details.</p>
 
                         {# First Contentful Paint #}
-                        <div
-            x-data="{ open: false }"
-            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
-            @click="open = !open"
-            @keydown.enter.prevent="open = !open"
-            @keydown.space.prevent="open = !open"
-            role="button"
-            tabindex="0"
-            :aria-expanded="open"
+                        <div x-data="{ fcp: false }" class="flex flex-col items-center px-4 py-3 rounded-lg border border-solid border-primary-core-blue  bg-white cursor-pointer">
+                        <button
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue hover:bg-quaternary-blue hover:text-white rounded-lg bg-white cursor-pointer focus:border-solid focus:border-2 focus:border-yellow-500"
+            @click="fcp = !fcp"
+            @click.outside="fcp = false"
+            :aria-expanded="fcp"
         >
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                            <span class="text-xs font-medium uppercase mb-1">
                 First Contentful Paint
             </span>
 
@@ -281,29 +268,27 @@
                                 {{ data.desktop.metrics.first_contentful_paint }}
                                 <span class="text-sm ml-1">s</span>
                             </span>
-
+                            </button>
                             <div
-                x-show="open"
+                x-show="fcp"
                 x-transition
                 x-cloak
-                class="mt-2 text-xs text-gray-600 text-center"
+                class="mt-2 text-xs text-black text-center"
+                @click.outside="fcp = false"
             >
                 Time until the first piece of content is rendered on screen.
             </div>
                         </div>
 
                         {# Largest Contentful Paint #}
-                        <div
-            x-data="{ open: false }"
-            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
-            @click="open = !open"
-            @keydown.enter.prevent="open = !open"
-            @keydown.space.prevent="open = !open"
-            tabindex="0"
-            role="button"
-            :aria-expanded="open"
+                        <div x-data="{ lcp: false }" class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer">
+                        <button
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue hover:bg-quaternary-blue hover:text-white rounded-lg bg-white cursor-pointer focus:border-solid focus:border-2 focus:border-yellow-500"
+            @click="lcp = !lcp"
+            @click.outside="lcp = false"
+            :aria-expanded="lcp"
         >
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                            <span class="text-xs font-medium uppercase mb-1">
                 Largest Contentful Paint
             </span>
 
@@ -311,28 +296,25 @@
                                 {{ data.desktop.metrics.largest_contentful_paint }}
                                 <span class="text-sm ml-1">s</span>
                             </span>
-
+                            </button>
                             <div
-                x-show="open"
+                x-show="lcp"
                 x-transition
                 x-cloak
-                class="mt-2 text-xs text-gray-600 text-center"
+                class="mt-2 text-xs text-black text-center"
+                @click.outside="lcp = false"
             >
                 How long it takes for the largest visible element to load.
             </div>
                         </div>
                         {# Total Blocking Time #}
-                        <div
-            x-data="{ open: false }"
-            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
-            @click="open = !open"
-            @keydown.enter.prevent="open = !open"
-            @keydown.space.prevent="open = !open"
-            tabindex="0"
-            role="button"
-            aria-expanded="open"
+                        <div x-data="{ tbt: false }" class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer">
+                        <button
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue hover:bg-quaternary-blue hover:text-white rounded-lg bg-white cursor-pointer focus:border-solid focus:border-2 focus:border-yellow-500"
+            @click="tbt = !tbt"
+            :aria-expanded="tbt"
         >
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                            <span class="text-xs font-medium uppercase mb-1">
                 Total Blocking Time
             </span>
 
@@ -340,27 +322,25 @@
                                 {{ data.desktop.metrics.total_blocking_time }}
                                 <span class="text-sm ml-1">ms</span>
                             </span>
-
+                            </button>
                             <div
-                x-show="open"
+                x-show="tbt"
                 x-transition
                 x-cloak
-                class="mt-2 text-xs text-gray-600 text-center"
+                class="mt-2 text-xs text-black text-center"
+                @click.outside="tbt = false"
             >
                 How long it takes for the largest visible element to load.
             </div>
                         </div>
                         {# Cumulative Layout Shift #}
-                        <div 
-            x-data="{ open: false }"
-            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
-            @click="open = !open"
-            @keydown.enter.prevent="open = !open"
-            @keydown.space.prevent="open = !open"
-            tabindex="0"
-            role="button"
-            aria-expanded="open">
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                        <div x-data="{ cls: false }" class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer">
+                        <button
+            class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue hover:bg-quaternary-blue hover:text-white rounded-lg bg-white cursor-pointer focus:border-solid focus:border-2 focus:border-yellow-500"
+            @click="cls = !cls"
+            @click.outside="cls = false"
+            :aria-expanded="cls">
+                            <span class="text-xs font-medium uppercase mb-1">
                 Cumulative Layout Shift
             </span>
 
@@ -368,28 +348,26 @@
                                 {{ data.desktop.metrics.cumulative_layout_shift }}
                                 <span class="text-sm ml-1">s</span>
                             </span>
-
+                            </button>
                             <div
-                x-show="open"
+                x-show="cls "
                 x-transition
                 x-cloak
-                class="mt-2 text-xs text-gray-600 text-center"
+                class="mt-2 text-xs text-black text-center"
+                @click="cls = false"
             >
                 How much the page layout shifts during loading.
             </div>
                         </div>
                         {# Speed Index #}
-                        <div
-                x-data="{ open: false }"
-                class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer"
-                @click="open = !open"
-                @keydown.enter.prevent="open = !open"
-                @keydown.space.prevent="open = !open"
-                tabindex="0"
-                role="button"
-                :aria-expanded="open"
+                        <div x-data="{ si: false }" class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue rounded-lg bg-white cursor-pointer">
+                        <button
+                class="flex flex-col items-center px-4 py-3 border border-solid border-primary-core-blue hover:bg-quaternary-blue hover:text-white rounded-lg bg-white cursor-pointer focus:border-solid focus:border-2 focus:border-yellow-500"
+                @click=" si = !si"
+                @click.outside="si = false"
+                :aria-expanded="si"
             >
-                            <span class="text-xs font-medium text-gray-600 uppercase mb-1">
+                            <span class="text-xs font-medium uppercase mb-1">
                     Speed Index
                 </span>
 
@@ -397,12 +375,13 @@
                                 {{ data.desktop.metrics.speed_index }}
                                 <span class="text-sm ml-1">s</span>
                             </span>
-
-                            <divS
-                    x-show="open"
+                            </button>
+                            <div
+                    x-show="si"
                     x-transition
                     x-cloak
-                    class="mt-2 text-xs text-gray-600 text-center"
+                    class="mt-2 text-xs text-black text-center"
+                    @click.outside="si = false"
                 >
                     How quickly the contents of a page are visibly populated.
                 </div>
@@ -415,7 +394,7 @@
             </div>
 
         {% endfor %}
-
+        </div>
     </section>
 
 {% elif params.type === "a11y-lighthouse" %}
