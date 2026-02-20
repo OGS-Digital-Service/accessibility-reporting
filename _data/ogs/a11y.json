@@ -5,8 +5,8 @@
     "accessibility": 98,
     "seo": 96,
     "bestpractice": 85,
-    "failures": [],
-    "recommendations": []
+    "failures": 17,
+    "recommendations": 91
   },
   {
     "page": "Homepage (Mobile)",
@@ -14,8 +14,8 @@
     "accessibility": 93,
     "seo": 96,
     "bestpractice": 85,
-    "failures": [],
-    "recommendations": []
+    "failures": 17,
+    "recommendations": 75
   },
   {
     "page": "Procurement Contracts (Desktop)",
@@ -23,8 +23,8 @@
     "accessibility": 100,
     "seo": 100,
     "bestpractice": 92,
-    "failures": [],
-    "recommendations": []
+    "failures": 22,
+    "recommendations": 38
   },
   {
     "page": "Procurement Contracts (Mobile)",
@@ -32,8 +32,8 @@
     "accessibility": 95,
     "seo": 100,
     "bestpractice": 92,
-    "failures": [],
-    "recommendations": []
+    "failures": 36,
+    "recommendations": 126
   },
   {
     "page": "Procurement (Desktop)",
@@ -41,8 +41,8 @@
     "accessibility": 100,
     "seo": 100,
     "bestpractice": 92,
-    "failures": [],
-    "recommendations": []
+    "failures": 27,
+    "recommendations": 110
   },
   {
     "page": "Procurement (Mobile)",
@@ -50,8 +50,8 @@
     "accessibility": 94,
     "seo": 100,
     "bestpractice": 92,
-    "failures": [],
-    "recommendations": []
+    "failures": 27,
+    "recommendations": 103
   },
   {
     "page": "Parking (Desktop)",
@@ -59,8 +59,8 @@
     "accessibility": 98,
     "seo": 96,
     "bestpractice": 100,
-    "failures": [],
-    "recommendations": []
+    "failures": 23,
+    "recommendations": 84
   },
   {
     "page": "Parking (Mobile)",
@@ -68,8 +68,8 @@
     "accessibility": 93,
     "seo": 100,
     "bestpractice": 100,
-    "failures": [],
-    "recommendations": []
+    "failures": 9,
+    "recommendations": 19
   },
   {
     "page": "Design and Construction (Desktop)",
@@ -77,8 +77,8 @@
     "accessibility": 98,
     "seo": 96,
     "bestpractice": 92,
-    "failures": [],
-    "recommendations": []
+    "failures": 26,
+    "recommendations": 90
   },
   {
     "page": "Design and Construction (Mobile)",
@@ -86,7 +86,7 @@
     "accessibility": 93,
     "seo": 100,
     "bestpractice": 92,
-    "failures": [],
-    "recommendations": []
+    "failures": 20,
+    "recommendations": 81
   }
 ]
