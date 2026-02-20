@@ -1,7 +1,7 @@
 ---
 layout: layout.njk
 title: NYS Digital Services Accessibility Automated Audit
-data: ogs.a11yAutomated
+data: ogs.a11y
 ---
 {% from '../../_includes/_components.njk' import dataCard with context %}
 
@@ -13,7 +13,7 @@ data: ogs.a11yAutomated
 {{
     dataCard({
         title:"Automated Reports",
-        type:"a11y-lighthouse",
-        dataSource: ogs.a11yAutomated
+        type:"a11y",
+        dataSource: ogs.a11y
     })
 }}
