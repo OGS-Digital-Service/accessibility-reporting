@@ -1,72 +1,92 @@
 [
   {
-    "page": "Homepage",
+    "page": "Homepage (Desktop)",
     "url": "https://ogs.ny.gov/",
     "accessibility": 98,
     "seo": 96,
-    "bestpractice": 85
+    "bestpractice": 85,
+    "failures": [],
+    "recommendations": []
   },
   {
     "page": "Homepage (Mobile)",
     "url": "https://ogs.ny.gov/",
     "accessibility": 93,
     "seo": 96,
-    "bestpractice": 85
+    "bestpractice": 85,
+    "failures": [],
+    "recommendations": []
   },
   {
-    "page": "Procurement Contracts",
+    "page": "Procurement Contracts (Desktop)",
     "url": "https://ogs.ny.gov/procurement/ogs-centralized-contracts-list",
     "accessibility": 100,
     "seo": 100,
-    "bestpractice": 92
+    "bestpractice": 92,
+    "failures": [],
+    "recommendations": []
   },
   {
     "page": "Procurement Contracts (Mobile)",
     "url": "https://ogs.ny.gov/procurement/ogs-centralized-contracts-list",
     "accessibility": 95,
     "seo": 100,
-    "bestpractice": 92
+    "bestpractice": 92,
+    "failures": [],
+    "recommendations": []
   },
   {
-    "page": "Procurement",
+    "page": "Procurement (Desktop)",
     "url": "https://ogs.ny.gov/procurement",
     "accessibility": 100,
     "seo": 100,
-    "bestpractice": 92
+    "bestpractice": 92,
+    "failures": [],
+    "recommendations": []
   },
   {
     "page": "Procurement (Mobile)",
     "url": "https://ogs.ny.gov/procurement",
     "accessibility": 94,
     "seo": 100,
-    "bestpractice": 92
+    "bestpractice": 92,
+    "failures": [],
+    "recommendations": []
   },
   {
-    "page": "Parking",
+    "page": "Parking (Desktop)",
     "url": "https://ogs.ny.gov/parking",
     "accessibility": 98,
     "seo": 96,
-    "bestpractice": 100
+    "bestpractice": 100,
+    "failures": [],
+    "recommendations": []
   },
   {
     "page": "Parking (Mobile)",
     "url": "https://ogs.ny.gov/parking",
     "accessibility": 93,
     "seo": 100,
-    "bestpractice": 100
+    "bestpractice": 100,
+    "failures": [],
+    "recommendations": []
   },
   {
-    "page": "Design and Construction",
+    "page": "Design and Construction (Desktop)",
     "url": "https://ogs.ny.gov/design-construction",
     "accessibility": 98,
     "seo": 96,
-    "bestpractice": 92
+    "bestpractice": 92,
+    "failures": [],
+    "recommendations": []
   },
   {
     "page": "Design and Construction (Mobile)",
     "url": "https://ogs.ny.gov/design-construction",
     "accessibility": 93,
     "seo": 100,
-    "bestpractice": 92
+    "bestpractice": 92,
+    "failures": [],
+    "recommendations": []
   }
 ]
