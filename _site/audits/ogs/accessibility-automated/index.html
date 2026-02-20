@@ -46,67 +46,128 @@
 
 
 
-
-    <section class="items-center flex flex-col">
-        <h2 class="">Automated Reports
+    
+    <section class="items-center flex flex-col bg-slate-300">
+        <h2 class="">Automated Testing Accessibility Reports 
         </h2>
+        <p class="w-2/3 p-4 leading-relaxed">For each of the five pages that were testing using automated tools there are two separate report cards. In each report card there is a list of total failures and recommendations as well as links to view the full expanded reports that have additional details. Google Lighthouse Scores for Accessibility, SEO, Best Practices are listed at the bottom of each card for reference. The NYS Digital Service cautions that automated tools can produce conflicting results, often leading clients to believe that their WCAG conformance status is significantly better than it is. Automated testing in any form can only check for about 30% of real WCAG failures. A manual audit by a trained professional is the only way to address many substantive accessibility issues. </p>
 
         
             <div class="flex flex-col m-4 p-4 w-2/3 border border-solid border-primary-core-blue rounded-lg bg-light-gray">
 
-                <h2 class="text-2xl">Homepage</h2>
-
+                <h2 class="text-2xl">Homepage (Desktop)</h2>
+                
                 <div class="flex">
-
-                    <div class="w-1/2">
-                        <h3 class="text-xl mb-1"> Automated Accessibility Reports from Google Lighthouse</h3>
-                        <p class="text-sm m-0">
+                    <div class="w-1/2 flex flex-col">
+                        <h3 class="text-xl mb-1">Automated Accessibility Reports</h3>
+                        <p class="text-sm">
                             <em>for https://ogs.ny.gov/
                             </em>
                         </p>
-                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3" href="/reports/">Full Mobile Report <span class="sr-only">for Homepage</span></a>
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/IBM/ibm-ogs-homepage.html">
+                            IBM Equal Access Full Report <span class="sr-only">for Homepage (Desktop)</span>
+                        </a>
+
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/pa11y/ogs-ny-gov-desktop.html">
+                            Pa11y Full Report <span class="sr-only">for Homepage (Desktop)</span>
+                        </a>
+
+                         <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/pa11y/index.html">
+                            Pa11y Summary for All Pages<span class="sr-only">for all pages</span>
+                        </a>
+
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/lighthouse/ogs.ny.gov-desktop.html">
+                            Google Lighthouse Full Report <span class="sr-only">for Homepage (Desktop)</span
+                        ></a>
+
                     </div>
 
-                    <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
-                        <p class="flex flex-col items-center text-center">
-                            <span class="font-bold text-xl">Mobile Score</span>
-                            <span 
-                                class="
-                                    text-4xl font-medium 
+                    <div class="w-1/2">
+                        <h3 class="text-xl mb-1 text-center">Total Number of Automated WCAG Failures</h3>
+                        <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
+                            <p class="flex flex-col items-center text-center">
+                                <span class="font-bold text-xl"> Failures</span>
+                                <span 
+                                    class="
+                                        text-4xl font-medium"
+                                >
+
+                                    17
+
                                     
+
+                                </span>
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
+                            <p class="flex flex-col items-center text-center">
+                                <span class="font-bold text-xl">Recommended / Needs Review
+                                </span>
+                                <span 
+                                    class="
+                                        text-4xl font-medium"
+                                >
+
+                                    91
+
+                                    
+
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <h3 class="text-xl mb-1">Google Lighthouse Summary Scores </h3>
+                    <div class="flex justify-evenly w-full">
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">Accessibility</h4>
+                            <div 
+                                class="
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                     text-success-green 
                                     
                                     
                                     "
                             >
+                                    98
+                                    <span class="text-xl text-black"> / 100 </span>
 
-                                
-
-                                <span class="text-lg"> / 100 </span>
-
-                            </span>
-                        </p>
-                    </div>
-
-                    <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
-                        <p class="flex flex-col items-center">
-                            <span class="font-bold text-xl">Desktop Score</span>
-                            <span 
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">SEO</h4>
+                            <div 
                                 class="
-                                    text-4xl font-medium 
-                                    
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                     text-success-green 
                                     
                                     
                                     "
                             >
+                                    96
+                                    <span class="text-xl text-black"> / 100 </span>
 
-                                
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">Best Practices</h4>
+                            <div 
+                                class="
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                    
+                                     text-warning-orange 
+                                    
+                                    "
+                            >
+                                    85
+                                    <span class="text-xl text-black"> / 100 </span>
 
-                                <span class="text-lg"> / 100 </span>
-
-                            </span>
-                        </p>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
 
@@ -114,117 +175,237 @@
             <div class="flex flex-col m-4 p-4 w-2/3 border border-solid border-primary-core-blue rounded-lg bg-light-gray">
 
                 <h2 class="text-2xl">Homepage (Mobile)</h2>
-
+                
                 <div class="flex">
-
-                    <div class="w-1/2">
-                        <h3 class="text-xl mb-1"> Automated Accessibility Reports from Google Lighthouse</h3>
-                        <p class="text-sm m-0">
+                    <div class="w-1/2 flex flex-col">
+                        <h3 class="text-xl mb-1">Automated Accessibility Reports</h3>
+                        <p class="text-sm">
                             <em>for https://ogs.ny.gov/
                             </em>
                         </p>
-                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3" href="/reports/">Full Mobile Report <span class="sr-only">for Homepage (Mobile)</span></a>
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/IBM/ibm-ogs-homepage-mobile.html">
+                            IBM Equal Access Full Report <span class="sr-only">for Homepage (Mobile)</span>
+                        </a>
+
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/pa11y/ogs-ny-gov-mobile.html">
+                            Pa11y Full Report <span class="sr-only">for Homepage (Mobile)</span>
+                        </a>
+
+                         <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/pa11y/index.html">
+                            Pa11y Summary for All Pages<span class="sr-only">for all pages</span>
+                        </a>
+
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/lighthouse/ogs.ny.gov-mobile.html">
+                            Google Lighthouse Full Report <span class="sr-only">for Homepage (Mobile)</span
+                        ></a>
+
                     </div>
 
-                    <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
-                        <p class="flex flex-col items-center text-center">
-                            <span class="font-bold text-xl">Mobile Score</span>
-                            <span 
-                                class="
-                                    text-4xl font-medium 
+                    <div class="w-1/2">
+                        <h3 class="text-xl mb-1 text-center">Total Number of Automated WCAG Failures</h3>
+                        <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
+                            <p class="flex flex-col items-center text-center">
+                                <span class="font-bold text-xl"> Failures</span>
+                                <span 
+                                    class="
+                                        text-4xl font-medium"
+                                >
+
+                                    17
+
                                     
+
+                                </span>
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
+                            <p class="flex flex-col items-center text-center">
+                                <span class="font-bold text-xl">Recommended / Needs Review
+                                </span>
+                                <span 
+                                    class="
+                                        text-4xl font-medium"
+                                >
+
+                                    75
+
+                                    
+
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <h3 class="text-xl mb-1">Google Lighthouse Summary Scores </h3>
+                    <div class="flex justify-evenly w-full">
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">Accessibility</h4>
+                            <div 
+                                class="
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                     text-success-green 
                                     
                                     
                                     "
                             >
+                                    93
+                                    <span class="text-xl text-black"> / 100 </span>
 
-                                
-
-                                <span class="text-lg"> / 100 </span>
-
-                            </span>
-                        </p>
-                    </div>
-
-                    <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
-                        <p class="flex flex-col items-center">
-                            <span class="font-bold text-xl">Desktop Score</span>
-                            <span 
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">SEO</h4>
+                            <div 
                                 class="
-                                    text-4xl font-medium 
-                                    
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                     text-success-green 
                                     
                                     
                                     "
                             >
+                                    96
+                                    <span class="text-xl text-black"> / 100 </span>
 
-                                
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">Best Practices</h4>
+                            <div 
+                                class="
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                    
+                                     text-warning-orange 
+                                    
+                                    "
+                            >
+                                    85
+                                    <span class="text-xl text-black"> / 100 </span>
 
-                                <span class="text-lg"> / 100 </span>
-
-                            </span>
-                        </p>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
 
         
             <div class="flex flex-col m-4 p-4 w-2/3 border border-solid border-primary-core-blue rounded-lg bg-light-gray">
 
-                <h2 class="text-2xl">Procurement Contracts</h2>
-
+                <h2 class="text-2xl">Procurement Contracts (Desktop)</h2>
+                
                 <div class="flex">
-
-                    <div class="w-1/2">
-                        <h3 class="text-xl mb-1"> Automated Accessibility Reports from Google Lighthouse</h3>
-                        <p class="text-sm m-0">
+                    <div class="w-1/2 flex flex-col">
+                        <h3 class="text-xl mb-1">Automated Accessibility Reports</h3>
+                        <p class="text-sm">
                             <em>for https://ogs.ny.gov/procurement/ogs-centralized-contracts-list
                             </em>
                         </p>
-                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3" href="/reports/">Full Mobile Report <span class="sr-only">for Procurement Contracts</span></a>
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/IBM/ibm-ogs-contracts.html">
+                            IBM Equal Access Full Report <span class="sr-only">for Procurement Contracts (Desktop)</span>
+                        </a>
+
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/pa11y/ogs-ny-gov-procurement-ogs-centralized-contracts-list-desktop.html">
+                            Pa11y Full Report <span class="sr-only">for Procurement Contracts (Desktop)</span>
+                        </a>
+
+                         <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/pa11y/index.html">
+                            Pa11y Summary for All Pages<span class="sr-only">for all pages</span>
+                        </a>
+
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/lighthouse/ogs.ny.gov-ogs-centralized-contracts-list-desktop.html">
+                            Google Lighthouse Full Report <span class="sr-only">for Procurement Contracts (Desktop)</span
+                        ></a>
+
                     </div>
 
-                    <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
-                        <p class="flex flex-col items-center text-center">
-                            <span class="font-bold text-xl">Mobile Score</span>
-                            <span 
-                                class="
-                                    text-4xl font-medium 
+                    <div class="w-1/2">
+                        <h3 class="text-xl mb-1 text-center">Total Number of Automated WCAG Failures</h3>
+                        <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
+                            <p class="flex flex-col items-center text-center">
+                                <span class="font-bold text-xl"> Failures</span>
+                                <span 
+                                    class="
+                                        text-4xl font-medium"
+                                >
+
+                                    22
+
                                     
+
+                                </span>
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
+                            <p class="flex flex-col items-center text-center">
+                                <span class="font-bold text-xl">Recommended / Needs Review
+                                </span>
+                                <span 
+                                    class="
+                                        text-4xl font-medium"
+                                >
+
+                                    38
+
+                                    
+
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <h3 class="text-xl mb-1">Google Lighthouse Summary Scores </h3>
+                    <div class="flex justify-evenly w-full">
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">Accessibility</h4>
+                            <div 
+                                class="
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                     text-success-green 
                                     
                                     
                                     "
                             >
+                                    100
+                                    <span class="text-xl text-black"> / 100 </span>
 
-                                
-
-                                <span class="text-lg"> / 100 </span>
-
-                            </span>
-                        </p>
-                    </div>
-
-                    <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
-                        <p class="flex flex-col items-center">
-                            <span class="font-bold text-xl">Desktop Score</span>
-                            <span 
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">SEO</h4>
+                            <div 
                                 class="
-                                    text-4xl font-medium 
-                                    
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                     text-success-green 
                                     
                                     
                                     "
                             >
+                                    100
+                                    <span class="text-xl text-black"> / 100 </span>
 
-                                
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">Best Practices</h4>
+                            <div 
+                                class="
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                     text-success-green 
+                                    
+                                    
+                                    "
+                            >
+                                    92
+                                    <span class="text-xl text-black"> / 100 </span>
 
-                                <span class="text-lg"> / 100 </span>
-
-                            </span>
-                        </p>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
 
@@ -232,117 +413,237 @@
             <div class="flex flex-col m-4 p-4 w-2/3 border border-solid border-primary-core-blue rounded-lg bg-light-gray">
 
                 <h2 class="text-2xl">Procurement Contracts (Mobile)</h2>
-
+                
                 <div class="flex">
-
-                    <div class="w-1/2">
-                        <h3 class="text-xl mb-1"> Automated Accessibility Reports from Google Lighthouse</h3>
-                        <p class="text-sm m-0">
+                    <div class="w-1/2 flex flex-col">
+                        <h3 class="text-xl mb-1">Automated Accessibility Reports</h3>
+                        <p class="text-sm">
                             <em>for https://ogs.ny.gov/procurement/ogs-centralized-contracts-list
                             </em>
                         </p>
-                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3" href="/reports/">Full Mobile Report <span class="sr-only">for Procurement Contracts (Mobile)</span></a>
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/IBM/ibm-ogs-contracts-mobile.html">
+                            IBM Equal Access Full Report <span class="sr-only">for Procurement Contracts (Mobile)</span>
+                        </a>
+
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/pa11y/ogs-ny-gov-procurement-ogs-centralized-contracts-list-mobile.html">
+                            Pa11y Full Report <span class="sr-only">for Procurement Contracts (Mobile)</span>
+                        </a>
+
+                         <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/pa11y/index.html">
+                            Pa11y Summary for All Pages<span class="sr-only">for all pages</span>
+                        </a>
+
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/lighthouse/ogs.ny.gov-ogs-centralized-contracts-list-mobile.html">
+                            Google Lighthouse Full Report <span class="sr-only">for Procurement Contracts (Mobile)</span
+                        ></a>
+
                     </div>
 
-                    <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
-                        <p class="flex flex-col items-center text-center">
-                            <span class="font-bold text-xl">Mobile Score</span>
-                            <span 
-                                class="
-                                    text-4xl font-medium 
+                    <div class="w-1/2">
+                        <h3 class="text-xl mb-1 text-center">Total Number of Automated WCAG Failures</h3>
+                        <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
+                            <p class="flex flex-col items-center text-center">
+                                <span class="font-bold text-xl"> Failures</span>
+                                <span 
+                                    class="
+                                        text-4xl font-medium"
+                                >
+
+                                    36
+
                                     
+
+                                </span>
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
+                            <p class="flex flex-col items-center text-center">
+                                <span class="font-bold text-xl">Recommended / Needs Review
+                                </span>
+                                <span 
+                                    class="
+                                        text-4xl font-medium"
+                                >
+
+                                    126
+
+                                    
+
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <h3 class="text-xl mb-1">Google Lighthouse Summary Scores </h3>
+                    <div class="flex justify-evenly w-full">
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">Accessibility</h4>
+                            <div 
+                                class="
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                     text-success-green 
                                     
                                     
                                     "
                             >
+                                    95
+                                    <span class="text-xl text-black"> / 100 </span>
 
-                                
-
-                                <span class="text-lg"> / 100 </span>
-
-                            </span>
-                        </p>
-                    </div>
-
-                    <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
-                        <p class="flex flex-col items-center">
-                            <span class="font-bold text-xl">Desktop Score</span>
-                            <span 
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">SEO</h4>
+                            <div 
                                 class="
-                                    text-4xl font-medium 
-                                    
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                     text-success-green 
                                     
                                     
                                     "
                             >
+                                    100
+                                    <span class="text-xl text-black"> / 100 </span>
 
-                                
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">Best Practices</h4>
+                            <div 
+                                class="
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                     text-success-green 
+                                    
+                                    
+                                    "
+                            >
+                                    92
+                                    <span class="text-xl text-black"> / 100 </span>
 
-                                <span class="text-lg"> / 100 </span>
-
-                            </span>
-                        </p>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
 
         
             <div class="flex flex-col m-4 p-4 w-2/3 border border-solid border-primary-core-blue rounded-lg bg-light-gray">
 
-                <h2 class="text-2xl">Procurement</h2>
-
+                <h2 class="text-2xl">Procurement (Desktop)</h2>
+                
                 <div class="flex">
-
-                    <div class="w-1/2">
-                        <h3 class="text-xl mb-1"> Automated Accessibility Reports from Google Lighthouse</h3>
-                        <p class="text-sm m-0">
+                    <div class="w-1/2 flex flex-col">
+                        <h3 class="text-xl mb-1">Automated Accessibility Reports</h3>
+                        <p class="text-sm">
                             <em>for https://ogs.ny.gov/procurement
                             </em>
                         </p>
-                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3" href="/reports/">Full Mobile Report <span class="sr-only">for Procurement</span></a>
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/IBM/ibm-ogs-procurement.html">
+                            IBM Equal Access Full Report <span class="sr-only">for Procurement (Desktop)</span>
+                        </a>
+
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/pa11y/ogs-ny-gov-procurement-desktop.html">
+                            Pa11y Full Report <span class="sr-only">for Procurement (Desktop)</span>
+                        </a>
+
+                         <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/pa11y/index.html">
+                            Pa11y Summary for All Pages<span class="sr-only">for all pages</span>
+                        </a>
+
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/lighthouse/ogs.ny.gov-procurement-desktop.html">
+                            Google Lighthouse Full Report <span class="sr-only">for Procurement (Desktop)</span
+                        ></a>
+
                     </div>
 
-                    <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
-                        <p class="flex flex-col items-center text-center">
-                            <span class="font-bold text-xl">Mobile Score</span>
-                            <span 
-                                class="
-                                    text-4xl font-medium 
+                    <div class="w-1/2">
+                        <h3 class="text-xl mb-1 text-center">Total Number of Automated WCAG Failures</h3>
+                        <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
+                            <p class="flex flex-col items-center text-center">
+                                <span class="font-bold text-xl"> Failures</span>
+                                <span 
+                                    class="
+                                        text-4xl font-medium"
+                                >
+
+                                    27
+
                                     
+
+                                </span>
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
+                            <p class="flex flex-col items-center text-center">
+                                <span class="font-bold text-xl">Recommended / Needs Review
+                                </span>
+                                <span 
+                                    class="
+                                        text-4xl font-medium"
+                                >
+
+                                    110
+
+                                    
+
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <h3 class="text-xl mb-1">Google Lighthouse Summary Scores </h3>
+                    <div class="flex justify-evenly w-full">
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">Accessibility</h4>
+                            <div 
+                                class="
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                     text-success-green 
                                     
                                     
                                     "
                             >
+                                    100
+                                    <span class="text-xl text-black"> / 100 </span>
 
-                                
-
-                                <span class="text-lg"> / 100 </span>
-
-                            </span>
-                        </p>
-                    </div>
-
-                    <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
-                        <p class="flex flex-col items-center">
-                            <span class="font-bold text-xl">Desktop Score</span>
-                            <span 
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">SEO</h4>
+                            <div 
                                 class="
-                                    text-4xl font-medium 
-                                    
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                     text-success-green 
                                     
                                     
                                     "
                             >
+                                    100
+                                    <span class="text-xl text-black"> / 100 </span>
 
-                                
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">Best Practices</h4>
+                            <div 
+                                class="
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                     text-success-green 
+                                    
+                                    
+                                    "
+                            >
+                                    92
+                                    <span class="text-xl text-black"> / 100 </span>
 
-                                <span class="text-lg"> / 100 </span>
-
-                            </span>
-                        </p>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
 
@@ -350,117 +651,237 @@
             <div class="flex flex-col m-4 p-4 w-2/3 border border-solid border-primary-core-blue rounded-lg bg-light-gray">
 
                 <h2 class="text-2xl">Procurement (Mobile)</h2>
-
+                
                 <div class="flex">
-
-                    <div class="w-1/2">
-                        <h3 class="text-xl mb-1"> Automated Accessibility Reports from Google Lighthouse</h3>
-                        <p class="text-sm m-0">
+                    <div class="w-1/2 flex flex-col">
+                        <h3 class="text-xl mb-1">Automated Accessibility Reports</h3>
+                        <p class="text-sm">
                             <em>for https://ogs.ny.gov/procurement
                             </em>
                         </p>
-                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3" href="/reports/">Full Mobile Report <span class="sr-only">for Procurement (Mobile)</span></a>
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/IBM/ibm-ogs-procurement-mobile.html">
+                            IBM Equal Access Full Report <span class="sr-only">for Procurement (Mobile)</span>
+                        </a>
+
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/pa11y/ogs-ny-gov-procurement-mobile.html">
+                            Pa11y Full Report <span class="sr-only">for Procurement (Mobile)</span>
+                        </a>
+
+                         <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/pa11y/index.html">
+                            Pa11y Summary for All Pages<span class="sr-only">for all pages</span>
+                        </a>
+
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/lighthouse/ogs.ny.gov-procurement-mobile.html">
+                            Google Lighthouse Full Report <span class="sr-only">for Procurement (Mobile)</span
+                        ></a>
+
                     </div>
 
-                    <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
-                        <p class="flex flex-col items-center text-center">
-                            <span class="font-bold text-xl">Mobile Score</span>
-                            <span 
-                                class="
-                                    text-4xl font-medium 
+                    <div class="w-1/2">
+                        <h3 class="text-xl mb-1 text-center">Total Number of Automated WCAG Failures</h3>
+                        <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
+                            <p class="flex flex-col items-center text-center">
+                                <span class="font-bold text-xl"> Failures</span>
+                                <span 
+                                    class="
+                                        text-4xl font-medium"
+                                >
+
+                                    27
+
                                     
+
+                                </span>
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
+                            <p class="flex flex-col items-center text-center">
+                                <span class="font-bold text-xl">Recommended / Needs Review
+                                </span>
+                                <span 
+                                    class="
+                                        text-4xl font-medium"
+                                >
+
+                                    103
+
+                                    
+
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <h3 class="text-xl mb-1">Google Lighthouse Summary Scores </h3>
+                    <div class="flex justify-evenly w-full">
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">Accessibility</h4>
+                            <div 
+                                class="
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                     text-success-green 
                                     
                                     
                                     "
                             >
+                                    94
+                                    <span class="text-xl text-black"> / 100 </span>
 
-                                
-
-                                <span class="text-lg"> / 100 </span>
-
-                            </span>
-                        </p>
-                    </div>
-
-                    <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
-                        <p class="flex flex-col items-center">
-                            <span class="font-bold text-xl">Desktop Score</span>
-                            <span 
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">SEO</h4>
+                            <div 
                                 class="
-                                    text-4xl font-medium 
-                                    
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                     text-success-green 
                                     
                                     
                                     "
                             >
+                                    100
+                                    <span class="text-xl text-black"> / 100 </span>
 
-                                
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">Best Practices</h4>
+                            <div 
+                                class="
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                     text-success-green 
+                                    
+                                    
+                                    "
+                            >
+                                    92
+                                    <span class="text-xl text-black"> / 100 </span>
 
-                                <span class="text-lg"> / 100 </span>
-
-                            </span>
-                        </p>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
 
         
             <div class="flex flex-col m-4 p-4 w-2/3 border border-solid border-primary-core-blue rounded-lg bg-light-gray">
 
-                <h2 class="text-2xl">Parking</h2>
-
+                <h2 class="text-2xl">Parking (Desktop)</h2>
+                
                 <div class="flex">
-
-                    <div class="w-1/2">
-                        <h3 class="text-xl mb-1"> Automated Accessibility Reports from Google Lighthouse</h3>
-                        <p class="text-sm m-0">
+                    <div class="w-1/2 flex flex-col">
+                        <h3 class="text-xl mb-1">Automated Accessibility Reports</h3>
+                        <p class="text-sm">
                             <em>for https://ogs.ny.gov/parking
                             </em>
                         </p>
-                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3" href="/reports/">Full Mobile Report <span class="sr-only">for Parking</span></a>
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/IBM/ibm-ogs-parking.html">
+                            IBM Equal Access Full Report <span class="sr-only">for Parking (Desktop)</span>
+                        </a>
+
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/pa11y/ogs-ny-gov-parking-desktop.html">
+                            Pa11y Full Report <span class="sr-only">for Parking (Desktop)</span>
+                        </a>
+
+                         <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/pa11y/index.html">
+                            Pa11y Summary for All Pages<span class="sr-only">for all pages</span>
+                        </a>
+
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/lighthouse/ogs.ny.gov-parking-desktop.html">
+                            Google Lighthouse Full Report <span class="sr-only">for Parking (Desktop)</span
+                        ></a>
+
                     </div>
 
-                    <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
-                        <p class="flex flex-col items-center text-center">
-                            <span class="font-bold text-xl">Mobile Score</span>
-                            <span 
-                                class="
-                                    text-4xl font-medium 
+                    <div class="w-1/2">
+                        <h3 class="text-xl mb-1 text-center">Total Number of Automated WCAG Failures</h3>
+                        <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
+                            <p class="flex flex-col items-center text-center">
+                                <span class="font-bold text-xl"> Failures</span>
+                                <span 
+                                    class="
+                                        text-4xl font-medium"
+                                >
+
+                                    23
+
                                     
+
+                                </span>
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
+                            <p class="flex flex-col items-center text-center">
+                                <span class="font-bold text-xl">Recommended / Needs Review
+                                </span>
+                                <span 
+                                    class="
+                                        text-4xl font-medium"
+                                >
+
+                                    84
+
+                                    
+
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <h3 class="text-xl mb-1">Google Lighthouse Summary Scores </h3>
+                    <div class="flex justify-evenly w-full">
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">Accessibility</h4>
+                            <div 
+                                class="
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                     text-success-green 
                                     
                                     
                                     "
                             >
+                                    98
+                                    <span class="text-xl text-black"> / 100 </span>
 
-                                
-
-                                <span class="text-lg"> / 100 </span>
-
-                            </span>
-                        </p>
-                    </div>
-
-                    <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
-                        <p class="flex flex-col items-center">
-                            <span class="font-bold text-xl">Desktop Score</span>
-                            <span 
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">SEO</h4>
+                            <div 
                                 class="
-                                    text-4xl font-medium 
-                                    
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                     text-success-green 
                                     
                                     
                                     "
                             >
+                                    96
+                                    <span class="text-xl text-black"> / 100 </span>
 
-                                
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">Best Practices</h4>
+                            <div 
+                                class="
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                     text-success-green 
+                                    
+                                    
+                                    "
+                            >
+                                    100
+                                    <span class="text-xl text-black"> / 100 </span>
 
-                                <span class="text-lg"> / 100 </span>
-
-                            </span>
-                        </p>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
 
@@ -468,117 +889,237 @@
             <div class="flex flex-col m-4 p-4 w-2/3 border border-solid border-primary-core-blue rounded-lg bg-light-gray">
 
                 <h2 class="text-2xl">Parking (Mobile)</h2>
-
+                
                 <div class="flex">
-
-                    <div class="w-1/2">
-                        <h3 class="text-xl mb-1"> Automated Accessibility Reports from Google Lighthouse</h3>
-                        <p class="text-sm m-0">
+                    <div class="w-1/2 flex flex-col">
+                        <h3 class="text-xl mb-1">Automated Accessibility Reports</h3>
+                        <p class="text-sm">
                             <em>for https://ogs.ny.gov/parking
                             </em>
                         </p>
-                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3" href="/reports/">Full Mobile Report <span class="sr-only">for Parking (Mobile)</span></a>
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/IBM/">
+                            IBM Equal Access Full Report <span class="sr-only">for Parking (Mobile)</span>
+                        </a>
+
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/pa11y/ogs-ny-gov-parking-mobile.html">
+                            Pa11y Full Report <span class="sr-only">for Parking (Mobile)</span>
+                        </a>
+
+                         <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/pa11y/index.html">
+                            Pa11y Summary for All Pages<span class="sr-only">for all pages</span>
+                        </a>
+
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/lighthouse/ogs.ny.gov-parking-mobile.html">
+                            Google Lighthouse Full Report <span class="sr-only">for Parking (Mobile)</span
+                        ></a>
+
                     </div>
 
-                    <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
-                        <p class="flex flex-col items-center text-center">
-                            <span class="font-bold text-xl">Mobile Score</span>
-                            <span 
-                                class="
-                                    text-4xl font-medium 
+                    <div class="w-1/2">
+                        <h3 class="text-xl mb-1 text-center">Total Number of Automated WCAG Failures</h3>
+                        <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
+                            <p class="flex flex-col items-center text-center">
+                                <span class="font-bold text-xl"> Failures</span>
+                                <span 
+                                    class="
+                                        text-4xl font-medium"
+                                >
+
+                                    9
+
                                     
+
+                                </span>
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
+                            <p class="flex flex-col items-center text-center">
+                                <span class="font-bold text-xl">Recommended / Needs Review
+                                </span>
+                                <span 
+                                    class="
+                                        text-4xl font-medium"
+                                >
+
+                                    19
+
+                                    
+
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <h3 class="text-xl mb-1">Google Lighthouse Summary Scores </h3>
+                    <div class="flex justify-evenly w-full">
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">Accessibility</h4>
+                            <div 
+                                class="
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                     text-success-green 
                                     
                                     
                                     "
                             >
+                                    93
+                                    <span class="text-xl text-black"> / 100 </span>
 
-                                
-
-                                <span class="text-lg"> / 100 </span>
-
-                            </span>
-                        </p>
-                    </div>
-
-                    <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
-                        <p class="flex flex-col items-center">
-                            <span class="font-bold text-xl">Desktop Score</span>
-                            <span 
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">SEO</h4>
+                            <div 
                                 class="
-                                    text-4xl font-medium 
-                                    
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                     text-success-green 
                                     
                                     
                                     "
                             >
+                                    100
+                                    <span class="text-xl text-black"> / 100 </span>
 
-                                
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">Best Practices</h4>
+                            <div 
+                                class="
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                     text-success-green 
+                                    
+                                    
+                                    "
+                            >
+                                    100
+                                    <span class="text-xl text-black"> / 100 </span>
 
-                                <span class="text-lg"> / 100 </span>
-
-                            </span>
-                        </p>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
 
         
             <div class="flex flex-col m-4 p-4 w-2/3 border border-solid border-primary-core-blue rounded-lg bg-light-gray">
 
-                <h2 class="text-2xl">Design and Construction</h2>
-
+                <h2 class="text-2xl">Design and Construction (Desktop)</h2>
+                
                 <div class="flex">
-
-                    <div class="w-1/2">
-                        <h3 class="text-xl mb-1"> Automated Accessibility Reports from Google Lighthouse</h3>
-                        <p class="text-sm m-0">
+                    <div class="w-1/2 flex flex-col">
+                        <h3 class="text-xl mb-1">Automated Accessibility Reports</h3>
+                        <p class="text-sm">
                             <em>for https://ogs.ny.gov/design-construction
                             </em>
                         </p>
-                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3" href="/reports/">Full Mobile Report <span class="sr-only">for Design and Construction</span></a>
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/IBM/ibm-ogs-design-construction.html">
+                            IBM Equal Access Full Report <span class="sr-only">for Design and Construction (Desktop)</span>
+                        </a>
+
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/pa11y/ogs-ny-gov-design-construction-desktop.html">
+                            Pa11y Full Report <span class="sr-only">for Design and Construction (Desktop)</span>
+                        </a>
+
+                         <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/pa11y/index.html">
+                            Pa11y Summary for All Pages<span class="sr-only">for all pages</span>
+                        </a>
+
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/lighthouse/ogs.ny.gov-design-construction-desktop.html">
+                            Google Lighthouse Full Report <span class="sr-only">for Design and Construction (Desktop)</span
+                        ></a>
+
                     </div>
 
-                    <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
-                        <p class="flex flex-col items-center text-center">
-                            <span class="font-bold text-xl">Mobile Score</span>
-                            <span 
-                                class="
-                                    text-4xl font-medium 
+                    <div class="w-1/2">
+                        <h3 class="text-xl mb-1 text-center">Total Number of Automated WCAG Failures</h3>
+                        <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
+                            <p class="flex flex-col items-center text-center">
+                                <span class="font-bold text-xl"> Failures</span>
+                                <span 
+                                    class="
+                                        text-4xl font-medium"
+                                >
+
+                                    26
+
                                     
+
+                                </span>
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
+                            <p class="flex flex-col items-center text-center">
+                                <span class="font-bold text-xl">Recommended / Needs Review
+                                </span>
+                                <span 
+                                    class="
+                                        text-4xl font-medium"
+                                >
+
+                                    90
+
+                                    
+
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <h3 class="text-xl mb-1">Google Lighthouse Summary Scores </h3>
+                    <div class="flex justify-evenly w-full">
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">Accessibility</h4>
+                            <div 
+                                class="
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                     text-success-green 
                                     
                                     
                                     "
                             >
+                                    98
+                                    <span class="text-xl text-black"> / 100 </span>
 
-                                
-
-                                <span class="text-lg"> / 100 </span>
-
-                            </span>
-                        </p>
-                    </div>
-
-                    <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
-                        <p class="flex flex-col items-center">
-                            <span class="font-bold text-xl">Desktop Score</span>
-                            <span 
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">SEO</h4>
+                            <div 
                                 class="
-                                    text-4xl font-medium 
-                                    
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                     text-success-green 
                                     
                                     
                                     "
                             >
+                                    96
+                                    <span class="text-xl text-black"> / 100 </span>
 
-                                
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">Best Practices</h4>
+                            <div 
+                                class="
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                     text-success-green 
+                                    
+                                    
+                                    "
+                            >
+                                    92
+                                    <span class="text-xl text-black"> / 100 </span>
 
-                                <span class="text-lg"> / 100 </span>
-
-                            </span>
-                        </p>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
 
@@ -586,58 +1127,118 @@
             <div class="flex flex-col m-4 p-4 w-2/3 border border-solid border-primary-core-blue rounded-lg bg-light-gray">
 
                 <h2 class="text-2xl">Design and Construction (Mobile)</h2>
-
+                
                 <div class="flex">
-
-                    <div class="w-1/2">
-                        <h3 class="text-xl mb-1"> Automated Accessibility Reports from Google Lighthouse</h3>
-                        <p class="text-sm m-0">
+                    <div class="w-1/2 flex flex-col">
+                        <h3 class="text-xl mb-1">Automated Accessibility Reports</h3>
+                        <p class="text-sm">
                             <em>for https://ogs.ny.gov/design-construction
                             </em>
                         </p>
-                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3" href="/reports/">Full Mobile Report <span class="sr-only">for Design and Construction (Mobile)</span></a>
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/IBM/ibm-ogs-design-construction-mobile.html">
+                            IBM Equal Access Full Report <span class="sr-only">for Design and Construction (Mobile)</span>
+                        </a>
+
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/pa11y/ogs-ny-gov-design-construction-mobile.html">
+                            Pa11y Full Report <span class="sr-only">for Design and Construction (Mobile)</span>
+                        </a>
+
+                         <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/pa11y/index.html">
+                            Pa11y Summary for All Pages<span class="sr-only">for all pages</span>
+                        </a>
+
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/lighthouse/ogs.ny.gov-design-construction-mobile.html">
+                            Google Lighthouse Full Report <span class="sr-only">for Design and Construction (Mobile)</span
+                        ></a>
+
                     </div>
 
-                    <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
-                        <p class="flex flex-col items-center text-center">
-                            <span class="font-bold text-xl">Mobile Score</span>
-                            <span 
-                                class="
-                                    text-4xl font-medium 
+                    <div class="w-1/2">
+                        <h3 class="text-xl mb-1 text-center">Total Number of Automated WCAG Failures</h3>
+                        <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
+                            <p class="flex flex-col items-center text-center">
+                                <span class="font-bold text-xl"> Failures</span>
+                                <span 
+                                    class="
+                                        text-4xl font-medium"
+                                >
+
+                                    20
+
                                     
+
+                                </span>
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
+                            <p class="flex flex-col items-center text-center">
+                                <span class="font-bold text-xl">Recommended / Needs Review
+                                </span>
+                                <span 
+                                    class="
+                                        text-4xl font-medium"
+                                >
+
+                                    81
+
+                                    
+
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <h3 class="text-xl mb-1">Google Lighthouse Summary Scores </h3>
+                    <div class="flex justify-evenly w-full">
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">Accessibility</h4>
+                            <div 
+                                class="
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                     text-success-green 
                                     
                                     
                                     "
                             >
+                                    93
+                                    <span class="text-xl text-black"> / 100 </span>
 
-                                
-
-                                <span class="text-lg"> / 100 </span>
-
-                            </span>
-                        </p>
-                    </div>
-
-                    <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
-                        <p class="flex flex-col items-center">
-                            <span class="font-bold text-xl">Desktop Score</span>
-                            <span 
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">SEO</h4>
+                            <div 
                                 class="
-                                    text-4xl font-medium 
-                                    
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                     text-success-green 
                                     
                                     
                                     "
                             >
+                                    100
+                                    <span class="text-xl text-black"> / 100 </span>
 
-                                
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">Best Practices</h4>
+                            <div 
+                                class="
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                     text-success-green 
+                                    
+                                    
+                                    "
+                            >
+                                    92
+                                    <span class="text-xl text-black"> / 100 </span>
 
-                                <span class="text-lg"> / 100 </span>
-
-                            </span>
-                        </p>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
 

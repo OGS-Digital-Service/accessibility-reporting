@@ -1,6 +1,6 @@
 module.exports = {
   content: [
-    '!./_site/results/*.html',
+    '!./_site/reports/**/**/*.html',
      './_site/*.html',
     './_site/**/*.html'
     

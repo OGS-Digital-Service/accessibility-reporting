@@ -1,0 +1,154 @@
+{# {% set a11yMetrics = {
+    first_contentful_paint: {
+        label: "First Contentful Paint",
+        unit: "s",
+        description: "Time until the first piece of content is rendered on screen."
+    },
+    largest_contentful_paint: {
+        label: "Largest Contentful Paint",
+        unit: "s",
+        description: "How long it takes for the largest visible element to load."
+    },
+    total_blocking_time: {
+        label: "Total Blocking Time",
+        unit: "ms",
+        description: "Sum of all time periods between First Contentful Paint and Time to Interactive where task length exceeded 50ms."
+    },
+    cumulative_layout_shift: {
+        label: "Cumulative Layout Shift",
+        unit: "",
+        description: "How much the page layout shifts during loading."
+    },
+    speed_index: {
+        label: "Speed Index",
+        unit: "s",
+        description: "How quickly the contents of a page are visibly populated."
+    }
+} %} #}
+    <section class="items-center flex flex-col bg-slate-300">
+        <h2 class="">{{params.title}} 
+        </h2>
+        <p class="w-2/3 p-4 leading-relaxed">{{params.summary}}</p>
+
+        {% for data in cardData %}
+            <div class="flex flex-col m-4 p-4 w-2/3 border border-solid border-primary-core-blue rounded-lg bg-light-gray">
+
+                <h2 class="text-2xl">{{data.page}}</h2>
+                
+                <div class="flex">{# links and total failures cars area  #}
+                    <div class="w-1/2 flex flex-col">
+                        <h3 class="text-xl mb-1">Automated Accessibility Reports</h3>
+                        <p class="text-sm">
+                            <em>for {{data.url}}
+                            </em>
+                        </p>
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/IBM/{{data.IBM}}">
+                            IBM Equal Access Full Report <span class="sr-only">for {{data.page}}</span>
+                        </a>
+
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/pa11y/{{data.pally}}">
+                            Pa11y Full Report <span class="sr-only">for {{data.page}}</span>
+                        </a>
+
+                         <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/pa11y/index.html">
+                            Pa11y Summary for All Pages<span class="sr-only">for all pages</span>
+                        </a>
+
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/lighthouse/{{data.lighthouse}}">
+                            Google Lighthouse Full Report <span class="sr-only">for {{data.page}}</span
+                        ></a>
+
+                    </div>
+
+                    <div class="w-1/2">
+                        <h3 class="text-xl mb-1 text-center">Total Number of Automated WCAG Failures</h3>
+                        <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
+                            <p class="flex flex-col items-center text-center">
+                                <span class="font-bold text-xl"> Failures</span>
+                                <span 
+                                    class="
+                                        text-4xl font-medium"
+                                >
+
+                                    {{data.failures}}
+
+                                    
+
+                                </span>
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center px-8 py-4 m-4 border border-solid border-primary-core-blue rounded-xl bg-white">
+                            <p class="flex flex-col items-center text-center">
+                                <span class="font-bold text-xl">Recommended / Needs Review
+                                </span>
+                                <span 
+                                    class="
+                                        text-4xl font-medium"
+                                >
+
+                                    {{data.recommendations}}
+
+                                    
+
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col items-center">{# lighthouse summary scores area #}
+                    <h3 class="text-xl mb-1">Google Lighthouse Summary Scores </h3>
+                    <div class="flex justify-evenly w-full">
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">Accessibility</h4>
+                            <div 
+                                class="
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                    {% if data.accessibility >= 89 %} text-success-green {% endif %}
+                                    {% if data.accessibility >= 50 and data.accessibility <= 88 %} text-warning-orange {% endif %}
+                                    {% if data.accessibility >= 0 and data.accessibility <= 49 %} text-dark-red-alert {% endif %}
+                                    "
+                            >
+                                    {{data.accessibility}}
+                                    <span class="text-xl text-black"> / 100 </span>
+
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">SEO</h4>
+                            <div 
+                                class="
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                    {% if data.seo >= 89 %} text-success-green {% endif %}
+                                    {% if data.seo >= 50 and data.seo <= 88 %} text-warning-orange {% endif %}
+                                    {% if data.seo >= 0 and data.seo <= 49 %} text-dark-red-alert {% endif %}
+                                    "
+                            >
+                                    {{data.seo}}
+                                    <span class="text-xl text-black"> / 100 </span>
+
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-lg text-black">Best Practices</h4>
+                            <div 
+                                class="
+                                    text-4xl font-medium border border-solid p-2 rounded-xl bg-gray-200
+                                    {% if data.bestpractice >= 89 %} text-success-green {% endif %}
+                                    {% if data.bestpractice >= 50 and data.bestpractice <= 88 %} text-warning-orange {% endif %}
+                                    {% if data.bestpractice >= 0 and data.bestpractice <= 49 %} text-dark-red-alert {% endif %}
+                                    "
+                            >
+                                    {{data.bestpractice}}
+                                    <span class="text-xl text-black"> / 100 </span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+
+    </section>
