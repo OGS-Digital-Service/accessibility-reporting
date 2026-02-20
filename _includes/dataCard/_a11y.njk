@@ -1,4 +1,4 @@
-{% set a11yMetrics = {
+{# {% set a11yMetrics = {
     first_contentful_paint: {
         label: "First Contentful Paint",
         unit: "s",
@@ -24,10 +24,11 @@
         unit: "s",
         description: "How quickly the contents of a page are visibly populated."
     }
-} %}
+} %} #}
     <section class="items-center flex flex-col bg-slate-300">
         <h2 class="">{{params.title}} 
         </h2>
+        <p class="w-2/3 p-4 leading-relaxed">{{params.summary}}</p>
 
         {% for data in cardData %}
             <div class="flex flex-col m-4 p-4 w-2/3 border border-solid border-primary-core-blue rounded-lg bg-light-gray">
