@@ -41,15 +41,19 @@
                             <em>for {{data.url}}
                             </em>
                         </p>
-                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/{{data.mobilelink}}">
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/pa11y/{data.mobilelink}}">
                             IBM Equal Access Full Report <span class="sr-only">for {{data.page}}</span>
                         </a>
 
-                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/{{data.mobilelink}}">
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/pa11y/{{data.mobilelink}}">
                             Pa11y Full Report <span class="sr-only">for {{data.page}}</span>
                         </a>
 
-                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/{{data.mobilelink}}">
+                         <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/pa11y/index.html">
+                            Pa11y Summary for All Pages<span class="sr-only">for all pages</span>
+                        </a>
+
+                        <a class="border border-solid rounded-xl bg-primary-core-blue text-white p-3 my-1" href="/reports/accessibility/pa11y/{{data.mobilelink}}">
                             Google Lighthouse Full Report <span class="sr-only">for {{data.page}}</span
                         ></a>
 
@@ -65,7 +69,7 @@
                                         text-4xl font-medium"
                                 >
 
-                                    {{data.mobile.performance_score}}
+                                    {{data.failures}}
 
                                     
 
@@ -81,7 +85,7 @@
                                         text-4xl font-medium"
                                 >
 
-                                    {{data.mobile.performance_score}}
+                                    {{data.recommendations}}
 
                                     
 
