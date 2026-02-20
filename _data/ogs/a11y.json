@@ -6,7 +6,10 @@
     "seo": 96,
     "bestpractice": 85,
     "failures": 17,
-    "recommendations": 91
+    "recommendations": 91,
+    "IBM": "ibm-ogs-homepage.html",
+    "lighthouse": "ogs.ny.gov-desktop.html",
+    "pally": "ogs-ny-gov-desktop.html"
   },
   {
     "page": "Homepage (Mobile)",
@@ -15,7 +18,10 @@
     "seo": 96,
     "bestpractice": 85,
     "failures": 17,
-    "recommendations": 75
+    "recommendations": 75,
+    "IBM": "ibm-ogs-homepage-mobile.html",
+    "lighthouse": "ogs.ny.gov-mobile.html",
+    "pally": "ogs-ny-gov-mobile.html"
   },
   {
     "page": "Procurement Contracts (Desktop)",
@@ -24,7 +30,10 @@
     "seo": 100,
     "bestpractice": 92,
     "failures": 22,
-    "recommendations": 38
+    "recommendations": 38,
+    "IBM": "ibm-ogs-contracts.html",
+    "lighthouse": "ogs.ny.gov-ogs-centralized-contracts-list-desktop.html",
+    "pally": "ogs-ny-gov-procurement-ogs-centralized-contracts-list-desktop.html"
   },
   {
     "page": "Procurement Contracts (Mobile)",
@@ -33,7 +42,10 @@
     "seo": 100,
     "bestpractice": 92,
     "failures": 36,
-    "recommendations": 126
+    "recommendations": 126,
+    "IBM": "ibm-ogs-contracts-mobile.html",
+    "lighthouse": "ogs.ny.gov-ogs-centralized-contracts-list-mobile.html",
+    "pally": "ogs-ny-gov-procurement-ogs-centralized-contracts-list-mobile.html"
   },
   {
     "page": "Procurement (Desktop)",
@@ -42,7 +54,10 @@
     "seo": 100,
     "bestpractice": 92,
     "failures": 27,
-    "recommendations": 110
+    "recommendations": 110,
+    "IBM": "ibm-ogs-procurement.html",
+    "lighthouse": "ogs.ny.gov-procurement-desktop.html",
+    "pally": "ogs-ny-gov-procurement-desktop.html"
   },
   {
     "page": "Procurement (Mobile)",
@@ -51,7 +66,10 @@
     "seo": 100,
     "bestpractice": 92,
     "failures": 27,
-    "recommendations": 103
+    "recommendations": 103,
+    "IBM": "ibm-ogs-procurement-mobile.html",
+    "lighthouse": "ogs.ny.gov-procurement-mobile.html",
+    "pally": "ogs-ny-gov-procurement-mobile.html"
   },
   {
     "page": "Parking (Desktop)",
@@ -60,7 +78,10 @@
     "seo": 96,
     "bestpractice": 100,
     "failures": 23,
-    "recommendations": 84
+    "recommendations": 84,
+    "IBM": "ibm-ogs-parking.html",
+    "lighthouse": "ogs.ny.gov-parking-desktop.html",
+    "pally": "ogs-ny-gov-parking-desktop.html"
   },
   {
     "page": "Parking (Mobile)",
@@ -69,7 +90,10 @@
     "seo": 100,
     "bestpractice": 100,
     "failures": 9,
-    "recommendations": 19
+    "recommendations": 19,
+    "IBM": null,
+    "lighthouse": "ogs.ny.gov-parking-mobile.html",
+    "pally": "ogs-ny-gov-parking-mobile.html"
   },
   {
     "page": "Design and Construction (Desktop)",
@@ -78,7 +102,10 @@
     "seo": 96,
     "bestpractice": 92,
     "failures": 26,
-    "recommendations": 90
+    "recommendations": 90,
+    "IBM": "ibm-ogs-design-construction.html",
+    "lighthouse": "ogs.ny.gov-design-construction-desktop.html",
+    "pally": "ogs-ny-gov-design-construction-desktop.html"
   },
   {
     "page": "Design and Construction (Mobile)",
@@ -87,6 +114,9 @@
     "seo": 100,
     "bestpractice": 92,
     "failures": 20,
-    "recommendations": 81
+    "recommendations": 81,
+    "IBM": "ibm-ogs-design-construction-mobile.html",
+    "lighthouse": "ogs.ny.gov-design-construction-mobile.html",
+    "pally": "ogs-ny-gov-design-construction-mobile.html"
   }
 ]
