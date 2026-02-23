@@ -5,15 +5,16 @@ data: ogs.performance
 ---
 {% from '../../_includes/_components.njk' import dataCard with context %}
 
-<h1 class="text-3xl"> Performance Data </h1>
+<h1 class="text-3xl"> Performance Data for OGS.ny.gov</h1>
 
 <p>
     </p>
 
 {{
     dataCard({
-        title:"Automated Reports",
+        title:"Automated Performance Reports",
         type:"performance",
-        dataSource: ogs.performance
+        dataSource: ogs.performance,
+        summary: "These reports represent a point-in-time analysis of several contributing factors to overall website performance. These tests were run using Google Lighthouse against both the desktop and mobile views of the 5 pages that were sampled. Devices were throttled to simulate a 4G loading experience. A continuous reporting environment is in progress to track performance over time. "
     })
 }}
