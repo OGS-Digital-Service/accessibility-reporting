@@ -3,12 +3,16 @@ layout: layout.njk
 title: NYS Digital Services Performance Audit
 data: ogs.performance
 ---
-{% from '../../_includes/_components.njk' import dataCard with context %}
+{% from '../../_includes/_components.njk' import hero, dataCard with context %}
 
-<h1 class="text-3xl"> Performance Data for OGS.ny.gov</h1>
-
-<p>
-    </p>
+{{ hero({
+    title: "Automated Performance Accessibility Reports",
+    description:"for OGS.ny.gov",
+    image:"",
+    headline:"",
+    date:""
+    })
+}}
 
 {{
     dataCard({

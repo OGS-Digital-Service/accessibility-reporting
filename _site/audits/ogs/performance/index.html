@@ -21,24 +21,160 @@
     <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
     <link href="/css/normalize.css" rel="stylesheet">
 <link href="/css/tailwind.css" rel="stylesheet">
+<link href="/css/digital-service-components.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="/js/nysds-utilities.js"></script>
 <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+      :root {
+          --primary-core-blue: #154973;
+          --secondary-core-blue: #457AA5;
+          --link-blue: #004DD1;
+          --tertiary-core-blue: #EFF6FB;
+          --quaternary-blue: #007AC2;
+          --core-accent-yellow: #FACE00;
+          --yellow-alert: #FFE396;
+          --black: #000000;
+          --darkest-gray: #242424;
+          --dark-gray: #62666A;
+          --mid-gray: #D0D0CE;
+          --light-gray: #EDEDED;
+          --white: #FFFFFF;
+          --dark-red-alert: #B32E31;
+          --light-red-alert: #FEC3C3;
+          --success-green: #329d08;
+          --warning-orange: #d4820c;
+        }
+    </style>
     <title>NYS Digital Services Performance Audit</title>
   </head>
   <body class="">
   <a href="#main-site-content-for-skiplink" class="sr-only focus:not-sr-only text-blue-700 underline">Skip to Main Content</a>
-    
-    
+      
+      <section class="nysds-unav" aria-labelledby="trustbar-statement">
+
+    <a href="https://ny.gov" class="nysds-unav-trust-link">
+        <span class="nysds-state-logo" aria-hidden="true"></span>
+        <span class="sr-only">New York State Homepage</span>
+    </a>
+
+    <div class="nysds-trust-identifier" id="trustbar-statement"> An Official Website of New York State </div>
+
+</section>
+ 
+         <nav class="nysds-global-nav" 
+     aria-labelledby="nysds-global-nav-label"
+     x-data="{ 
+                dropdownMenu: false,
+                mobileOpen: false,
+                closeIcon: false
+                }"  
+                
+     @click.outside="mobileOpen = false, closeIcon = false"
+     @keydown.escape.document="mobileOpen = false, closeIcon = false"
+     >
+    <span class="sr-only" id="nysds-global-nav-label"> main website navigation </span>
+    <div class="nysds-global-name-container">
+        <h1 class="nysds-global-site-name">
+            <a href="/" class="nysds-global-home-link">
+                NYS Digital First Standards Report Cards
+            </a>
+        </h1>
+        
+        <button class="nysds-global-mobile-menu"
+                @click="mobileOpen = ! mobileOpen, closeIcon = ! closeIcon"
+                aria-controls="nygov-nav-menu"
+                :aria-expanded="mobileOpen" 
+        >
+            <span class="nysds-global-menu-icon" x-show="! closeIcon"></span>
+            <span class="nysds-global-close-icon" x-show="closeIcon" x-cloak></span>
+            <span class="sr-only"> Toggle Website Navigation </span>
+        </button>
+        
+    </div>
+
+    <div class="nysds-global-nav-container"
+        :class="window.innerWidth < 1280 &&  mobileOpen ? '!flex' : ''"
+         x-cloak
+         id="nygov-nav-menu"  
+    >
+        <ul class="nysds-global-link-list"
+        >
+            
+                <li class="nysds-global-list-item"
+                    x-data="{
+                                dropdown: false
+                            }"
+                    >
+                    
+
+                        
+                        <button class="nysds-global-button nysds-global-link "  
+                            @click="dropdown = ! dropdown"
+                            :aria-expanded="dropdown"
+                            aria-controls="nysds-global-dropdown-menu1"
+                            @click.outside="dropdown=false"
+                            > 
+                            Agency Audits 
+                            <span class="nysds-global-caret-icon" :class="! dropdown ? '' : 'nysds-rotate-180'" ></span>
+                        </button>
+                        
+
+                        
+                        <ul class="nysds-global-link-sub-list" 
+                            @keydown.escape.document="dropdown=false"
+                            @focusin.outside="dropdown=false"
+                            x-show="dropdown"
+                            x-cloak 
+                            x-ref="submenu1" 
+                            id="nysds-global-dropdown-menu1"
+                            >
+                        
+                        
+                            <li class="nysds-global-list-child-item">
+                                <a href="/audits/ogs" class="nysds-global-sublink nysds-global-link" 
+                                >
+                                    <span class="nysds-global-turn-arrow-icon" aria-hidden="true"></span>
+                                    OGS.ny.gov
+                                </a>
+                                
+                            </li>
+                        
+                        </ul>
+                    
+                </li>
+            
+        </ul>
+    </div>
+</nav> 
     <main class="" id="main-site-content-for-skiplink">
     
 
-<h1 class="text-3xl"> Performance Data for OGS.ny.gov</h1>
+<style>
+.nysds-hero-background-image {
+    
+    background-color: #457AA5;
+    min-height: 275px;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+</style>
+<div class="nysds-hero-container nysds-hero-background-image ">
+    <div class="nysds-hero-information">
+        
+        
+            <h2 class="nysds-hero-title">Automated Performance Accessibility Reports</h2>
+        
+            <p class="nysds-hero-description">for OGS.ny.gov</p>
+        
+        
+    </div>
+</div>
 
-<p>
-    </p>
 
 
 
@@ -1846,6 +1982,13 @@
     </section>
 
     </main>
-    
+    <footer class="nysds-footer">
+    <h2 class="nysds-footer-site-name">New York State Digital <span class="nysds-footer-separator" aria-hidden="true"></span></h2>
+    <ul class="nysds-footer-list">
+        
+            <li ><a href="https://ny.gov" class="nysds-footer-links">NY.gov</a></li>
+        
+    </ul>
+</footer>
   </body>
 </html>

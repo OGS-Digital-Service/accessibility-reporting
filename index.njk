@@ -1,16 +1,34 @@
 ---
 layout: layout.njk
-title: NYS Digital Services
+title: NYS Digital Services 
 data:
 ---
-{% from './_includes/_components.njk' import hero,categorytiles,card,bio,textarea,highlight,iconframe,quicklinks,feedback, dataCard  %}
+{% from './_includes/_components.njk' import hero, cards, dataCard  %}
 
-Audits
-<ul>
-  <li><a href="/audits/ogs/accessibility-automated/" >Accessibility Automated Audit</a></li>
-  <li><a href="/audits/ogs/accessibility-manual/" >Accessibility Manual Audit</a></li>
-  <li><a href="/audits/ogs/performance/" >Performance Automated Audit</a></li>
-</ul>
+{{ hero({
+    title: "Accessibility & Performance Data",
+    description:"",
+    image:"",
+    headline:"",
+    date:""
+    })
+}}
+
+{{
+    cards({
+        heading:"Digital First Standards Audits",
+        intro:"",
+        cards:[
+            {
+                title:"Office of General Services Audit",
+                content:"Automated accessibility and performance data results for ogs.ny.gov digital first standards.",
+                link:"/audits/ogs",
+                image:"https://www.governor.ny.gov/sites/default/files/2024-08/Governor%27sSeal1280x512_1.jpg",
+                imagealt:"new york state seal"
+            }
+        ]
+    })
+}}
 
 
 

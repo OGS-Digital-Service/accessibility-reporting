@@ -1,0 +1,42 @@
+---
+layout: layout.njk
+title: NYS Digital Services
+parmalink: ""
+---
+{% from '../../_includes/_components.njk' import hero, cards, dataCard  %}
+
+{{ hero({
+    title: "OGS.ny.gov Accessibility & Performance Data",
+    description:"",
+    image:"",
+    headline:"",
+    date:""
+    })
+}}
+
+
+{{
+    cards({
+        heading:"Digital First Standards Audits",
+        intro:"",
+        cards:[
+            {
+                title:"Automated Accessibility Results",
+                content:"Automated accessibility data results for ogs.ny.gov digital first standards.",
+                link:"/audits/ogs/accessibility-automated"
+            },
+            {
+                title:"Automated Performance Results",
+                content:"Automated performance data results for ogs.ny.gov digital first standards.",
+                link:"/audits/ogs/performance"
+            },
+            {
+                title:"Manual Accessibility Results",
+                content:"COMING SOON...",
+                link:"/audits/ogs"
+            }
+        ]
+    })
+}}
+
+
