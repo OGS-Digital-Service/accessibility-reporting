@@ -48,6 +48,8 @@ Notes and commands for running the tests.
 
 ### IBM equal access
 - these tests are configured using puppeteer and run from a js file included in the test_configurations
+- to run a test, use "node {{path to test file}}" don't run the npm ibm test since we're not using the aceconfig or achecker.yml 
+- manually move the test files into their _results directory (fix this at some point)
 - currently the overally summary number is totally borked, no idea why it doesn't match the browser runs. The violations, needs review, and recommendations are still correct.
 
 ### automated tool effectiveness
