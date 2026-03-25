@@ -1,59 +1,82 @@
- npx lighthouse --only-categories performance --output-path=https:wwwnygovservicesapply-professional-licenseMOBILE.html -- https://https://www.ny.gov/services/apply-professional-license 
+
+
+
+
+
+    
+
+    
+    
+        
+        npx lighthouse --only-categories accessibility, best-practices, seo --output-path=https:wwwnygovservicesapply-professional-licenseMOBILE.html -- https://www.ny.gov/services/apply-professional-license 
         
         
-       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories performance --output-path=https:wwwnygovservicesapply-professional-licenseDESKTOP.html -- https://https://www.ny.gov/services/apply-professional-license
+       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories accessibility, best-practices, seo --output-path=https:wwwnygovservicesapply-professional-licenseDESKTOP.html -- https://www.ny.gov/services/apply-professional-license
        
-        npx lighthouse --only-categories performance --output-path=https:wwwnygovprograms911-assistance-programsMOBILE.html -- https://https://www.ny.gov/programs/911-assistance-programs 
+        npx lighthouse --only-categories accessibility, best-practices, seo --output-path=https:wwwnygovprograms911-assistance-programsMOBILE.html -- https://www.ny.gov/programs/911-assistance-programs 
         
         
-       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories performance --output-path=https:wwwnygovprograms911-assistance-programsDESKTOP.html -- https://https://www.ny.gov/programs/911-assistance-programs
+       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories accessibility, best-practices, seo --output-path=https:wwwnygovprograms911-assistance-programsDESKTOP.html -- https://www.ny.gov/programs/911-assistance-programs
        
-        npx lighthouse --only-categories performance --output-path=https:wwwnygovprogramsabortion-new-york-state-know-your-rightsMOBILE.html -- https://https://www.ny.gov/programs/abortion-new-york-state-know-your-rights 
+        npx lighthouse --only-categories accessibility, best-practices, seo --output-path=https:wwwnygovprogramsabortion-new-york-state-know-your-rightsMOBILE.html -- https://www.ny.gov/programs/abortion-new-york-state-know-your-rights 
         
         
-       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories performance --output-path=https:wwwnygovprogramsabortion-new-york-state-know-your-rightsDESKTOP.html -- https://https://www.ny.gov/programs/abortion-new-york-state-know-your-rights
+       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories accessibility, best-practices, seo --output-path=https:wwwnygovprogramsabortion-new-york-state-know-your-rightsDESKTOP.html -- https://www.ny.gov/programs/abortion-new-york-state-know-your-rights
        
-        npx lighthouse --only-categories performance --output-path=https:wwwnygovnew-york-state-womens-suffrage-commissionhistoric-new-york-suffragistsMOBILE.html -- https://https://www.ny.gov/new-york-state-womens-suffrage-commission/historic-new-york-suffragists 
+        npx lighthouse --only-categories accessibility, best-practices, seo --output-path=https:wwwnygovnew-york-state-womens-suffrage-commissionhistoric-new-york-suffragistsMOBILE.html -- https://www.ny.gov/new-york-state-womens-suffrage-commission/historic-new-york-suffragists 
         
         
-       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories performance --output-path=https:wwwnygovnew-york-state-womens-suffrage-commissionhistoric-new-york-suffragistsDESKTOP.html -- https://https://www.ny.gov/new-york-state-womens-suffrage-commission/historic-new-york-suffragists
+       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories accessibility, best-practices, seo --output-path=https:wwwnygovnew-york-state-womens-suffrage-commissionhistoric-new-york-suffragistsDESKTOP.html -- https://www.ny.gov/new-york-state-womens-suffrage-commission/historic-new-york-suffragists
        
-        npx lighthouse --only-categories performance --output-path=https:wwwnygovprogramsnew-york-and-crisis-lsraelMOBILE.html -- https://https://www.ny.gov/programs/new-york-and-crisis-lsrael 
+        npx lighthouse --only-categories accessibility, best-practices, seo --output-path=https:wwwnygovprogramsnew-york-and-crisis-lsraelMOBILE.html -- https://www.ny.gov/programs/new-york-and-crisis-lsrael 
         
         
-       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories performance --output-path=https:wwwnygovprogramsnew-york-and-crisis-lsraelDESKTOP.html -- https://https://www.ny.gov/programs/new-york-and-crisis-lsrael
+       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories accessibility, best-practices, seo --output-path=https:wwwnygovprogramsnew-york-and-crisis-lsraelDESKTOP.html -- https://www.ny.gov/programs/new-york-and-crisis-lsrael
        
-        npx lighthouse --only-categories performance --output-path=https:wwwnygovservicesapply-snapMOBILE.html -- https://https://www.ny.gov/services/apply-snap 
+        npx lighthouse --only-categories accessibility, best-practices, seo --output-path=https:wwwnygovservicesapply-snapMOBILE.html -- https://www.ny.gov/services/apply-snap 
         
         
-       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories performance --output-path=https:wwwnygovservicesapply-snapDESKTOP.html -- https://https://www.ny.gov/services/apply-snap
+       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories accessibility, best-practices, seo --output-path=https:wwwnygovservicesapply-snapDESKTOP.html -- https://www.ny.gov/services/apply-snap
        
-        npx lighthouse --only-categories performance --output-path=https:wwwnygovprogramsnew-york-state-community-commission-reparations-remediesMOBILE.html -- https://https://www.ny.gov/programs/new-york-state-community-commission-reparations-remedies 
+        npx lighthouse --only-categories accessibility, best-practices, seo --output-path=https:wwwnygovprogramsnew-york-state-community-commission-reparations-remediesMOBILE.html -- https://www.ny.gov/programs/new-york-state-community-commission-reparations-remedies 
         
         
-       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories performance --output-path=https:wwwnygovprogramsnew-york-state-community-commission-reparations-remediesDESKTOP.html -- https://https://www.ny.gov/programs/new-york-state-community-commission-reparations-remedies
+       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories accessibility, best-practices, seo --output-path=https:wwwnygovprogramsnew-york-state-community-commission-reparations-remediesDESKTOP.html -- https://www.ny.gov/programs/new-york-state-community-commission-reparations-remedies
        
-        npx lighthouse --only-categories performance --output-path=https:wwwnygovprogramsopen-foil-nyMOBILE.html -- https://https://www.ny.gov/programs/open-foil-ny 
+        npx lighthouse --only-categories accessibility, best-practices, seo --output-path=https:wwwnygovprogramsopen-foil-nyMOBILE.html -- https://www.ny.gov/programs/open-foil-ny 
         
         
-       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories performance --output-path=https:wwwnygovprogramsopen-foil-nyDESKTOP.html -- https://https://www.ny.gov/programs/open-foil-ny
+       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories accessibility, best-practices, seo --output-path=https:wwwnygovprogramsopen-foil-nyDESKTOP.html -- https://www.ny.gov/programs/open-foil-ny
        
-        npx lighthouse --only-categories performance --output-path=https:wwwnygovservicesMOBILE.html -- https://https://www.ny.gov/services 
+        npx lighthouse --only-categories accessibility, best-practices, seo --output-path=https:wwwnygovservicesMOBILE.html -- https://www.ny.gov/services 
         
         
-       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories performance --output-path=https:wwwnygovservicesDESKTOP.html -- https://https://www.ny.gov/services
+       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories accessibility, best-practices, seo --output-path=https:wwwnygovservicesDESKTOP.html -- https://www.ny.gov/services
        
-        npx lighthouse --only-categories performance --output-path=https:wwwnygovservicesapply-federal-disability-benefitsMOBILE.html -- https://https://www.ny.gov/services/apply-federal-disability-benefits 
+        npx lighthouse --only-categories accessibility, best-practices, seo --output-path=https:wwwnygovservicesapply-federal-disability-benefitsMOBILE.html -- https://www.ny.gov/services/apply-federal-disability-benefits 
         
         
-       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories performance --output-path=https:wwwnygovservicesapply-federal-disability-benefitsDESKTOP.html -- https://https://www.ny.gov/services/apply-federal-disability-benefits
+       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories accessibility, best-practices, seo --output-path=https:wwwnygovservicesapply-federal-disability-benefitsDESKTOP.html -- https://www.ny.gov/services/apply-federal-disability-benefits
        
-        npx lighthouse --only-categories performance --output-path=https:wwwnygovprogramsphone-free-schools-implementation-resourcesMOBILE.html -- https://https://www.ny.gov/programs/phone-free-schools-implementation-resources 
+        npx lighthouse --only-categories accessibility, best-practices, seo --output-path=https:wwwnygovprogramsphone-free-schools-implementation-resourcesMOBILE.html -- https://www.ny.gov/programs/phone-free-schools-implementation-resources 
         
         
-       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories performance --output-path=https:wwwnygovprogramsphone-free-schools-implementation-resourcesDESKTOP.html -- https://https://www.ny.gov/programs/phone-free-schools-implementation-resources
+       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories accessibility, best-practices, seo --output-path=https:wwwnygovprogramsphone-free-schools-implementation-resourcesDESKTOP.html -- https://www.ny.gov/programs/phone-free-schools-implementation-resources
        
-        npx lighthouse --only-categories performance --output-path=https:wwwnygovprogramsenough-enough-combating-sexual-assault-college-campusesMOBILE.html -- https://https://www.ny.gov/programs/enough-enough-combating-sexual-assault-college-campuses 
+        npx lighthouse --only-categories accessibility, best-practices, seo --output-path=https:wwwnygovprogramsenough-enough-combating-sexual-assault-college-campusesMOBILE.html -- https://www.ny.gov/programs/enough-enough-combating-sexual-assault-college-campuses 
         
         
-       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories performance --output-path=https:wwwnygovprogramsenough-enough-combating-sexual-assault-college-campusesDESKTOP.html -- https://https://www.ny.gov/programs/enough-enough-combating-sexual-assault-college-campuses
+       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories accessibility, best-practices, seo --output-path=https:wwwnygovprogramsenough-enough-combating-sexual-assault-college-campusesDESKTOP.html -- https://www.ny.gov/programs/enough-enough-combating-sexual-assault-college-campuses
+       
+        npx lighthouse --only-categories accessibility, best-practices, seo --output-path=https:wwwnygovMOBILE.html -- https://www.ny.gov/ 
+        
+        
+       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories accessibility, best-practices, seo --output-path=https:wwwnygovDESKTOP.html -- https://www.ny.gov/
+       
+    
+
+    
+
+
+    
+
