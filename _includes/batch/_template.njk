@@ -14,14 +14,14 @@
         {% for link in params.url %}
             
             {
-            "url": "https://{{link.link}}?mobile",
+            "url": "{{link.link}}?mobile",
             "viewport": {
                 "width": 360,
                 "height": 480
             }
             },
             {
-            "url": "https://{{link.link}}/?desktop",
+            "url": "{{link.link}}/?desktop",
             "viewport": {
                 "width": 1280,
                 "height": 1024
