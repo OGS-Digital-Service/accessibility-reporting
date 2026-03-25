@@ -1,0 +1,223 @@
+{
+    "defaults": {
+      "chromeLaunchConfig": {
+            "ignoreHTTPSErrors": true
+        },
+      "reporters": [
+        [
+          "pa11y-ci-reporter-html",
+          { "destination": "./pa11y-reports", "includeZeroIssues": true }
+        ],
+        "cli"
+      ],
+      
+      "runners": ["axe", "htmlcs"],
+      "includeNotices": false,
+      "includeWarnings": true,
+      "standard": "WCAG2AA"
+    },
+    "urls": [
+            {
+            "url": "https://https://www.ny.gov/services/apply-professional-license?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "https://https://www.ny.gov/services/apply-professional-license/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://https://www.ny.gov/programs/911-assistance-programs?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "https://https://www.ny.gov/programs/911-assistance-programs/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://https://www.ny.gov/programs/abortion-new-york-state-know-your-rights?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "https://https://www.ny.gov/programs/abortion-new-york-state-know-your-rights/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://https://www.ny.gov/new-york-state-womens-suffrage-commission/historic-new-york-suffragists?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "https://https://www.ny.gov/new-york-state-womens-suffrage-commission/historic-new-york-suffragists/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://https://www.ny.gov/programs/new-york-and-crisis-lsrael?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "https://https://www.ny.gov/programs/new-york-and-crisis-lsrael/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://https://www.ny.gov/services/apply-snap?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "https://https://www.ny.gov/services/apply-snap/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://https://www.ny.gov/programs/new-york-state-community-commission-reparations-remedies?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "https://https://www.ny.gov/programs/new-york-state-community-commission-reparations-remedies/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://https://www.ny.gov/programs/open-foil-ny?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "https://https://www.ny.gov/programs/open-foil-ny/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://https://www.ny.gov/services?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "https://https://www.ny.gov/services/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://https://www.ny.gov/services/apply-federal-disability-benefits?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "https://https://www.ny.gov/services/apply-federal-disability-benefits/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://https://www.ny.gov/programs/phone-free-schools-implementation-resources?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "https://https://www.ny.gov/programs/phone-free-schools-implementation-resources/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://https://www.ny.gov/programs/enough-enough-combating-sexual-assault-college-campuses?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "https://https://www.ny.gov/programs/enough-enough-combating-sexual-assault-college-campuses/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            }
+
+  ]
+  }

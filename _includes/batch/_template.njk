@@ -10,7 +10,7 @@
     {% endif %}
 
 
-    {% if params.test == 'a11y' %}
+    {% if params.test == 'pa11y' %}
         {% for link in params.url %}
             
             {
@@ -32,4 +32,40 @@
     {% endif %}
 
 
+    {%if params.test == "ibm" %}
+     {% for link in params.url %}
+    // PAGE {{loop.index}} of {{loop.length}}
+        try {
+            // Navigate to the page you want to scan
+            await page.goto('{{link.link}}', { waitUntil: "networkidle2" }); // Replace with your target URL
+            await page.setViewport({
+                width: 1500,
+                height: 1000,
+                deviceScaleFactor: 1,
+                });
 
+            await page.screenshot({ path: 'IBMresults/{{link.title}}.png' });
+            // Perform the accessibility scan using aChecker.getCompliance
+            // The aChecker.getCompliance API expects the Puppeteer Page object when using Puppeteer.
+            await aChecker.getCompliance(page, '{{link.title}}');
+
+            // Navigate to the page you want to scan
+            await page.goto('{{link.link}}', { waitUntil: "networkidle2" }); // Replace with your target URL
+            await page.setViewport({
+                width: 400,
+                height: 800,
+                deviceScaleFactor: 1,
+                });
+
+            await page.screenshot({ path: 'IBMresults/{{link.title}}-mobile.png' });
+            // Perform the accessibility scan using aChecker.getCompliance
+            // The aChecker.getCompliance API expects the Puppeteer Page object when using Puppeteer.
+            await aChecker.getCompliance(page, '{{link.title}}-mobile');
+        }
+        finally {
+            // close the engine
+            await aChecker.close();
+            console.log('achecker test has completed page {{loop.index}} of {{loop.length}}')
+        };
+        {% endfor %}
+    {%endif %}
