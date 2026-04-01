@@ -37,7 +37,8 @@ Issues ranked as severe, moderate, or low should be remediated in order to promo
 Notes and commands for running the tests.
 
 ### pa11y
-- npm run pa11y 
+- npm run pa11y
+- make sure to either replace the .pa11yci file at the root with the copy of the one you want to run tests against, or path the run command to a custom .pa11yci file in the test configuration folder. 
 - figuring out the list of urls for mobile vs desktop
 
 ### lighthouse
@@ -48,11 +49,15 @@ Notes and commands for running the tests.
 
 ### IBM equal access
 - these tests are configured using puppeteer and run from a js file included in the test_configurations
+- to run a test, use "node {{path to test file}}" don't run the npm ibm test since we're not using the aceconfig or achecker.yml 
+- manually move the test files into their _results directory (fix this at some point)
 - currently the overally summary number is totally borked, no idea why it doesn't match the browser runs. The violations, needs review, and recommendations are still correct.
 
 ### automated tool effectiveness
 - https://alphagov.github.io/accessibility-tool-audit/index.html
 
+### Create Test Runners
+- Use the batch-create.njk to create test runner scripts for each type of test 
 
 ### flags for lighthouse
 - --chrome-flags='--ignore-certificate-errors' in order to run against non-https urls
@@ -60,3 +65,6 @@ Notes and commands for running the tests.
 - --output-path for <path><name>
 - helpful https://medium.com/@giezendanenner/running-lighthouse-reports-on-the-command-line-1691a1b06a56 
 
+## How to get data to display in the report cards
+- create a data file in the _data directory that the card templates can pull from.
+- create a directory for the site audited, inlcude an index, and one page for each accessibility and performance if needed.

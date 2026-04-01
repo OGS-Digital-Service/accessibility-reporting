@@ -1,27 +1,36 @@
 
 
-    {% if params.test == 'lighthouse' %}
+    {% if params.test == 'lighthouse-performance' %}
         {% for link in params.url %}
-        npx lighthouse --only-categories performance --output-path={% filter replace(".", "") %}{% filter replace("/", "") %}{{link.link}}{% endfilter %}{% endfilter %}MOBILE.html -- https://{{link.link}} 
+        npx lighthouse --only-categories performance --output-path={% filter replace(".", "") %}{% filter replace("/", "") %}{{link.link}}{% endfilter %}{% endfilter %}MOBILE.html -- {{link.link}} 
         
         
-       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories performance --output-path={% filter replace(".", "") %}{% filter replace("/", "") %}{{link.link}}{% endfilter %}{% endfilter %}DESKTOP.html -- https://{{link.link}}
+       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories performance --output-path={% filter replace(".", "") %}{% filter replace("/", "") %}{{link.link}}{% endfilter %}{% endfilter %}DESKTOP.html -- {{link.link}}
        {% endfor %}
     {% endif %}
 
+    
+    {% if params.test == 'lighthouse-a11y' %}
+        {% for link in params.url %}
+        npx lighthouse --only-categories accessibility, best-practices, seo --output-path={% filter replace(".", "") %}{% filter replace("/", "") %}{{link.link}}{% endfilter %}{% endfilter %}MOBILE.html -- {{link.link}} 
+        
+        
+       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories accessibility, best-practices, seo --output-path={% filter replace(".", "") %}{% filter replace("/", "") %}{{link.link}}{% endfilter %}{% endfilter %}DESKTOP.html -- {{link.link}}
+       {% endfor %}
+    {% endif %}
 
-    {% if params.test == 'a11y' %}
+    {% if params.test == 'pa11y' %}
         {% for link in params.url %}
             
             {
-            "url": "https://{{link.link}}?mobile",
+            "url": "{{link.link}}?mobile",
             "viewport": {
                 "width": 360,
                 "height": 480
             }
             },
             {
-            "url": "https://{{link.link}}/?desktop",
+            "url": "{{link.link}}/?desktop",
             "viewport": {
                 "width": 1280,
                 "height": 1024
@@ -32,4 +41,40 @@
     {% endif %}
 
 
+    {%if params.test == "ibm" %}
+     {% for link in params.url %}
+    // PAGE {{loop.index}} of {{loop.length}}
+        try {
+            // Navigate to the page you want to scan
+            await page.goto('{{link.link}}', { waitUntil: "networkidle2" }); // Replace with your target URL
+            await page.setViewport({
+                width: 1500,
+                height: 1000,
+                deviceScaleFactor: 1,
+                });
 
+            await page.screenshot({ path: 'IBMresults/{{link.title}}.png' });
+            // Perform the accessibility scan using aChecker.getCompliance
+            // The aChecker.getCompliance API expects the Puppeteer Page object when using Puppeteer.
+            await aChecker.getCompliance(page, '{{link.title}}');
+
+            // Navigate to the page you want to scan
+            await page.goto('{{link.link}}', { waitUntil: "networkidle2" }); // Replace with your target URL
+            await page.setViewport({
+                width: 400,
+                height: 800,
+                deviceScaleFactor: 1,
+                });
+
+            await page.screenshot({ path: 'IBMresults/{{link.title}}-mobile.png' });
+            // Perform the accessibility scan using aChecker.getCompliance
+            // The aChecker.getCompliance API expects the Puppeteer Page object when using Puppeteer.
+            await aChecker.getCompliance(page, '{{link.title}}-mobile');
+        }
+        finally {
+            // close the engine
+            await aChecker.close();
+            console.log('achecker test has completed page {{loop.index}} of {{loop.length}}')
+        };
+        {% endfor %}
+    {%endif %}
