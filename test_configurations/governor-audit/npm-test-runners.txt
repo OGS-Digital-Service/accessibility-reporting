@@ -1,0 +1,81 @@
+
+
+
+
+    
+
+    
+    
+        
+        npx lighthouse --only-categories accessibility, best-practices, seo --output-path=https:wwwgovernornygovprogramseliminating-distractions-new-york-schoolsMOBILE.html -- https://www.governor.ny.gov/programs/eliminating-distractions-new-york-schools 
+        
+        
+       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories accessibility, best-practices, seo --output-path=https:wwwgovernornygovprogramseliminating-distractions-new-york-schoolsDESKTOP.html -- https://www.governor.ny.gov/programs/eliminating-distractions-new-york-schools
+       
+        npx lighthouse --only-categories accessibility, best-practices, seo --output-path=https:wwwgovernornygovlegislationMOBILE.html -- https://www.governor.ny.gov/legislation 
+        
+        
+       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories accessibility, best-practices, seo --output-path=https:wwwgovernornygovlegislationDESKTOP.html -- https://www.governor.ny.gov/legislation
+       
+        npx lighthouse --only-categories accessibility, best-practices, seo --output-path=https:wwwgovernornygovprograms2025-state-stateMOBILE.html -- https://www.governor.ny.gov/programs/2025-state-state 
+        
+        
+       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories accessibility, best-practices, seo --output-path=https:wwwgovernornygovprograms2025-state-stateDESKTOP.html -- https://www.governor.ny.gov/programs/2025-state-state
+       
+        npx lighthouse --only-categories accessibility, best-practices, seo --output-path=https:wwwgovernornygovnewsMOBILE.html -- https://www.governor.ny.gov/news 
+        
+        
+       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories accessibility, best-practices, seo --output-path=https:wwwgovernornygovnewsDESKTOP.html -- https://www.governor.ny.gov/news
+       
+        npx lighthouse --only-categories accessibility, best-practices, seo --output-path=https:wwwgovernornygovexecutiveordersMOBILE.html -- https://www.governor.ny.gov/executiveorders 
+        
+        
+       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories accessibility, best-practices, seo --output-path=https:wwwgovernornygovexecutiveordersDESKTOP.html -- https://www.governor.ny.gov/executiveorders
+       
+        npx lighthouse --only-categories accessibility, best-practices, seo --output-path=https:wwwgovernornygovschedulegovernor-hochul-new-york-city-dutchess-county-and-albanyMOBILE.html -- https://www.governor.ny.gov/schedule/governor-hochul-new-york-city-dutchess-county-and-albany 
+        
+        
+       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories accessibility, best-practices, seo --output-path=https:wwwgovernornygovschedulegovernor-hochul-new-york-city-dutchess-county-and-albanyDESKTOP.html -- https://www.governor.ny.gov/schedule/governor-hochul-new-york-city-dutchess-county-and-albany
+       
+        npx lighthouse --only-categories accessibility, best-practices, seo --output-path=https:wwwgovernornygovnewsgovernor-hochul-announces-billion-dollar-rescue-plan-small-businesses-and-strengthen-new-yorksMOBILE.html -- https://www.governor.ny.gov/news/governor-hochul-announces-billion-dollar-rescue-plan-small-businesses-and-strengthen-new-yorks 
+        
+        
+       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories accessibility, best-practices, seo --output-path=https:wwwgovernornygovnewsgovernor-hochul-announces-billion-dollar-rescue-plan-small-businesses-and-strengthen-new-yorksDESKTOP.html -- https://www.governor.ny.gov/news/governor-hochul-announces-billion-dollar-rescue-plan-small-businesses-and-strengthen-new-yorks
+       
+        npx lighthouse --only-categories accessibility, best-practices, seo --output-path=https:wwwgovernornygovprogramsaddressing-youth-mental-health-crisis-new-yorkMOBILE.html -- https://www.governor.ny.gov/programs/addressing-youth-mental-health-crisis-new-york 
+        
+        
+       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories accessibility, best-practices, seo --output-path=https:wwwgovernornygovprogramsaddressing-youth-mental-health-crisis-new-yorkDESKTOP.html -- https://www.governor.ny.gov/programs/addressing-youth-mental-health-crisis-new-york
+       
+        npx lighthouse --only-categories accessibility, best-practices, seo --output-path=https:wwwgovernornygovnewsaudio-video-photos-b-roll-rush-transcript-governor-hochul-elected-officials-and-mta-leadershipMOBILE.html -- https://www.governor.ny.gov/news/audio-video-photos-b-roll-rush-transcript-governor-hochul-elected-officials-and-mta-leadership 
+        
+        
+       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories accessibility, best-practices, seo --output-path=https:wwwgovernornygovnewsaudio-video-photos-b-roll-rush-transcript-governor-hochul-elected-officials-and-mta-leadershipDESKTOP.html -- https://www.governor.ny.gov/news/audio-video-photos-b-roll-rush-transcript-governor-hochul-elected-officials-and-mta-leadership
+       
+        npx lighthouse --only-categories accessibility, best-practices, seo --output-path=https:wwwgovernornygovprogramsnew-penn-stationMOBILE.html -- https://www.governor.ny.gov/programs/new-penn-station 
+        
+        
+       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories accessibility, best-practices, seo --output-path=https:wwwgovernornygovprogramsnew-penn-stationDESKTOP.html -- https://www.governor.ny.gov/programs/new-penn-station
+       
+        npx lighthouse --only-categories accessibility, best-practices, seo --output-path=https:wwwgovernornygovprogramstaking-action-against-car-theftMOBILE.html -- https://www.governor.ny.gov/programs/taking-action-against-car-theft 
+        
+        
+       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories accessibility, best-practices, seo --output-path=https:wwwgovernornygovprogramstaking-action-against-car-theftDESKTOP.html -- https://www.governor.ny.gov/programs/taking-action-against-car-theft
+       
+        npx lighthouse --only-categories accessibility, best-practices, seo --output-path=https:wwwgovernornygovexecutive-orderno-58-declaring-disaster-emergency-counties-albany-bronx-columbia-greene-delawareMOBILE.html -- https://www.governor.ny.gov/executive-order/no-58-declaring-disaster-emergency-counties-albany-bronx-columbia-greene-delaware 
+        
+        
+       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories accessibility, best-practices, seo --output-path=https:wwwgovernornygovexecutive-orderno-58-declaring-disaster-emergency-counties-albany-bronx-columbia-greene-delawareDESKTOP.html -- https://www.governor.ny.gov/executive-order/no-58-declaring-disaster-emergency-counties-albany-bronx-columbia-greene-delaware
+       
+        npx lighthouse --only-categories accessibility, best-practices, seo --output-path=https:wwwgovernornygovcontentgovernor-contact-formMOBILE.html -- https://www.governor.ny.gov/content/governor-contact-form 
+        
+        
+       npx lighthouse --preset=desktop  --throttling.throughputKbps=1650 --throttling.rttMs=150  --only-categories accessibility, best-practices, seo --output-path=https:wwwgovernornygovcontentgovernor-contact-formDESKTOP.html -- https://www.governor.ny.gov/content/governor-contact-form
+       
+    
+
+    
+
+
+    
+
