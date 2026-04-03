@@ -1,4 +1,14 @@
+    const puppeteer = require('puppeteer-extra');
+    const aChecker = require('accessibility-checker');
+    const StealthPlugin = require('puppeteer-extra-plugin-stealth');
+    // add the stealth plugin
+    puppeteer.use(StealthPlugin());
 
+    (async () => {
+        const browser = await puppeteer.launch();
+        const page = await browser.newPage();
+
+     
 
 
 
@@ -455,5 +465,6 @@
             console.log('achecker test has completed page 13 of 13')
         };
         
-    
 
+        await browser.close();
+    })();
