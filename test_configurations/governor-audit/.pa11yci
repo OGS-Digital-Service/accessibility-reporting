@@ -1,0 +1,252 @@
+{
+    "defaults": {
+      "chromeLaunchConfig": {
+            "ignoreHTTPSErrors": true
+        },
+      "reporters": [
+        [
+          "pa11y-ci-reporter-html",
+          { "destination": "./pa11y-reports", "includeZeroIssues": true }
+        ],
+        "cli"
+      ],
+      
+      "runners": ["axe", "htmlcs"],
+      "includeNotices": false,
+      "includeWarnings": true,
+      "standard": "WCAG2AA"
+    },
+    "urls": [
+
+
+
+
+    
+
+    
+    
+
+    
+        
+            
+            {
+            "url": "https://www.governor.ny.gov/programs/eliminating-distractions-new-york-schools?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "https://www.governor.ny.gov/programs/eliminating-distractions-new-york-schools/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://www.governor.ny.gov/legislation?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "https://www.governor.ny.gov/legislation/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://www.governor.ny.gov/programs/2025-state-state?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "https://www.governor.ny.gov/programs/2025-state-state/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://www.governor.ny.gov/news?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "https://www.governor.ny.gov/news/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://www.governor.ny.gov/executiveorders?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "https://www.governor.ny.gov/executiveorders/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://www.governor.ny.gov/schedule/governor-hochul-new-york-city-dutchess-county-and-albany?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "https://www.governor.ny.gov/schedule/governor-hochul-new-york-city-dutchess-county-and-albany/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://www.governor.ny.gov/news/governor-hochul-announces-billion-dollar-rescue-plan-small-businesses-and-strengthen-new-yorks?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "https://www.governor.ny.gov/news/governor-hochul-announces-billion-dollar-rescue-plan-small-businesses-and-strengthen-new-yorks/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://www.governor.ny.gov/programs/addressing-youth-mental-health-crisis-new-york?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "https://www.governor.ny.gov/programs/addressing-youth-mental-health-crisis-new-york/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://www.governor.ny.gov/news/audio-video-photos-b-roll-rush-transcript-governor-hochul-elected-officials-and-mta-leadership?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "https://www.governor.ny.gov/news/audio-video-photos-b-roll-rush-transcript-governor-hochul-elected-officials-and-mta-leadership/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://www.governor.ny.gov/programs/new-penn-station?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "https://www.governor.ny.gov/programs/new-penn-station/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://www.governor.ny.gov/programs/taking-action-against-car-theft?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "https://www.governor.ny.gov/programs/taking-action-against-car-theft/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://www.governor.ny.gov/executive-order/no-58-declaring-disaster-emergency-counties-albany-bronx-columbia-greene-delaware?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "https://www.governor.ny.gov/executive-order/no-58-declaring-disaster-emergency-counties-albany-bronx-columbia-greene-delaware/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            },
+           
+         
+            
+            {
+            "url": "https://www.governor.ny.gov/content/governor-contact-form?mobile",
+            "viewport": {
+                "width": 360,
+                "height": 480
+            }
+            },
+            {
+            "url": "https://www.governor.ny.gov/content/governor-contact-form/?desktop",
+            "viewport": {
+                "width": 1280,
+                "height": 1024
+            }
+            }
+
+  ]
+  }

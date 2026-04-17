@@ -40,6 +40,7 @@ Notes and commands for running the tests.
 - npm run pa11y
 - make sure to either replace the .pa11yci file at the root with the copy of the one you want to run tests against, or path the run command to a custom .pa11yci file in the test configuration folder. 
 - figuring out the list of urls for mobile vs desktop
+- to run against custom config file use npx pa11y-ci -c (path to pa11y-ci file)
 
 ### lighthouse
 - using the ignore invalid cert flag for chrome
